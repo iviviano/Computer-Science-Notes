@@ -4,55 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "1ea912a00b240768",
+        "id": "e4e2c769a92b9f3e",
         "type": "tabs",
         "children": [
           {
-            "id": "22b251d82869abc3",
+            "id": "e0f0ae91918bdab9",
             "type": "leaf",
             "state": {
               "type": "empty",
               "state": {}
             }
-          },
-          {
-            "id": "523153dc33ff57b3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Asymptotic Tight Bound for Polynomials Proposition.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9eebef361d2b3dd4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "List.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1708fc6b5c8c5bf7",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.5"
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "List.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -135,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -157,13 +118,10 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "List.md"
-              }
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -179,12 +137,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1708fc6b5c8c5bf7",
+  "active": "e0f0ae91918bdab9",
   "lastOpenFiles": [
+    "Isaac Homework/Homework 1.md",
+    "81C7E693-4E99-41EA-8D75-472288FDC15E_1_105_c.jpeg",
+    "Pictures/FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg",
+    "Class Notes/Fibonacci Sequence.md",
+    "Test.md",
+    "Asymptotic Tight Bound for Polynomials Proposition.md",
+    "List.md",
     "List 2.md",
     "Linked List 2",
     "Linked List",
-    "Isaac Homework/Homework 1.md",
     "Isaac Homework/Homework 0 9.md",
     "Isaac Homework/Homework 0 12.md",
     "Isaac Homework/Homework 0 11.md",
@@ -207,15 +171,10 @@
     "Elinor Homework/Learning Obsidian 11.md",
     "Elinor Homework/Learning Obsidian 10.md",
     "Elinor Homework/HW 0 9.md",
-    "Elinor Homework/HW 0 12.md",
-    "Elinor Homework/HW 0 11.md",
-    "Elinor Homework/HW 0 10.md",
     "Elinor Homework/EFrost_CS280_HW0 9.pdf",
     "Elinor Homework/EFrost_CS280_HW0 12.pdf",
     "Elinor Homework/EFrost_CS280_HW0 11.pdf",
     "Elinor Homework/EFrost_CS280_HW0 10.pdf",
-    "Efficiency 2.md",
-    "Degree of a Polynomial 2.md",
     "Set-Theory/Preimage.md.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak 3.bak",
     "Pictures/IMG_2504 3.jpg",
     "Pictures/IMG_2504 4.jpg",
