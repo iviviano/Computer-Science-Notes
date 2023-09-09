@@ -1,0 +1,6 @@
+---
+mathLink: tight bound for sum of functions
+---
+>[!prop]
+>Let $f,g$ be two [[Function]]s with $f=O(g)$. Then, $f+g=\Theta(g)$. 
+

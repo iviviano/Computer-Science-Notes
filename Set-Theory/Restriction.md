@@ -1,0 +1,9 @@
+---
+tag: set theory
+mathLink: restriction
+---
+> [!def]
+> Let $f:A\mapsto B$ be a [[Function]] and $A_0$ be a [[Subset]] of $A$. The *restriction* of $f$ to $A_0$ is the [[Function]] mapping $A_0$ to $B$ whose [[Rule of Assignment]] is 
+> $${(a, f(a)|a\in A_0)}$$
+
+Notation: [[notation for restriction|notation for restriction]]

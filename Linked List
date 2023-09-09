@@ -1,0 +1,6 @@
+---
+mathLink: linked list
+---
+>[!def]
+>A [[List]] implementation that uses sequential [[node]]s with each linked to the next (and possibly the previous).
+
