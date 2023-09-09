@@ -36,17 +36,16 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 >>[!alg]
 >>$$\begin{align}
 &\textbf{Algorithm } \text{Tree?} \\
-&\textbf{Input: } \text{Graph } G \\
+&\textbf{Input: } \text{Graph } G \text{ with vertex set }V\\
 &\textbf{Output: } \text{Boolean Value indicating whether } G \text{ is a Tree} \\
 &\text{Let } lst = \text{DFS}(G) \\
 &\text{Let } set \text{ be a } \text{Set} \\
-
 &\textbf{For } \text{Vertex } v \in lst\textbf{ do:} \\
 &\quad \textbf{If } v\in set \textbf{ then:} \\
 &\quad \quad \textbf{return } \text{false} \\
 &\quad \textbf{Else:} \\
 &\quad \quad \text{Add } v \text{ to } set \\
-&\textbf{return } \text{true}
+&\textbf{return } V==set
 \end{align}$$
 >
 (c) Similar DFS to B
