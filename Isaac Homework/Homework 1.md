@@ -32,7 +32,7 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 \end{align}$$
 >
 (CLARIFY THIS PART)
-(b) Let $\text{BFS}$ take a [[Graph]] $G$. Let the [[Function]] pick a random [[node]] of $G$ and perform a [[Breadth-First Search]] on $G$ starting at the chosen node. Let it create a [[List]] of vertices, adding each vertex to the list every time it is visited. Here is an [[Algorithm]] to determine if a [[Graph]] is a [[Tree]].
+(b) Let $\text{BFS}$ take a [[Graph]] $G$. Let the [[Function]] pick a random [[node]] of $G$ and perform a [[Breadth-First Search]] on $G$ starting at the chosen node. Let it return the [[Breadth-First Search Tree]].
 >>[!alg]
 >>$$\begin{align}
 &\textbf{Algorithm } \text{Tree?} \\
