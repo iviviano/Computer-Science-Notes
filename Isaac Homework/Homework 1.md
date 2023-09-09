@@ -1,6 +1,6 @@
 >[!note] 1
 
-First, I want to explain some terminology I will use. I will divide the the wall of size $2^{n}$ into $4$ quadrants following the numbering convention used for cartesian plane:
+First, I want to explain some terminology I will use. I will divide the the wall of size $2^{n}$ into $4$ quadrants of with side lengths $2^{n-1}$.
 ![[FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg | 200]]
 I will define an size $n$-tile [[Recursive]]ly. A $1$-tile is simply one of the given L-shaped bricks. For $n≥2$, an $n$-tile is constructed from $4$ $(n-1)$-tiles as shown:
 ![[81C7E693-4E99-41EA-8D75-472288FDC15E_1_105_c.jpeg | 300]]
@@ -8,12 +8,14 @@ Now for the inductive proof.
 
 >[!proof]
 Let $P(n)$ be the [[Proposition]]: the $2^{n}$ wall can be tiled with the drain-pipe anywhere.
-
+>
 Base Case: n=1
 Suppose the pipe goes in quadrant $i\in\{1,2,3,4\}$. For this case, the quadrants each correspond to one of the squares. Fill three remaining squares with a $1$-tile. As this works no matter which tile the pipe is in, $P(1)$ is true.
-
+>
 Inductive Step: Let $n≥1$ be given, assume $P(n)$ is true.
-Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the drain pipe goes. Consider a $2^{n+1}\times2^{n+1}$ wall.
+Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the drain pipe goes. Consider a $2^{n+1}\times2^{n+1}$ wall. Then, each quadrant is a $2^{n}\times2^{n}$ wall. Let the pipe go in any square. Whichever quadrant the pipe is in, tile with L-blocks. Note: this is possible by the inductive hypothesis. The remainder of the wall may be tiled by one $(n+1)$-tile. This fills the $2^{n+1}\times2^{n+1}$ with L-tiles no matter where the pipe is. So, $P(n)\implies P(n+1)$.
+>
+[[therefore]] by the [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
 
 >[!note] 2
 (a) Let $\text{BFS}$ take a [[node]] $v$ and [[Graph]] $G$ containing $v$. Let the [[Function]] perform a [[Breadth-First Search]] on $G$ from $v$. Let $\text{BFS}$ return the maximum [[Distance]] of any [[node]] from $v$. Here is an [[Algorithm]] to determine if a [[Graph]] has [[Diameter]] of 3.
