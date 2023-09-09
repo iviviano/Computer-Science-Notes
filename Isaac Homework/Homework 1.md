@@ -40,6 +40,7 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{Output: } \text{Boolean Value indicating whether } G \text{ is a Tree} \\
 &\text{Let } lst = \text{DFS}(G) \\
 &\text{Let } set \text{ be a } \text{Set} \\
+
 &\textbf{For } \text{Vertex } v \in lst\textbf{ do:} \\
 &\quad \textbf{If } v\in set \textbf{ then:} \\
 &\quad \quad \textbf{return } \text{false} \\
