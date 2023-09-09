@@ -72,20 +72,21 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\quad \textbf{end for} \\
 &\quad \textbf{For } child \text{ of } node \textbf{ do:} \\
 &\quad \quad \text{Push } child \text{ onto } stck \\
-&\quad \textbf{end for}
+&\quad \textbf{end for} \\
 &\textbf{end while} \\
 &\textbf{return } \text{false} \\
 \end{align}$$
 
 >[!note] 3
-(a) Consider the [[Worst Case Run Time]] that occurs when both numbers are [[String]]s of $n$ $1$s. Then, $k-1$ bitwise additions are required for the $2^{k}$-th place. So, to add the two [[Binary]] numbers, $$\sum_{k=1}^{n}k-1≤\sum_{k=1}^{n}k=\frac{n(n+1)}{2}$$This is $O(n^2)$ by the [[Asymptotic Tight Bound for Polynomials Proposition]].
+(a) Consider the [[Worst Case Run Time]] that occurs when both numbers are [[String]]s of $n$ $1$s. Then, $2$ bitwise additions are required for each bit after the first and excluding the $n-th$ carry. So, to add the two [[Binary]] numbers, at most $2n+2$ bitwise additions are required. By the [[Asymptotic Tight Bound for Polynomials Proposition]], this process is $O(n)$.
 >
-(b) Let P(n) be the [[Proposition]] $n!≤n^{n}$. I will prove that $P(n)$ is true for $n\in \mathbb{N}$.
+(b) Let P(n) be the [[Proposition]] $\log(n!)≤\log(n^{n})$. I will prove that $P(n)$ is true for $n\in \mathbb{N}$.
 Base case: $n=1$
 As $1!=1$ and $1^{1}=1$, $P(1)$ is true.
+>
 Inductive Step: Let $n\in \mathbb{N}, n≥1$ be given, and assume $P(n)$ is true.
-Then, $$(n+1)!=(n+1)\cdot n!≤(n+1)\cdot n^{n}≤(n+1)\cdot(n+1)^{n}=(n+1)^{n+1}$$so, $P(n+1)$.
-[[therefore]] by [[Principle of Mathematical Induction]], for all $n\in \mathbb{N}$, $n!≤n^{n}$. This implies that $n!=O(n^n)$ By the [[Asymptotic Bound of Compositions of Functions Proposition]], $$\log(n!)=\log(n^n)=n\log(n)$$
+Then, $$\log[(n+1)!]=\log(n+1)+ \log(n!)≤\log(n+1)+ \log(n^{n})$$by the inductive hypothesis. As $\log$ is monotonic, $n\log(n)\le n\log(n+1)$. So,  $$\log(n+1)\log(n^{n})≤\log(n+1)+\log(n+1)^{n}=\log(n+1)^{n+1}$$so, $P(n+1)$.
+[[therefore]] by [[Principle of Mathematical Induction]], for all $n\in \mathbb{N}$, $\log(n!)≤\log(n^{n})$.
 >
 (c) If $n_{0}=1$ and $c=100$, for all $n≥n_{0}$, $c\cdot (2n+3)≥5n$
 >

@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9269ba229cd15c60",
+        "id": "2f811c2de6f55249",
         "type": "tabs",
         "children": [
           {
-            "id": "00f56706670d5e30",
+            "id": "7a50beeb1f8daa31",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 1.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 1.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,9 +137,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "00f56706670d5e30",
+  "active": "7a50beeb1f8daa31",
   "lastOpenFiles": [
     "Isaac Homework/Homework 1.md",
+    "Asymptotic Bound of Compositions of Functions Proposition.md",
     "Class Notes/Fibonacci Sequence 9.md",
     "81C7E693-4E99-41EA-8D75-472288FDC15E_1_105_c.jpeg",
     "Pictures/FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg",
@@ -180,7 +172,6 @@
     "Elinor Homework/Learning Obsidian 12.md",
     "Elinor Homework/Learning Obsidian 11.md",
     "Elinor Homework/Learning Obsidian 10.md",
-    "Elinor Homework/HW 0 9.md",
     "Elinor Homework/EFrost_CS280_HW0 9.pdf",
     "Elinor Homework/EFrost_CS280_HW0 12.pdf",
     "Elinor Homework/EFrost_CS280_HW0 11.pdf",
