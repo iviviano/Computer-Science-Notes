@@ -55,11 +55,26 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 (c) Use the same $\text{BFS}$ function from (b), except $\text{BFS}$ accepts the starting vertex as an argument.
 >>[!alg]
 >>$$\begin{align}
-&\textbf{Algorithm } \text{Cycle Contaning } v\\
+&\textbf{Algorithm } \text{Cycle Containing } v \text{?}\\
 &\textbf{Input: } \text{Graph }G \text{ with vertex }v\\
 &\textbf{Output: } \text{Boolean indicating whether }v \text{ is contained in a cycle}\\
 &\text{Let } tree = \text{DFS}(G,v)\\
-
+&\text{Let } stck \text{ be a stack}\\
+&\textbf{For } grandchild \text{ of root of } tree \textbf{ do:} \\
+&\quad \text{Add } grandchild \text{ to } stck \\
+&\textbf{end for} \\
+&\textbf{While } stck \text{ is not empty} \textbf{ do:} \\
+&\quad node = Pop(stck) \\
+&\quad \textbf{For } \text{Edge } e\in E \textbf{ do:} \\
+&\quad \quad \textbf{If } node\in e\land v\in e \textbf{ then:} \\
+&\quad \quad \quad \textbf{return } \text{true}\\
+&\quad \quad \textbf{end if} \\
+&\quad \textbf{end for} \\
+&\quad \textbf{For } child \text{ of } node \textbf{ do:} \\
+&\quad \quad \text{Push } child \text{ onto } stck \\
+&\quad \textbf{end for}
+&\textbf{end while} \\
+&\textbf{return } \text{false} \\
 \end{align}$$
 
 >[!note] 3
