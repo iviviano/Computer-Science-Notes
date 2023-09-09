@@ -52,17 +52,14 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{return } V==V'\land E==E'
 \end{align}$$
 >
-(c) Use the same $\text{DFS}$ function from (b)
+(c) Use the same $\text{BFS}$ function from (b), except $\text{BFS}$ accepts the starting vertex as an argument.
 >>[!alg]
 >>$$\begin{align}
 &\textbf{Algorithm } \text{Cycle Contaning } v\\
 &\textbf{Input: } \text{Graph }G \text{ with vertex }v\\
 &\textbf{Output: } \text{Boolean indicating whether }v \text{ is contained in a cycle}\\
-&\text{Let } lst=\text{DFS}(G)\\
-&\textbf{For } i\text{ in } 1 \text{ to length(}lst)-1\textbf{ do:}\\
-&\quad \textbf{If } v==lst[i] \textbf{ then:}\\
-&\quad \quad \textbf{return } \text{true}\\
-&\textbf{return } \text{false}\\
+&\text{Let } tree = \text{DFS}(G,v)\\
+
 \end{align}$$
 
 >[!note] 3
