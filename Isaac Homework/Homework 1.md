@@ -44,10 +44,10 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{While } stck \text{ is not empty} \textbf{ do:} \\
 &\quad node = Pop(stck) \\
 &\quad \textbf{For } child \text{ of } node \textbf{ do:} \\
-&\quad \quad \text{Add } \{node, child\} \text{ to } E\\
+&\quad \quad \text{Add } \{node, child\} \text{ to } E'\\
 &\quad \quad \text{Push } child \text{ onto } stck\\
 &\quad \textbf{end for} \\
-&\quad \text{Add } node \text{ to } V \\
+&\quad \text{Add } node \text{ to } V' \\
 &\textbf{end while} \\
 &\textbf{return } V==V'\land E==E'
 \end{align}$$
