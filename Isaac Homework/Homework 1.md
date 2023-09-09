@@ -37,7 +37,7 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{Algorithm } \text{Tree?} \\
 &\textbf{Input: } \text{Graph } G \text{ with vertex set }V \text{ edge set }E\\
 &\textbf{Output: } \text{Boolean Value indicating whether } G \text{ is a Tree} \\
-&\text{Let } tree = \text{DFS}(G) \\
+&\text{Let } tree = \text{BFS}(G) \\
 &\text{Let } stck \text{ be a stack} \\
 &\text{Let } E' \text{ and } V' \text{ be sets} \\
 &\text{Push root of } tree \text{ onto } stck \\ 
@@ -49,7 +49,7 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\quad \textbf{end for} \\
 &\quad \text{Add } node \text{ to } V \\
 &\textbf{end while} \\
-&\textbf{return } V==V'\land E=E'
+&\textbf{return } V==V'\land E==E'
 \end{align}$$
 >
 (c) Similar DFS to B
