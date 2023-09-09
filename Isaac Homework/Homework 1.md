@@ -31,21 +31,25 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{return } \max(lst)==3
 \end{align}$$
 >
-(CLARIFY THIS PART)
 (b) Let $\text{BFS}$ take a [[Graph]] $G$. Let the [[Function]] pick a random [[node]] of $G$ and perform a [[Breadth-First Search]] on $G$ starting at the chosen node. Let it return the [[Breadth-First Search Tree]].
 >>[!alg]
 >>$$\begin{align}
 &\textbf{Algorithm } \text{Tree?} \\
-&\textbf{Input: } \text{Graph } G \text{ with vertex set }V\\
+&\textbf{Input: } \text{Graph } G \text{ with vertex set }V \text{ edge set }E\\
 &\textbf{Output: } \text{Boolean Value indicating whether } G \text{ is a Tree} \\
-&\text{Let } lst = \text{DFS}(G) \\
-&\text{Let } set \text{ be a } \text{Set} \\
-&\textbf{For } \text{Vertex } v \in lst\textbf{ do:} \\
-&\quad \textbf{If } v\in set \textbf{ then:} \\
-&\quad \quad \textbf{return } \text{false} \\
-&\quad \textbf{Else:} \\
-&\quad \quad \text{Add } v \text{ to } set \\
-&\textbf{return } V==set
+&\text{Let } tree = \text{DFS}(G) \\
+&\text{Let } stck \text{ be a stack} \\
+&\text{Let } E' \text{ and } V' \text{ be sets} \\
+&\text{Push root of } tree \text{ onto } stck \\ 
+&\textbf{While } stck \text{ is not empty} \textbf{ do:} \\
+&\quad node = Pop(stck) \\
+&\quad \textbf{For } child \text{ of } node \textbf{ do:} \\
+&\quad \quad \text{Add } \{node, child\} \text{ to } E\\
+&\quad \quad \text{Push } child \text{ onto } stck\\
+&\quad \textbf{end for} \\
+&\quad \text{Add } node \text{ to } V \\
+&\textbf{end while} \\
+&\textbf{return } V==V'\land E=E'
 \end{align}$$
 >
 (c) Similar DFS to B
