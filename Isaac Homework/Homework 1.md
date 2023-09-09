@@ -52,7 +52,7 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{return } V==V'\land E==E'
 \end{align}$$
 >
-(c) Similar DFS to B
+(c) Use the same $\text{DFS}$ function from (b)
 >>[!alg]
 >>$$\begin{align}
 &\textbf{Algorithm } \text{Cycle Contaning } v\\
