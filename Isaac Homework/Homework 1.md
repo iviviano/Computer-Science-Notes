@@ -23,12 +23,10 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{Algorithm } \text{Diameter of 3?} \\
 &\textbf{Input: } \text{Graph } G \text{ with vertex set } V \\
 &\textbf{Output: } \text{Boolean Value inducating whether } G \text{ has diameter 3} \\
-&\text{Let } lst \text{ be a list with length equal to the number of vertices in } V  \\
-&\text{Let } i=0\\
+&\text{Let } set \text{ be a Set of integers}  \\
 &\textbf{For } \text{Vertex } v\in V\textbf{ do:} \\
-&\quad lst[i]=\text{BFS}(v,G)\\
-&\quad i=i+1\\
-&\textbf{return } \max(lst)==3
+&\quad \text{Add BFS}(v,G)\text{ to } set\\
+&\textbf{return } \max(set)==3
 \end{align}$$
 >
 (b) Let $\text{BFS}$ take a [[Graph]] $G$. Let the [[Function]] pick a random [[node]] of $G$ and perform a [[Breadth-First Search]] on $G$ starting at the chosen node. Let it return the [[Breadth-First Search Tree]].
