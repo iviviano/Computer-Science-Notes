@@ -7,8 +7,8 @@ Now for the inductive proof.
 >
 >>[!proof]
 Let $P(n)$ be the [[Proposition]]: the $2^{n}$ wall can be tiled with the drain-pipe anywhere.
->>
-Base Case: n=1
+>>Induction on $n$:
+Base Case: $n=1$
 For this case, the quadrants each correspond to one of the squares. So, whichever square the pipe occupies, the pipe takes up the whole quadrant containing it. Fill three remaining squares with a $1$-tile. As this works no matter which tile the pipe is in, $P(1)$ is true.
 >>
 Inductive Step: Let $n≥1$ be given, assume $P(n)$ is true.
