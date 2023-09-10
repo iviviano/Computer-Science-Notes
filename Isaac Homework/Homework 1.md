@@ -76,9 +76,10 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 \end{align}$$
 
 >[!note] 3
-(a) Consider the [[Worst Case Run Time]] that occurs when both numbers are [[String]]s of $n$ $1$s. Then, $2$ bitwise additions are required for each bit after the first and excluding the $n-th$ carry. So, to add the two [[Binary]] numbers, at most $2n+2$ bitwise additions are required. By the [[Asymptotic Tight Bound for Polynomials Proposition]], this process is $O(n)$.
+(a) Consider the [[Worst Case Run Time]] that occurs when both numbers are [[String]]s of $n$ $1$s. Then, $2$ bitwise additions are required for each bit after the first and excluding the $n-th$ carry. So, to add the two [[Binary]] numbers, at most $2n$ bitwise additions are required. By the [[Asymptotic Tight Bound for Polynomials Proposition]], this process is $O(n)$.
 >
 (b) Let P(n) be the [[Proposition]] $\log(n!)≤\log(n^{n})$. I will prove that $P(n)$ is true for $n\in \mathbb{N}$.
+Induction on $n$:
 Base case: $n=1$
 As $1!=1$ and $1^{1}=1$, $P(1)$ is true.
 >
