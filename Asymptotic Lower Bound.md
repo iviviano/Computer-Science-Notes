@@ -9,3 +9,9 @@ mathLink: asymptotic lower bound
 >We then say that $T$ is *asymptotically lower bounded* by $f$.
 
 Note: $\epsilon$ must be independent of $n$.
+
+>[!def] Alternative Definition
+>$T(n)$ is $\Omega(f(n))$ if $f(n)$ is $O(T(n))$ ($T$ is an [[Asymptotic Upper Bounds]] for $f$).
+
+
+

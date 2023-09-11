@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "90d57c8d58deca5f",
+        "id": "e59b5a8de428d832",
         "type": "tabs",
         "children": [
           {
-            "id": "6541ac20b20b7468",
+            "id": "8f62ecaf3e3e3af1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Asymptotic Upper Bounds.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d7f3f7d7de3239e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Asymptotic Tight Bound of Logarithms.md",
+                "file": "Asymptotically Tight Bound.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Asymptotic Tight Bound of Logarithms.md",
+                "file": "Asymptotically Tight Bound.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Asymptotic Tight Bound of Logarithms.md",
+                "file": "Asymptotically Tight Bound.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Asymptotic Tight Bound of Logarithms.md"
+                "file": "Asymptotically Tight Bound.md"
               }
             }
           }
@@ -160,10 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d7f3f7d7de3239e",
+  "active": "8f62ecaf3e3e3af1",
   "lastOpenFiles": [
-    "Asymptotic Upper Bounds.md",
     "Asymptotic Tight Bound of Logarithms.md",
+    "Asymptotic Tight Bound for Polynomials Proposition.md",
+    "Asymptotic Lower Bound.md",
+    "Asymptotic Upper Bounds.md",
+    "Asymptotically Tight Bound.md",
+    "Asymptotic Bounds of Sums of Functions.md",
     "Isaac Homework/Homework 1.md",
     "Asymptotic Bound of Compositions of Functions Proposition.md",
     "Class Notes/Fibonacci Sequence 9.md",
@@ -171,7 +161,6 @@
     "Pictures/FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg",
     "Class Notes/Fibonacci Sequence.md",
     "Test.md",
-    "Asymptotic Tight Bound for Polynomials Proposition.md",
     "List.md",
     "List 2.md",
     "Linked List 2",
@@ -192,9 +181,6 @@
     "Elinor Homework/Learning Obsidian 5.md",
     "Elinor Homework/Learning Obsidian 24.md",
     "Elinor Homework/Learning Obsidian 23.md",
-    "Elinor Homework/Learning Obsidian 22.md",
-    "Elinor Homework/Learning Obsidian 21.md",
-    "Elinor Homework/Learning Obsidian 12.md",
     "Elinor Homework/EFrost_CS280_HW0 9.pdf",
     "Elinor Homework/EFrost_CS280_HW0 12.pdf",
     "Elinor Homework/EFrost_CS280_HW0 11.pdf",
