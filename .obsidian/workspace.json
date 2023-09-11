@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2f811c2de6f55249",
+        "id": "90d57c8d58deca5f",
         "type": "tabs",
         "children": [
           {
-            "id": "7a50beeb1f8daa31",
+            "id": "6541ac20b20b7468",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 1.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 1.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,7 +137,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "369e3d3423d2c99a",
+  "active": "6541ac20b20b7468",
   "lastOpenFiles": [
     "Isaac Homework/Homework 1.md",
     "Asymptotic Bound of Compositions of Functions Proposition.md",
