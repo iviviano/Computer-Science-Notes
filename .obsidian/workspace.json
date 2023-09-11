@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e59b5a8de428d832",
+        "id": "a6b003840b9f6500",
         "type": "tabs",
         "children": [
           {
-            "id": "c474cace82526c54",
+            "id": "def3273e55ff642a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Merge-Sort.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Merge-Sort.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Merge-Sort.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Merge-Sort.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,10 +137,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c474cace82526c54",
+  "active": "def3273e55ff642a",
   "lastOpenFiles": [
-    "Divide and Conquer Paradigm.md",
     "Merge-Sort.md",
+    "Divide and Conquer Paradigm.md",
     "Asymptotically Tight Bound.md",
     "Asymptotic Tight Bound of Logarithms.md",
     "Asymptotic Tight Bound for Polynomials Proposition.md",
