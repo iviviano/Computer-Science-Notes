@@ -9,3 +9,8 @@ mathLink: asymptotic upper bound
 >We then say that $T$ is *asymptotically upper bounded* by $f$.
 
 Note: $c$ must be independent of $n$ (similar to uniform convergence)
+
+Examples:
+1. $n\log n=O(n^{2})$
+2. $n=O(n^{2})$
+3. $n\log n=O(n^{2})$ as [[Asymptotic Bounds of Sums of Functions]]
