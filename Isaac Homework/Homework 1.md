@@ -1,3 +1,4 @@
+
 >[!note] 1
 First, I want to explain some terminology I will use. I will divide the the wall of size $2^{n}$ into $4$ quadrants of with side lengths $2^{n-1}$.
 ![[FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg | 200]]
