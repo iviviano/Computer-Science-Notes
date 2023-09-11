@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6d7f3f7d7de3239e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Asymptotic Tight Bound of Logarithms.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Asymptotic Upper Bounds.md",
+                "file": "Asymptotic Tight Bound of Logarithms.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Asymptotic Upper Bounds.md",
+                "file": "Asymptotic Tight Bound of Logarithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Asymptotic Upper Bounds.md"
+                "file": "Asymptotic Tight Bound of Logarithms.md"
               }
             }
           }
@@ -146,8 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6541ac20b20b7468",
+  "active": "6d7f3f7d7de3239e",
   "lastOpenFiles": [
+    "Asymptotic Upper Bounds.md",
+    "Asymptotic Tight Bound of Logarithms.md",
     "Isaac Homework/Homework 1.md",
     "Asymptotic Bound of Compositions of Functions Proposition.md",
     "Class Notes/Fibonacci Sequence 9.md",
@@ -179,8 +195,6 @@
     "Elinor Homework/Learning Obsidian 22.md",
     "Elinor Homework/Learning Obsidian 21.md",
     "Elinor Homework/Learning Obsidian 12.md",
-    "Elinor Homework/Learning Obsidian 11.md",
-    "Elinor Homework/Learning Obsidian 10.md",
     "Elinor Homework/EFrost_CS280_HW0 9.pdf",
     "Elinor Homework/EFrost_CS280_HW0 12.pdf",
     "Elinor Homework/EFrost_CS280_HW0 11.pdf",
