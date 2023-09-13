@@ -61,7 +61,7 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{Algorithm } \text{Cycle Containing } v \text{?}\\
 &\textbf{Input: } \text{Graph }G \text{ with vertex }v\\
 &\textbf{Output: } \text{Boolean indicating whether }v \text{ is contained in a cycle}\\
-&\text{Let } tree = \text{DFS}(G,v)\\
+&\text{Let } tree = \text{BFS}(G,v)\\
 &\text{Let } stck \text{ be a stack}\\
 &\textbf{For } grandchild \text{ of root of } tree \textbf{ do:} \\
 &\quad \text{Add } grandchild \text{ to } stck \\
