@@ -69,7 +69,7 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 &\textbf{While } stck \text{ is not empty} \textbf{ do:} \\
 &\quad node = Pop(stck) \\
 &\quad \textbf{For } \text{Edge } e\in E \textbf{ do:} \\
-&\quad \quad \textbf{If } node\in e\land v\in e \textbf{ then:} \\
+&\quad \quad \textbf{If } (node, v) == e \textbf{ then:} \\
 &\quad \quad \quad \textbf{return } \text{true}\\
 &\quad \quad \textbf{end if} \\
 &\quad \textbf{end for} \\

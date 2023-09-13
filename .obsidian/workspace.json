@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
+                "file": "Isaac Homework/1.1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
+                "file": "Isaac Homework/1.1.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
+                "file": "Isaac Homework/1.1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Isaac Homework/Homework 1.md"
+                "file": "Isaac Homework/1.1.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   "active": "91bb42f43f589a95",
   "lastOpenFiles": [
     "Isaac Homework/Homework 1.md",
+    "Isaac Homework/1.1.md",
     "Merge-Sort.md",
     "Divide and Conquer Paradigm.md",
     "Asymptotically Tight Bound.md",
@@ -180,7 +181,6 @@
     "Elinor Homework/Learning Obsidian 9.md",
     "Elinor Homework/Learning Obsidian 7.md",
     "Elinor Homework/Learning Obsidian 6.md",
-    "Elinor Homework/Learning Obsidian 5.md",
     "Elinor Homework/EFrost_CS280_HW0 9.pdf",
     "Elinor Homework/EFrost_CS280_HW0 12.pdf",
     "Elinor Homework/EFrost_CS280_HW0 11.pdf",
