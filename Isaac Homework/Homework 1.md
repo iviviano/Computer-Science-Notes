@@ -1,3 +1,7 @@
+<p align=center>
+Isaac Viviano <br>
+Homework 1
+</p>
 
 >[!note] 1
 First, I want to explain some terminology I will use. I will divide the the wall of size $2^{n}$ into $4$ quadrants of with side lengths $2^{n-1}$.
