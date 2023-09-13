@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a6b003840b9f6500",
+        "id": "ba2d1198d0de459c",
         "type": "tabs",
         "children": [
           {
-            "id": "def3273e55ff642a",
+            "id": "91bb42f43f589a95",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 1.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 1.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +137,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "def3273e55ff642a",
+  "active": "91bb42f43f589a95",
   "lastOpenFiles": [
+    "Isaac Homework/Homework 1.md",
     "Merge-Sort.md",
     "Divide and Conquer Paradigm.md",
     "Asymptotically Tight Bound.md",
@@ -156,7 +148,6 @@
     "Asymptotic Lower Bound.md",
     "Asymptotic Upper Bounds.md",
     "Asymptotic Bounds of Sums of Functions.md",
-    "Isaac Homework/Homework 1.md",
     "Asymptotic Bound of Compositions of Functions Proposition.md",
     "Class Notes/Fibonacci Sequence 9.md",
     "Pictures/81C7E693-4E99-41EA-8D75-472288FDC15E_1_105_c.jpeg",
