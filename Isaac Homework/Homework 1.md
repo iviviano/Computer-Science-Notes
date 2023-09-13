@@ -22,7 +22,7 @@ Then, a $2^{n}\times 2^{n}$ wall may be filled with L-blocks no matter where the
 [[therefore]] by the [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
 
 >[!note] 2
-(a) Let $\text{BFS}$ take a [[node]] $v$ and [[Graph]] $G$ containing $v$. Let the [[Function]] perform a [[Breadth-First Search]] on $G$ from $v$. Let $\text{BFS}$ return the maximum [[Distance]] of any [[node]] from $v$. Here is an [[Algorithm]] to determine if a [[Graph]] has [[Diameter]] of 3.
+(a) Let $\text{BFS}$ take a [[node]] $v$ and [[Graph]] $G$ containing $v$. Let the [[Function]] perform a [[Breadth-First Search]] on $G$ from $v$. Let $\text{BFS}$ return the maximum [[Distance]] of any [[node]] from $v$ (height of [[Breadth-First Search Tree]]. Here is an [[Algorithm]] to determine if a [[Graph]] has [[Diameter]] of 3.
 >>[!alg]
 >>$$\begin{align}
 &\textbf{Algorithm } \text{Diameter of 3?} \\
