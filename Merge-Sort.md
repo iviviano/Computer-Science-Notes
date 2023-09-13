@@ -38,3 +38,8 @@ Inductive step: Assume $P(n)$ for all $k≥n≥1$ for some $k\in \mathbb{N}$.
 Then given a [[List]] of size $k+1$, split this into two lists $A,B$ where $A$ contains the first $\left\lfloor\frac{k+1}{2}\right\rfloor$ elements of the input and $B$ contains the rest. As $\left\lceil \frac{k+1}{2}\right\rceil≤k$, merge sort works for $A$ and $B$. If $merge$ combines $A$ and $B$ in sorted order, then the input list of size $k+1$ is sorted, so $P(k+1)$.
 >
 [[therefore]] By [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$
+
+Runtime analysis of merge-sort:
+- The number of [[Recursive]] layers is about $\log_{2}(n)$ 
+- $merge$ takes $m+n$ steps where $m,n$ are the lengths of the inputs. The total length of the inputs to $merge$ over a layer in the recursion tree is $n$, the length of the input
+- [[therefore]] the total number of computational steps is $O(n\log n)$
