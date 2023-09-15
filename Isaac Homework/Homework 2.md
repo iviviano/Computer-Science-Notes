@@ -55,7 +55,25 @@ Split into three subproblems of size $\frac{n}{3}$. Merge the resulting lists wi
 
 (d) $O(n\log n)$
 
-(e) 
+(e)
+>[!alg]
+>$$\begin{align}
+&\textbf{Algorithm } k\text{-Merge} \\
+&\textbf{Input: } k\text{ sorted lists} \\
+&\textbf{Output: } \text{A sorted list containing all the elements of the input lists} \\
+&\text{Let } Q \text{ be a priority queue of lists. Use as comparitor the given} \\
+&\quad \text{sorting comparitor applied to the first elements of any two lists }\\
+&\text{Let } S \text{ be a list }\\
+&\text{Add each of the input lists to }Q\\
+&\textbf{While } Q≠\emptyset \textbf{ do:} \\
+&\quad A = dequeue(Q) \\
+&\quad \text{Append }A[0] \text{ to }S\\
+&\quad \text{Remove the first element of }A\\
+&\quad \textbf{If } A≠\emptyset \textbf{ then:} \\
+&\quad \quad \text{Add } A \text{ to the } Q\\
+&\quad \textbf{end if} \\
+&\textbf{end while}
+\end{align}$$
 
 >[!note] 3
 
