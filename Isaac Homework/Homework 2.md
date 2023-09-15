@@ -16,7 +16,7 @@
 Suppose $T(1)=c$.
 
 Inductive Step: Suppose that for all $k\in\{1,\ldots,n\}$, $P(k)$.
-Then, $$\begin{align} T(n+1)&=aT\left(\frac{n}{d}\right)+O(n^{d})=a\left(\frac{n}{d}\right)^{d}\log\left(\frac{n}{d}\right)+O(n^{d}) \\ &= \frac{a}{d^{d}}n^{d}\log n- \frac{a}{d^{d}}\end{align}$$
+Then, $$\begin{align} T(n+1)&=aT\left(\frac{n}{d}\right)+O(n^{d})=a\left(\frac{n}{d}\right)^{d}\log\left(\frac{n}{d}\right)+O(n^{d}) \\ &= \frac{a}{d^{d}}n^{d}\log n- \frac{a}{d^{d}}\log d+O(n^{d})=O(n^{d}\log n)\end{align}$$
 
 >[!note] 2
 
