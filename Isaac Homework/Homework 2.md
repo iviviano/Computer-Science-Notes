@@ -10,7 +10,7 @@
 7. $f=\Omega(g)$
 
 (b)
-
+Splitting the 
 
 >[!note] 2
 
