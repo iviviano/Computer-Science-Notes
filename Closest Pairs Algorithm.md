@@ -14,11 +14,15 @@ $$\begin{align}
 &\quad \textbf{return } S\\
 &\textbf{end if} \\
 &\text{Sort } S \text{ by } x \text{-coordinate}\\
-&\text{Let } Q = S[0:\frac{len(S)}{2}],R=S[\frac{len(S)}{2}:len(S)]\\
+&\text{Let } Q = S\left[0:\frac{len(S)}{2}\right],R=S\left[\frac{len(S)}{2}:len(S)\right]\\
 &\text{Let }(q_{0}^{*},q_{1}^{*})=closest\_pairs(Q)\\
 &\text{Let }(r_{0}^{*},r_{1}^{*})=closest\_pairs(R)\\
-&\
+&\text{}\\
 &merge: \\
 &\quad \text{Let } \delta=\min\{d(q_{0}^{*},q_{1}^{*}),d(r_{0}^{*},r_{1}^{*})\}\\
-
+&\quad \text{Let } X \text{ be points within } \delta \text{ of } S\left[\frac{len(S)}{2}\right]_{x} \\
+&\quad \text{Sort } X \text{ by } y \text{-coordinate}\\
+&\quad 
 \end{align}$$
+
+Note: can find $X$ in $merge$ in $O(n)$.
