@@ -22,7 +22,6 @@ Then, $$\begin{align} T(n+1)&=aT\left(\frac{n}{d}\right)+O(n^{d})=a\left(\frac{n
 >[!note] 2
 
 >[!alg]
-
 >$$\begin{align}
 &\textbf{Algorithm } \text{Merge Sort} \\
 &\textbf{Input: } \text{Array } A \\
@@ -48,6 +47,15 @@ Then, $$\begin{align} T(n+1)&=aT\left(\frac{n}{d}\right)+O(n^{d})=a\left(\frac{n
 &\quad \textbf{end while} \\
 &\quad \textbf{return } S \\
 \end{align}$$
+
+(b) $O(n)$
+
+(c) $T(n)=3T\left(\frac{n}{3}\right)+O(n)$
+Split into three subproblems of size $\frac{n}{3}$. Merge the resulting lists with runtime $O(n)$.
+
+(d) $O(n\log n)$
+
+(e) 
 
 >[!note] 3
 
