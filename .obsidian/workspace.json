@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Merge-Sort.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Merge-Sort.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Merge-Sort.md"
+                "file": "Isaac Homework/Homework 2.md"
               }
             }
           }
@@ -160,13 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "37f4a406e14d099b",
+  "active": "0105152ac32deb9f",
   "lastOpenFiles": [
+    "Merge-Sort.md",
     "Isaac Homework/Homework 2.md",
     "Closest Pairs Algorithm.md",
     "Closest Pairs Problem.md",
     "Isaac Homework/1.2.md",
-    "Merge-Sort.md",
     "Divide and Conquer Paradigm.md",
     "Isaac Homework/1.3.md",
     "Isaac Homework/1.1.md",
