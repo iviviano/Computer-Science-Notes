@@ -19,35 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "2ad774193b5989f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Closest Pairs Algorithm.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "80bfa3082328d693",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Closest Pairs Problem.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Closest Pairs Algorithm.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -130,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Closest Pairs Algorithm.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -153,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Closest Pairs Algorithm.md"
+                "file": "Isaac Homework/Homework 2.md"
               }
             }
           }
@@ -173,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2ad774193b5989f6",
+  "active": "0105152ac32deb9f",
   "lastOpenFiles": [
-    "Isaac Homework/Homework 2.md",
     "Closest Pairs Algorithm.md",
+    "Isaac Homework/Homework 2.md",
     "Closest Pairs Problem.md",
     "Isaac Homework/1.2.md",
     "Merge-Sort.md",
