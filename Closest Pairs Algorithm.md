@@ -20,10 +20,15 @@ $$\begin{align}
 &\text{}\\
 &merge: \\
 &\quad \text{Let } \delta=\min\{d(q_{0}^{*},q_{1}^{*}),d(r_{0}^{*},r_{1}^{*})\}\\
-&\quad \text{Let } X \text{ be points within } \delta \text{ of } S\left[\frac{len(S)}{2}\right]_{x} \\
+&\quad \text{Let } X \text{ be points within } \delta \text{ of } S\left[\frac{len(S)}{2}\right]_{x} \text{ } (O(n)) \\
 &\quad \text{Sort } X \text{ by } y \text{-coordinate } (O(n\log n))\\
-&\quad \text{Look over alll pairs of points within }15\text{ positions of each other in }X \text{ }(O(n))\\
+&\quad \text{Look over all pairs of points within }15\text{ positions of each other in }X \text{ }(O(n))\\
 
 \end{align}$$
 
 Note: can find $X$ in $merge$ in $O(n)$.
+
+>[!proof] Proof: Any closest pair is at most 15 positions from each other in $X$.
+
+
+
