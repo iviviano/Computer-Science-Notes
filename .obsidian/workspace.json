@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Closest Pairs Algorithm.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -46,7 +46,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -112,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
+                "file": "Closest Pairs Algorithm.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -129,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
+                "file": "Closest Pairs Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -152,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Isaac Homework/Homework 2.md"
+                "file": "Closest Pairs Algorithm.md"
               }
             }
           }
@@ -172,10 +173,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0105152ac32deb9f",
+  "active": "2ad774193b5989f6",
   "lastOpenFiles": [
-    "Untitled 1.md",
     "Isaac Homework/Homework 2.md",
+    "Closest Pairs Algorithm.md",
     "Closest Pairs Problem.md",
     "Isaac Homework/1.2.md",
     "Merge-Sort.md",
