@@ -10,7 +10,7 @@
 7. $f=\Omega(g)$
 
 (b)
-Splitting the 
+Each of the subproblems of size $\frac{n}{d}$ requires $T(\frac{n}{d})$ [[Primitive Computational Step]]s by our definition of $T$. 
 
 >[!note] 2
 
