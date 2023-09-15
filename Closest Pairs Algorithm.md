@@ -30,5 +30,5 @@ Note: can find $X$ in $merge$ in $O(n)$.
 
 >[!proof] Proof: Any closest pair is at most 15 positions from each other in $X$.
 
-
+Divide $X$ into boxes of length $\frac{\delta}{2}$. Note: no two points of $X$ can share a box, as they would be in the same set $Q$ or $R$ with a distance less that $\delta$. If $x,y\in X$, they are $≥16$ positions apart in $X$. 
 
