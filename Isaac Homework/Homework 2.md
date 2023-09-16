@@ -22,7 +22,7 @@ $$T(n+1)=a\cdot T\left(\frac{n+1}{b}\right)+O((n+1)^{d})$$by the known recurrenc
 [[therefore]] by [[Principle of Mathematical Induction]], ...
 
 3. $T(n)=O(n^{n})$
-
+Most work on the lowest layer.
 
 >[!note] 2
 
