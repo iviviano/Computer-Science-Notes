@@ -11,10 +11,10 @@
 
 (b)
 1. Each of the subproblems of size $\frac{n}{b}$ requires $T(\frac{n}{d})$ [[Primitive Computational Step]]s by our definition of $T$. As there are $a$ subproblems, the number of [[Primitive Computational Step]]s from subproblems is $aT(\frac{n}{b})$. The steps for merging the solutions to the subproblems must be added to steps from subproblems. [[therefore]] the total [[Worst Case Run Time]] is given by the equation: $$T(n)=aT\left(\frac{n}{b}\right)+O(n^{d}) $$
-2. Let $P(n)$ be that $T(n)≤n^{d}\log n+(n^{d})$ 
+2. Let $P(n)$ be that $T(n)≤an^{d}\log n$ where $c$ represents the time requirement of the base case.
 
-Base Case: $n=1$. 
-
+Base Case: $n=b$. 
+$T(b)=aT(\frac{b}{b})$ 
 
 Inductive Step: Suppose that for all $k\in\{1,\ldots,n\}$, $P(k)$.
 $$T(n+1)=a\cdot T\left(\frac{n+1}{b}\right)+O((n+1)^{d})$$by the known recurrence relation. As $\frac{n+1}{b}≤n$, $P(\frac{n+1}{b})$ by the inductive hypothesis. So, (NEEDS SOME WORK) $$T\left(\frac{n+1}{b}\right)≤\left(\frac{n+1}{b}\right)^{d}\log\left(\frac{n+1}{b}\right)+O(n)≤\left(\frac{n+1}{b}\right)^{d}\log(n+1)+O(n)$$By the [[Asymptotic Tight Bound for Polynomials Proposition]], $O((n+1)^{d})=O(n^{d})$. So,  $$T(n+1)≤a\cdot \frac{(n+1)^{d}}{b^{d}}\log(n+1) + O(n)=(n+1)\log(n+1)+O(n)$$So, $P(n+1)$.
