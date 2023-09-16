@@ -99,8 +99,8 @@ $$\begin{align}
 &\quad \text{Let } S' \text{ be the list with the smaller first } x \text{ coord}\\
 &\quad \textbf{If } S[i]_{y} < S'[0]_{y} \textbf{ then:} \\
 &\quad \quad \text{Add }(S'[0]) \text{ to } S\\
-&\quad \quad \text{Remove } S'[0]\\
 &\quad \textbf{end if}\\
+&\quad \text{Remove } S'[0]\\
 &\textbf{end while}\\
 &\text{Append } S_{1} \text{ and }S_{2} \text{ to } S(\text{ one will be empty})\\
 \end{align}$$
