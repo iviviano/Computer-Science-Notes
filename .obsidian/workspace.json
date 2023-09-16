@@ -19,6 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1c5cd1b4506d7311",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Closest Pairs Algorithm.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -148,9 +161,9 @@
   },
   "active": "959524df3c2cf718",
   "lastOpenFiles": [
-    "Merge-Sort.md",
-    "Isaac Homework/Homework 2.md",
     "Closest Pairs Algorithm.md",
+    "Isaac Homework/Homework 2.md",
+    "Merge-Sort.md",
     "Closest Pairs Problem.md",
     "Isaac Homework/1.2.md",
     "Divide and Conquer Paradigm.md",
