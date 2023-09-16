@@ -11,7 +11,7 @@
 
 (b)
 1. Each of the subproblems of size $\frac{n}{b}$ requires $T(\frac{n}{d})$ [[Primitive Computational Step]]s by our definition of $T$. As there are $a$ subproblems, the number of [[Primitive Computational Step]]s from subproblems is $aT(\frac{n}{b})$. The steps for merging the solutions to the subproblems must be added to steps from subproblems. [[therefore]] the total [[Worst Case Run Time]] is given by the equation: $$T(n)=aT\left(\frac{n}{b}\right)+O(n^{d}) $$
-2. Let $P(n)$ be that $T(n)≤n^{d}\log n+O(n^{d})$ 
+2. Let $P(n)$ be that $T(n)≤n^{d}\log n+(n^{d})$ 
 
 Base Case: $n=1$. 
 
