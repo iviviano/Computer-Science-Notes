@@ -16,7 +16,7 @@
 Base Case: $n=b$. 
 $$T(b)=aT\left(\frac{b}{b}\right)+O(b^{d})=ac$$
 
-Inductive Step: Suppose that for all $k\in\{1,\ldots,n\}$, $P(k)$.
+Inductive Step: Let $n\in \mathbb{N}$ with $n>b$. Suppose that $P(k)$ holds for all $b≤k<n$.
 $$T(n+1)=a\cdot T\left(\frac{n+1}{b}\right)+O((n+1)^{d})$$by the known recurrence relation. As $\frac{n+1}{b}≤n$, $P(\frac{n+1}{b})$ by the inductive hypothesis. So, (NEEDS SOME WORK) $$T\left(\frac{n+1}{b}\right)≤\left(\frac{n+1}{b}\right)^{d}\log\left(\frac{n+1}{b}\right)+O(n)≤\left(\frac{n+1}{b}\right)^{d}\log(n+1)+O(n)$$By the [[Asymptotic Tight Bound for Polynomials Proposition]], $O((n+1)^{d})=O(n^{d})$. So,  $$T(n+1)≤a\cdot \frac{(n+1)^{d}}{b^{d}}\log(n+1) + O(n)=(n+1)\log(n+1)+O(n)$$So, $P(n+1)$.
 
 [[therefore]] by [[Principle of Mathematical Induction]], ...
