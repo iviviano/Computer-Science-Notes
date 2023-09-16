@@ -92,6 +92,9 @@ $T(n)=kT(\frac{n}{k})+O(n\log k)$
 (b) 
 Naive Solution:
 $$\begin{align}
+&\textbf{Algorithm } \text{Merge Two Silhuoettes}\\
+&\textbf{Input: } \text{Silhuoettes } S_{1},S_{2}\\
+&\textbf{Output: } \text{The merged silhuoette}\\
 &\text{Let } S \text{ be a list }\\
 &\text{Add whichever starting point has smaller } x \text{ to } S\\ 
 &\text{Remove the added point from its list}\\
@@ -102,5 +105,23 @@ $$\begin{align}
 &\quad \textbf{end if}\\
 &\quad \text{Remove } S'[0]\\
 &\textbf{end while}\\
-&\text{Append } S_{1} \text{ and }S_{2} \text{ to } S(\text{ one will be empty})\\
+&\text{Append } S_{1} \text{ and }S_{2} \text{ to } S \text{ }(\text{one will be empty})\\
+&\textbf{return } S\\
 \end{align}$$
+
+Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Suppose $T(1)=c$.
+
+>[!proof]
+Let $P(n)$ be that $T(n)≤2c\log_{2}(n)+dn$.
+>
+Base Case: $n=2$.
+By the recurrence relation, $$T(2)=2T(1)+2d=2c+2d≤2c\log_{2}(2)+2d$$so $P(2)$.
+>
+Inductive Step: let $n>2$. Assume that $P(k)$ holds for all $2≤k<n$.
+$$T(n)≤2T\left(\frac{n}{2}\right)+dn≤2c\log_{2}\left(\frac{n}{2}\right)+dn$$by the inductive hypothesis. 
+$$2c\log_{2}\left(\frac{n}{2}\right)+dn=2c\log_{2}(n)-2c\log_{2}(2)+dn=2c\log_{2}(n)+dn$$so $P(n)$.
+>
+[[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n≥2$.
+
+Justify $O(n\log n)$:
+Let $n_{0}=2,\alpha=2\cdot()$
