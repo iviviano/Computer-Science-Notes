@@ -14,18 +14,23 @@
 Rewrite the recurrence relation: $$T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}$$with $c≥T(1)$.
 
 
-Let $P(n)$ be that $T(n)≤b^{d}n^{d}\log_{b} n+cn^{d}$. 
+Let $P(n)$ be that $T(n)≤an^{d}\log_{b} n+cn^{d}$. 
 
+Induction on $n$:
 
-
-Base Case: $n=b$. (CHECK)
+Base Case: $n=b$. 
 $$T(b)=aT\left(\frac{b}{b}\right)+cb^{d}≤ac+cb^{d}≤ab^{d}\log_{b}b+cb^{d}$$so, $P(b)$.
 
 Inductive Step: Let $n\in \mathbb{N}$ with $n>b$. Suppose that $P(k)$ holds for all $b≤k<n$.
+$$
+T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+cn^{d}\right)+cn^{d}
+$$
+By the inductive hypothesis.
 $$\begin{align}
-&T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+cn^{d}\right)+cn^{d}\\
-&=a()
+&T(n)≤a\left(\left(\frac{n}{b}\right)^{d}\log_{b}n-\left(\frac{n}{b}\right)^{d}+cn^{d}\right)+cn^{d} \\
+&≤ \frac{a}{b^{d}}n^{d}\log_{b}(n)+cn^{d}≤an^{d}\log_{b}(n)+cn^{d}
 \end{align}$$
+So, $P(n)$.
 
 
 [[therefore]] by [[Principle of Mathematical Induction]], ...
