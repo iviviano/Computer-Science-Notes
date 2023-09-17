@@ -113,8 +113,7 @@ $T(n)=kT(\frac{n}{k})+O(n\log k)$
 \end{align}$$
 
 >[!alg]
-
-$$\begin{align}
+>$$\begin{align}
 &\textbf{Algorithm } \text{Skyline}\\
 &\textbf{Input: } \text{List } B \text{ of buildings}\\
 &\textbf{Output: } \text{List of points constituting the skyline}\\
@@ -122,7 +121,9 @@ $$\begin{align}
 &\quad l=B[0][0]; h=B[0][1]; r=B[0][2]\\
 &\quad \textbf{return } \text{List }((l,h),(r,0))\\
 &\textbf{end if}\\
-&
+&\text{Let }S_{1}=skyline\left(B\left[0:\frac{\text{len }B}{2}\right]\right)\\
+&\text{Let }S_{2}=skyline\left(\left[\frac{\text{len }B}{2}:\text{len }B\right]\right)\\
+&\textbf{return } merge(S_{1},S_{2})\\
 \end{align}$$
 
 
