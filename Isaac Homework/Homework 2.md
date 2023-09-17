@@ -116,10 +116,10 @@ Let $P(n)$ be that $T(n)≤2cn\log_{2}(n)+dn$.
 >
 Base Case: $n=2$.
 By the recurrence relation, $$T(2)=2T(1)+2d=2c+2d≤4c\log_{2}(2)+2d$$so $P(2)$.
->
+ 
 Inductive Step: let $n>2$. Assume that $P(k)$ holds for all $2≤k<n$.
-$$T(n)≤2T\left(\frac{n}{2}\right)+dn≤2c\frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+dn$$by the inductive hypothesis. 
-$$2c\log_{2}\left(\frac{n}{2}\right)+dn=2c\log_{2}(n)-2c\log_{2}(2)+dn=2c\log_{2}(n)+dn$$so $P(n)$.
+$$T(n)≤2T\left(\frac{n}{2}\right)+dn≤2\left(c\frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+ d\frac{n}{2}\right)+dn$$by the inductive hypothesis. 
+$$2\left(c \frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+d \frac{n}{2}\right)+dn=$$
 >
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n≥2$.
 
