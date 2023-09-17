@@ -90,8 +90,11 @@ $T(n)=kT(\frac{n}{k})+O(n\log k)$
 (a) $(l_{1},h_{1}),(r_{1},0)$
 
 (b) 
-Naive Solution:
-$$\begin{align}
+
+
+(c)
+>[!alg]
+>$$\begin{align}
 &\textbf{Algorithm } \text{Merge Two Silhuoettes}\\
 &\textbf{Input: } \text{Silhuoettes } S_{1},S_{2}\\
 &\textbf{Output: } \text{The merged silhuoette}\\
@@ -108,6 +111,18 @@ $$\begin{align}
 &\text{Append } S_{1} \text{ and }S_{2} \text{ to } S \text{ }(\text{one will be empty})\\
 &\textbf{return } S\\
 \end{align}$$
+
+>[!alg]
+
+$$\begin{align}
+&\textbf{Algorithm } \text{}
+\end{align}$$
+
+
+>[!proof] Proof of Correctness
+
+Runtime Analysis
+
 
 Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$.
 
@@ -128,6 +143,5 @@ $$\begin{align}
 
 Justify $O(n\log n)$:
 
-Pick $N\in \mathbb{N}$ such that $N≥2$ and if 
-
-Let $n_{0}=2,\alpha=2\cdot \frac{c}{\log2}$. Then, if $n≥n_{0}$, $$\alpha n\log n=2cn\log n≥cn\log n+cn≥cn\log n+dn$$
+Let $n_{0}=2,\alpha=2\cdot \frac{c}{\log2}$. Then, if $n≥n_{0}$, $$\alpha n\log n=2 \frac{c}{\log2}n\log n≥ \frac{c}{\log2} n\log n+cn≥cn\log_{2} n+dn≥T(n)$$
+So, $T(n)=O(n\log n)$.
