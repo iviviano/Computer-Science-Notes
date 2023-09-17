@@ -120,8 +120,8 @@ By the recurrence relation, $$T(2)=2T(1)+2d=2c+2d≤4c\log_{2}(2)+2d$$so $P(2)$.
 Inductive Step: let $n>2$. Assume that $P(k)$ holds for all $2≤k<n$.
 $$T(n)≤2T\left(\frac{n}{2}\right)+dn≤2\left(c\frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+ d\frac{n}{2}\right)+dn$$by the inductive hypothesis. 
 $$\begin{align}
-&2\left(c \frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+d \frac{n}{2}\right)+dn=2\left(c \frac{n}{2}\log_{2}\left(n\right)-c \frac{n}{2}\log_{2}(2)\right)\\
-&=2(c \frac{n}{2}\log_{2}(n)-)
+&2\left(c \frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+d \frac{n}{2}\right)+dn=2\left(c \frac{n}{2}\log_{2}\left(n\right)-c \frac{n}{2}\log_{2}(2)\right)+dn\\
+&=2(c \frac{n}{2}\log_{2}(n))-cn+dn
 \end{align}$$
 >
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n≥2$.
