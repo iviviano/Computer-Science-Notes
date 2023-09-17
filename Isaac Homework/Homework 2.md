@@ -109,7 +109,7 @@ $$\begin{align}
 &\textbf{return } S\\
 \end{align}$$
 
-Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Suppose $T(1)=c$.
+Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$.
 
 >[!proof]
 Let $P(n)$ be that $T(n)≤cn\log_{2}(n)+dn$.
@@ -121,8 +121,8 @@ Inductive Step: let $n>2$. Assume that $P(k)$ holds for all $2≤k<n$.
 $$T(n)≤2T\left(\frac{n}{2}\right)+dn≤2\left(c\frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+ d\frac{n}{2}\right)+dn$$by the inductive hypothesis. 
 $$\begin{align}
 &2\left(c \frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+d \frac{n}{2}\right)+dn=2\left(c \frac{n}{2}\log_{2}\left(n\right)-c \frac{n}{2}\log_{2}(2)\right)+2dn\\
-&=2\left(c \frac{n}{2}\log_{2}(n)\right)-cn+2dn=cn\log_{2}(n)
-\end{align}$$
+&=2\left(c \frac{n}{2}\log_{2}(n)\right)-cn+2dn=cn\log_{2}(n) -cn+2dn≤cn\log_{2}n+dn
+\end{align}$$so, $P(n)$.
 >
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n≥2$.
 
@@ -130,4 +130,4 @@ Justify $O(n\log n)$:
 
 Pick $N\in \mathbb{N}$ such that $N≥2$ and if 
 
-Let $n_{0}=2,\alpha=2\cdot(2c)$
+Let $n_{0}=2,\alpha=2\cdot \frac{c}{\log2}$. Then, if $n≥n_{0}$, $$\alpha n\log n=2cn\log n≥cn\log n+cn≥cn\log n+dn$$
