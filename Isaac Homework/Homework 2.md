@@ -115,7 +115,14 @@ $T(n)=kT(\frac{n}{k})+O(n\log k)$
 >[!alg]
 
 $$\begin{align}
-&\textbf{Algorithm } \text{}
+&\textbf{Algorithm } \text{Skyline}\\
+&\textbf{Input: } \text{List } B \text{ of buildings}\\
+&\textbf{Output: } \text{List of points constituting the skyline}\\
+&\textbf{If } \text{len }B==1 \textbf{ then:} \\
+&\quad l=B[0][0]; h=B[0][1]; r=B[0][2]\\
+&\quad \textbf{return } \text{List }((l,h),(r,0))\\
+&\textbf{end if}\\
+&
 \end{align}$$
 
 
