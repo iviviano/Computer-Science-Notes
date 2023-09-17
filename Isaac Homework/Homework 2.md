@@ -1,13 +1,12 @@
 >[!note] 1
-
 (a) 
-1. $f=O(g)$
-2. $f=\Omega(g)$
-3. $f=\Theta(g)$
-4. $f=O(g)$
-5. $f=\Theta(g)$
-6. $f=\Theta(g)$
-7. $f=\Omega(g)$
+>1. $f=O(g)$
+>2. $f=\Omega(g)$
+>3. $f=\Theta(g)$
+>4. $f=O(g)$
+>5. $f=\Theta(g)$
+>6. $f=\Theta(g)$
+>7. $f=\Omega(g)$
 
 (b)
 1. Each of the subproblems of size $\frac{n}{b}$ requires $T(\frac{n}{d})$ [[Primitive Computational Step]]s by our definition of $T$. As there are $a$ subproblems, the number of [[Primitive Computational Step]]s from subproblems is $aT(\frac{n}{b})$. The steps for merging the solutions to the subproblems must be added to steps from subproblems. [[therefore]] the total [[Worst Case Run Time]] is given by the equation: $$T(n)=aT\left(\frac{n}{b}\right)+O(n^{d}) $$
@@ -22,7 +21,7 @@ $$T(n+1)=a\cdot T\left(\frac{n+1}{b}\right)+O((n+1)^{d})$$by the known recurrenc
 [[therefore]] by [[Principle of Mathematical Induction]], ...
 
 3. $T(n)=O(n^{n})$
-Most work on the lowest layer.
+The most work is done on the lowest layer. 
 
 >[!note] 2
 
