@@ -95,9 +95,9 @@ $T(n)=kT(\frac{n}{k})+O(n\log k)$
 (c)
 >[!alg]
 >$$\begin{align}
-&\textbf{Algorithm } \text{Merge Two Silhuoettes}\\
-&\textbf{Input: } \text{Silhuoettes } S_{1},S_{2}\\
-&\textbf{Output: } \text{The merged silhuoette}\\
+&\textbf{Algorithm } \text{Merge Two Silhouettes}\\
+&\textbf{Input: } \text{Silhouettes } S_{1},S_{2}\\
+&\textbf{Output: } \text{The merged silhouette}\\
 &\text{Let } S \text{ be a list }\\
 &\text{Add whichever starting point has smaller } x \text{ to } S\\ 
 &\text{Remove the added point from its list}\\
@@ -129,14 +129,16 @@ $T(n)=kT(\frac{n}{k})+O(n\log k)$
 
 >[!proof] Proof of Correctness
 
-Let $P(n)$ be the statement that $skyline$ works for inputs of size $n$.
+Let $P(n)$ be the statement that $skyline$ [[Algorithm]] works for inputs of size $n$.
 
+Base Case: $n=1$.
+If $n=1$, then we only need to convert one building to a silhouette. The first point in the skyline will be the upper left corner of the first building. This is given by $(l_{1},h_{1})$ since $l_{1}$ is the $x$-coordinate of the 
 
 
 Runtime Analysis
 
 
-Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$.
+Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$. This is true, because the merge step only requires iterating through two lists each of size $\frac{n}{2}$. Clearly, merge runs in linear time. 
 
 >[!proof]
 Let $P(n)$ be that $T(n)≤cn\log_{2}(n)+dn$.
