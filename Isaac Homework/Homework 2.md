@@ -33,7 +33,9 @@ $$\begin{align}
 So, $P(n)$.
 
 
-[[therefore]] by [[Principle of Mathematical Induction]], ...
+[[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n$.
+
+If $n_{0}=b$ and $\alpha=$ , $$$$
 
 3. $T(n)=O(n^{n})$
 The most work is done on the lowest layer. 
