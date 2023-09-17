@@ -136,7 +136,7 @@ Converting one building to a silhouette does not change the picture.
 
 
 Inductive Step: let $n>1$ be given. Assume that $P(k)$ holds for all $1≤k<n$.
-By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be merged.
+By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be merged. I shall prove that $merge$ correctly merges them.
 
 
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
