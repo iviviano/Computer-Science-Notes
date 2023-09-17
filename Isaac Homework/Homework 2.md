@@ -136,15 +136,21 @@ Converting one building to a silhouette does not change the picture.
 
 
 Inductive Step: let $n>1$ be given. Assume that $P(k)$ holds for all $1≤k<n$.
+By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be merged.
+
+
+[[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
 
 
 Runtime Analysis
 
 
-Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$. This is true, because the merge step only requires iterating through two lists each of size $\frac{n}{2}$. Clearly, merge runs in linear time. The rest of the computational steps come from the two recursive calls with the first and second half of the list of buildings. So, $T$ does satsify the recurrence.
+Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$. This is true, because the merge step only requires iterating through two lists each of size $\frac{n}{2}$. Clearly, merge runs in linear time. The rest of the computational steps come from the two recursive calls with the first and second half of the list of buildings. So, $T$ does satisfy the recurrence.
 
 >[!proof]
 Let $P(n)$ be that $T(n)≤cn\log_{2}(n)+dn$.
+>
+Induction on $n$:
 >
 Base Case: $n=2$.
 By the recurrence relation, $$T(2)=2T(1)+2d=2c+2d≤2c\log_{2}(2)+2d$$so $P(2)$.
