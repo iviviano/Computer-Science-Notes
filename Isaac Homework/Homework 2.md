@@ -25,7 +25,7 @@ Inductive Step: Let $n\in \mathbb{N}$ with $n>b$. Suppose that $P(k)$ holds for 
 $$
 T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+cn^{d}\right)+cn^{d}
 $$
-By the inductive hypothesis.
+By the inductive hypothesis. Note: 
 $$\begin{align}
 &T(n)≤a\left(\left(\frac{n}{b}\right)^{d}\log_{b}n-\left(\frac{n}{b}\right)^{d}+cn^{d}\right)+cn^{d} \\
 &≤ \frac{a}{b^{d}}n^{d}\log_{b}(n)+cn^{d}≤an^{d}\log_{b}(n)+cn^{d}
