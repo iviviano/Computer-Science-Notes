@@ -4,33 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4fbddc840598215a",
+        "id": "1d536d5b840999f9",
         "type": "tabs",
         "children": [
           {
-            "id": "959524df3c2cf718",
+            "id": "08a8384288ce26b1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 2.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1c5cd1b4506d7311",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Closest Pairs Algorithm.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -99,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -138,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 2.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -159,7 +137,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "959524df3c2cf718",
+  "active": "08a8384288ce26b1",
   "lastOpenFiles": [
     "Closest Pairs Algorithm.md",
     "Isaac Homework/Homework 2.md",
