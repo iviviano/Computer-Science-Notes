@@ -132,7 +132,7 @@ $T(n)=kT(\frac{n}{k})+O(n\log k)$
 Let $P(n)$ be the statement that $skyline$ [[Algorithm]] works for inputs of size $n$.
 
 Base Case: $n=1$.
-If $n=1$, then we only need to convert one building to a silhouette. The first point in the skyline will be the upper left corner of the first building. This is given by $(l_{1},h_{1})$ since $l_{1}$ is the $x$-coordinate of the 
+If $n=1$, then we only need to convert one building to a silhouette. The first point in the skyline will be the upper left corner of the first building. This is given by $(l_{1},h_{1})$. 
 
 
 Runtime Analysis
