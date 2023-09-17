@@ -138,7 +138,7 @@ If $n=1$, then we only need to convert one building to a silhouette. The first p
 Runtime Analysis
 
 
-Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$. This is true, because the merge step only requires iterating through two lists each of size $\frac{n}{2}$. Clearly, merge runs in linear time. 
+Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$. This is true, because the merge step only requires iterating through two lists each of size $\frac{n}{2}$. Clearly, merge runs in linear time. The rest of the computational steps come from 
 
 >[!proof]
 Let $P(n)$ be that $T(n)≤cn\log_{2}(n)+dn$.
