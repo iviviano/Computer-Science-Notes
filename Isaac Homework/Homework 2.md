@@ -129,7 +129,8 @@ $T(n)=kT(\frac{n}{k})+O(n\log k)$
 
 >[!proof] Proof of Correctness
 
-Let $P(n)$ be the statement that 
+Let $P(n)$ be the statement that $skyline$ works for inputs of size $n$.
+
 
 
 Runtime Analysis
