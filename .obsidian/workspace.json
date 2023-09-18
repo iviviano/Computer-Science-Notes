@@ -11,11 +11,30 @@
             "id": "1f47f675a4bf44c2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Isaac Homework/Homework 2.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cd8558f495bf886b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Closest Pairs Algorithm.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Closest Pairs Algorithm.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Closest Pairs Algorithm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +139,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Closest Pairs Algorithm.md"
+              }
             }
           }
         ]
@@ -137,12 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f47f675a4bf44c2",
+  "active": "cd8558f495bf886b",
   "lastOpenFiles": [
     "Isaac Homework/Homework 2.md",
+    "Closest Pairs Algorithm.md",
     "Asymptotic Bounds of Sums of Functions.md",
     "Asymptotic Lower Bound.md",
-    "Closest Pairs Algorithm.md",
     "Merge-Sort.md",
     "Closest Pairs Problem.md",
     "Isaac Homework/1.2.md",

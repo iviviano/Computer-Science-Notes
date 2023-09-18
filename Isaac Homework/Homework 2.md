@@ -11,26 +11,26 @@
 (b)
 1. Each of the subproblems of size $\frac{n}{b}$ requires $T(\frac{n}{d})$ [[Primitive Computational Step]]s by our definition of $T$. As there are $a$ subproblems, the number of [[Primitive Computational Step]]s from subproblems is $aT(\frac{n}{b})$. The steps for merging the solutions to the subproblems must be added to steps from subproblems. [[therefore]] the total [[Worst Case Run Time]] is given by the equation: $$T(n)=aT\left(\frac{n}{b}\right)+O(n^{d}) $$
 2. 
-Rewrite the recurrence relation: $$T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}$$with $c≥T(1)$.
+Rewrite the recurrence relation: $$T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}$$with $c≥T(1)$ fixed.
 
 
-Let $P(n)$ be that $T(n)≤an^{d}\log_{b} n+cn^{d}$. 
+Let $P(n)$ be that $T(n)≤cn^{d}\log_{b} n+cn^{d}$. 
 
 Induction on $n$:
 
 Base Case: $n=b$. 
-$$T(b)=aT\left(\frac{b}{b}\right)+cb^{d}≤ac+cb^{d}≤ab^{d}\log_{b}b+cb^{d}$$so, $P(b)$.
+$$T(b)=aT\left(\frac{b}{b}\right)+cb^{d}≤ac+cb^{d}≤cb^{d}\log_{b}b+cb^{d}$$as $a=b^{d}$. So, $P(b)$.
 
 Inductive Step: Let $n\in \mathbb{N}$ with $n>b$. Suppose that $P(k)$ holds for all $b≤k<n$.
 $$
-T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+cn^{d}\right)+cn^{d}
+T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(c\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+c \left(\frac{n}{b}\right)^{d}\right)+cn^{d}
 $$
 By the inductive hypothesis. Note: 
 $$\begin{align}
-&T(n)≤a\left(\left(\frac{n}{b}\right)^{d}\log_{b}n-\left(\frac{n}{b}\right)^{d}+cn^{d}\right)+cn^{d} \\
-&≤ \frac{a}{b^{d}}n^{d}\log_{b}(n)+cn^{d}≤an^{d}\log_{b}(n)+cn^{d}
+&T(n)≤a\left(c\left(\frac{n}{b}\right)^{d}\log_{b}n-c\left(\frac{n}{b}\right)^{d}+c \left(\frac{n}{b}\right)^{d}\right)+cn^{d} \\
+&≤ \frac{ac}{b^{d}}n^{d}\log_{b}(n)+cn^{d}≤cn^{d}\log_{b}(n)+cn^{d}
 \end{align}$$
-So, $P(n)$.
+as $a=b^{d}$. So, $P(n)$.
 
 
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n$.
