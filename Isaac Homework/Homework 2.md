@@ -7,78 +7,63 @@
 >5. $f=\Theta(g)$
 >6. $f=\Theta(g)$
 >7. $f=\Omega(g)$
-
+>
 (b)
-1. Each of the subproblems of size $\frac{n}{b}$ requires $T(\frac{n}{d})$ [[Primitive Computational Step]]s by our definition of $T$. As there are $a$ subproblems, the number of [[Primitive Computational Step]]s from subproblems is $aT(\frac{n}{b})$. The steps for merging the solutions to the subproblems must be added to steps from subproblems. [[therefore]] the total [[Worst Case Run Time]] is given by the equation: $$T(n)=aT\left(\frac{n}{b}\right)+O(n^{d}) $$
-2. 
-Rewrite the recurrence relation: $$T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}$$with $c≥T(1)$ fixed.
-
->[!proof]
+>1. Each of the subproblems of size $\frac{n}{b}$ requires $T(\frac{n}{d})$ [[Primitive Computational Step]]s by our definition of $T$. As there are $a$ subproblems, the number of [[Primitive Computational Step]]s from subproblems is $aT(\frac{n}{b})$. The steps for merging the solutions to the subproblems must be added to steps from subproblems. [[therefore]] the total [[Worst Case Run Time]] is given by the equation: $$T(n)=aT\left(\frac{n}{b}\right)+O(n^{d}) $$
+>2. Rewrite the recurrence relation: $$T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}$$with $c≥T(1)$ fixed.
+>
+>>[!proof]
 Let $P(n)$ be that $T(n)≤cn^{d}\log_{b} n+cn^{d}$. 
->
+>>
 Induction on $n$:
->
+>>
 Base Case: $n=b$. 
 $$T(b)=aT\left(\frac{b}{b}\right)+cb^{d}≤ac+cb^{d}≤cb^{d}\log_{b}b+cb^{d}$$as $a=b^{d}$. So, $P(b)$.
->
+>>
 Inductive Step: Let $n\in \mathbb{N}$ with $n>b$. Suppose that $P(k)$ holds for all $b≤k<n$.
 >$$T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(c\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+c \left(\frac{n}{b}\right)^{d}\right)+cn^{d}$$
 By the inductive hypothesis. Note: 
->$$\begin{align}
+>>$$\begin{align}
 &T(n)≤a\left(c\left(\frac{n}{b}\right)^{d}\log_{b}n-c\left(\frac{n}{b}\right)^{d}+c \left(\frac{n}{b}\right)^{d}\right)+cn^{d} \\
 &≤ \frac{ac}{b^{d}}n^{d}\log_{b}(n)+cn^{d}≤cn^{d}\log_{b}(n)+cn^{d}
 \end{align}$$
 as $a=b^{d}$. So, $P(n)$.
->
+>>
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n$.
-
+>
 If $n_{0}=b$ and $\alpha=2 \frac{c}{\log b}$ , for all $n≥n_{0}$, $$T(n)≤cn^{d}\log_{b}n+cn^{d}=cn^{d}\frac{\log n}{\log b}+cn^{d}≤2 \frac{c}{\log b}\log n=\alpha n\log n$$
-[[therefore]] $T=O(n\log n)$.
+[[therefore]] $T(n)=O(n\log n)$.
 
 3. $T(n)=O(n^{n})$
 The most work is done on the lowest layer, so this is the only layer that matters for the [[Asymptotic Upper Bounds]]. Formally, $$L(1)≥\alpha\sum_{i=1}^{l}L(i)$$where $l$ is the number of layers ($l\sim\log_{b}n$ CHECK) and $L(i)$ measures the [[Time Complexity]] of layer $i$. So, $T=O(\sum L(i))=O(L(1))$. 
 
-Claim: there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=a^\frac{\log_{a} n}{\log_{a} b}=(a^{\log_{a}n})^\frac{1}{\log_{a}b}=n^\frac{1}{\log_{a}b}$$So, $T(n)=O(L(1))=O(O(n^\frac{1}{\log_{a}b})=O(n^\frac{1}{\log_{a}b})$.
+As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=a^\frac{\log_{a} n}{\log_{a} b}=(a^{\log_{a}n})^\frac{1}{\log_{a}b}=n^\frac{1}{\log_{a}b}$$So, $T(n)=O(L(1))=O(O(n^\frac{1}{\log_{a}b})=O(n^\frac{1}{\log_{a}b})$.
 
 >[!note] 2
-
->[!alg]
->$$\begin{align}
-&\textbf{Algorithm } \text{Merge Sort} \\
-&\textbf{Input: } \text{Array } A \\
-&\textbf{Output: } \text{Sorted array} A \\
-&\textbf{If } \text{len } A == 1 \textbf{ then:} \\
-&\quad \textbf{return } \text{} A \\
-&\textbf{end if} \\
-&\text{Let } len \text{ be the number of elements in }A\\
-&\text{Let }U=A\left[0:\frac{len}{3}\right]\\
-&\text{Let }V=A\left[\frac{len}{3}: \frac{2len}{3}\right]\\
-&\text{Let }W=A\left[\frac{2len}{3}:len\right]\\
-&U=mergesort(U)\\
-&V=mergesort(V)\\
-&W=mergesort(W)\\
-&\textbf{return } merge(U,V,W) \\
-& \\
-&merge(A,B,C): \\
-&\quad \text{Let } S \text{ be a list} \\
-&\quad \textbf{While } A\cup B\cup C≠\emptyset \textbf{ do:} \\
-&\quad \quad \text{Let } D \in\{A,B,C\} \text{ such that } D[0]=\min\{A[0],B[0],C[0]\} \\
-&\quad \quad \text{Append } C[0] \text{ to } S \\
-&\quad \quad \text{Remove } C[0] \text{ from } C \\
-&\quad \textbf{end while} \\
-&\quad \textbf{return } S \\
+>>[!alg]
+>>$$\begin{align}
+&\textbf{Algorithm } \text{3-Merge}\\
+&\textbf{Input: } 3 \text{ sorted lists }A,B,C\\
+&\text{Output: } \text{A sorted list of all the elements of }A,B,\text{ and }C\\
+&\text{Let } S \text{ be a list} \\
+&\textbf{While } A\cup B\cup C≠\emptyset \textbf{ do:} \\
+&\quad \text{Let } D \in\{A,B,C\} \text{ such that } D[0]=\min\{A[0],B[0],C[0]\} \\
+&\quad \text{Append } C[0] \text{ to } S \\
+&\quad \text{Remove } C[0] \text{ from } C \\
+&\textbf{end while} \\
+&\textbf{return } S \\
 \end{align}$$
-
-(b) $O(n)$
-
-(c) $T(n)=3T\left(\frac{n}{3}\right)+O(n)$
+>
+(b) Like [[Merge-Sort]]'s merge, $3$-merge has runtime $O(n)$, since $3$ lists of total length $n$ are iterated through once.
+>
+(c) $T(n)=3T\left(\frac{n}{3}\right)+O(n)$ 
 Split into three subproblems of size $\frac{n}{3}$. Merge the resulting lists with runtime $O(n)$.
-
-(d) $O(n\log n)$
-
+>
+(d) As $d=1,a=3,b=3$, $T(n)=O(n\log n)$ by (1)
+>
 (e)
->[!alg]
->$$\begin{align}
+>>[!alg]
+>>$$\begin{align}
 &\textbf{Algorithm } k\text{-Merge} \\
 &\textbf{Input: } k\text{ sorted lists} \\
 &\textbf{Output: } \text{A sorted list containing all the elements of the input lists} \\
@@ -95,9 +80,10 @@ Split into three subproblems of size $\frac{n}{3}$. Merge the resulting lists wi
 &\quad \textbf{end if} \\
 &\textbf{end while}
 \end{align}$$
-
-(f)
-$T(n)=kT(\frac{n}{k})+O(n\log k)$
+>
+(f) $k$-merge has runtime $O(n\log k)$. The while loop runs $n$ times, and priority queues take $O(\log i)$ to dequeue, where $i$ is the size. A dequeue happens each iteration of the while loop. [[therefore]] $O(n\log k)$ goes into the expression for $T(n,k)$. As there are $k$ subproblems, each of size $\frac{n}{k}$, the term $kT(\frac{n}{k},k)$ must be added. The recurrence relation is given by:
+$$T(n,k)=kT\left(\frac{n}{k},k\right)+O(n\log k)$$
+There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each level, the total [[Worst Case Run Time]] of $k$-merge is $O(n\log k)$. [[therefore]] $T(n,k)=O(n\log n\log k)$.
 
 
 >[!note] 3
