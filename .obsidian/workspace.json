@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1d536d5b840999f9",
+        "id": "bfcf1a1524a21006",
         "type": "tabs",
         "children": [
           {
-            "id": "08a8384288ce26b1",
+            "id": "1f47f675a4bf44c2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 2.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 2.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,11 +137,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "08a8384288ce26b1",
+  "active": "1f47f675a4bf44c2",
   "lastOpenFiles": [
+    "Isaac Homework/Homework 2.md",
     "Asymptotic Bounds of Sums of Functions.md",
     "Asymptotic Lower Bound.md",
-    "Isaac Homework/Homework 2.md",
     "Closest Pairs Algorithm.md",
     "Merge-Sort.md",
     "Closest Pairs Problem.md",
