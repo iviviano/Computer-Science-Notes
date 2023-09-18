@@ -33,8 +33,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Closest Pairs Algorithm.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Closest Pairs Algorithm.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -140,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Closest Pairs Algorithm.md"
+                "file": "Isaac Homework/Homework 2.md"
               }
             }
           }
@@ -160,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cd8558f495bf886b",
+  "active": "1f47f675a4bf44c2",
   "lastOpenFiles": [
-    "Isaac Homework/Homework 2.md",
     "Closest Pairs Algorithm.md",
+    "Screenshot 2023-09-18 at 10.40.06 AM.png",
+    "Isaac Homework/Homework 2.md",
     "Asymptotic Bounds of Sums of Functions.md",
     "Asymptotic Lower Bound.md",
     "Merge-Sort.md",
@@ -191,7 +191,6 @@
     "Isaac Homework/Homework 0 9.md",
     "Isaac Homework/Homework 0 12.md",
     "Isaac Homework/Homework 0 11.md",
-    "Isaac Homework/Homework 0 10.md",
     "Isaac Homework/Algorithms_viviano_Homework_0 9.pdf",
     "Isaac Homework/Algorithms_viviano_Homework_0 12.pdf",
     "Isaac Homework/Algorithms_viviano_Homework_0 11.pdf",
@@ -207,7 +206,6 @@
     "Pictures/IMG_2504 2.jpg",
     "Pictures/B6609288-F0CA-4D3B-8702-E489DCF84143_1_105_c 2.jpeg",
     "Pictures/IMG_2504.jpg",
-    "Pictures/B6609288-F0CA-4D3B-8702-E489DCF84143_1_105_c.jpeg",
     "Untitled.canvas"
   ]
 }

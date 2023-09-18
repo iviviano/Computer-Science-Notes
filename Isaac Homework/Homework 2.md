@@ -22,11 +22,9 @@ Base Case: $n=b$.
 $$T(b)=aT\left(\frac{b}{b}\right)+cb^{d}≤ac+cb^{d}≤cb^{d}\log_{b}b+cb^{d}$$as $a=b^{d}$. So, $P(b)$.
 >
 Inductive Step: Let $n\in \mathbb{N}$ with $n>b$. Suppose that $P(k)$ holds for all $b≤k<n$.
-$$
-T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(c\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+c \left(\frac{n}{b}\right)^{d}\right)+cn^{d}
-$$
+>$$T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(c\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+c \left(\frac{n}{b}\right)^{d}\right)+cn^{d}$$
 By the inductive hypothesis. Note: 
-$$\begin{align}
+>$$\begin{align}
 &T(n)≤a\left(c\left(\frac{n}{b}\right)^{d}\log_{b}n-c\left(\frac{n}{b}\right)^{d}+c \left(\frac{n}{b}\right)^{d}\right)+cn^{d} \\
 &≤ \frac{ac}{b^{d}}n^{d}\log_{b}(n)+cn^{d}≤cn^{d}\log_{b}(n)+cn^{d}
 \end{align}$$
@@ -34,10 +32,13 @@ as $a=b^{d}$. So, $P(n)$.
 >
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n$.
 
-If $n_{0}=b$ and $\alpha=$ , $$$$
+If $n_{0}=b$ and $\alpha=2 \frac{c}{\log b}$ , for all $n≥n_{0}$, $$T(n)≤cn^{d}\log_{b}n+cn^{d}=cn^{d}\frac{\log n}{\log b}+cn^{d}≤2 \frac{c}{\log b}\log n=\alpha n\log n$$
+[[therefore]] $T=O(n\log n)$.
 
 3. $T(n)=O(n^{n})$
-The most work is done on the lowest layer. 
+The most work is done on the lowest layer, so this is the only layer that matters for the [[Asymptotic Upper Bounds]]. Formally, $$L(1)≥\alpha\sum_{i=1}^{l}L(i)$$where $l$ is the number of layers ($l\sim\log_{b}n$ CHECK) and $L(i)$ measures the [[Time Complexity]] of layer $i$. So, $T=O(\sum L(i))=O(L(1))$. 
+
+Claim: there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=a^\frac{\log_{a} n}{\log_{a} b}=(a)$$
 
 >[!note] 2
 
