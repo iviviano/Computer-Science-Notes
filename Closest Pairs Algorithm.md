@@ -13,6 +13,9 @@ $$\begin{align}
 &\textbf{If } |S|==2 \textbf{ then:} \\
 &\quad \textbf{return } S\\
 &\textbf{end if} \\
+&\textbf{If } |S|==3 \textbf{ then:} \\
+&\quad \textbf{return } \text{brute force solution} \\
+&\textbf{end if} \\
 &\text{Sort } S \text{ by } x \text{-coordinate } (O(n\log n))\\
 &\text{Let } Q = S\left[0:\frac{len(S)}{2}\right],R=S\left[\frac{len(S)}{2}:len(S)\right]\\
 &\text{Let }(q_{0}^{*},q_{1}^{*})=closest\_pairs(Q)\\

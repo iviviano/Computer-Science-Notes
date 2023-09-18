@@ -13,14 +13,14 @@
 2. 
 Rewrite the recurrence relation: $$T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}$$with $c≥T(1)$ fixed.
 
-
+>[!proof]
 Let $P(n)$ be that $T(n)≤cn^{d}\log_{b} n+cn^{d}$. 
-
+>
 Induction on $n$:
-
+>
 Base Case: $n=b$. 
 $$T(b)=aT\left(\frac{b}{b}\right)+cb^{d}≤ac+cb^{d}≤cb^{d}\log_{b}b+cb^{d}$$as $a=b^{d}$. So, $P(b)$.
-
+>
 Inductive Step: Let $n\in \mathbb{N}$ with $n>b$. Suppose that $P(k)$ holds for all $b≤k<n$.
 $$
 T(n)≤aT\left(\frac{n}{b}\right)+cn^{d}≤a\left(c\left(\frac{n}{b}\right)^{d}\log_{b}\left(\frac{n}{b}\right)+c \left(\frac{n}{b}\right)^{d}\right)+cn^{d}
@@ -31,8 +31,7 @@ $$\begin{align}
 &≤ \frac{ac}{b^{d}}n^{d}\log_{b}(n)+cn^{d}≤cn^{d}\log_{b}(n)+cn^{d}
 \end{align}$$
 as $a=b^{d}$. So, $P(n)$.
-
-
+>
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n$.
 
 If $n_{0}=b$ and $\alpha=$ , $$$$
