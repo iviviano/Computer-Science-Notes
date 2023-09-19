@@ -40,6 +40,7 @@ The most work is done on the lowest layer, so this is the only layer that matter
 As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=a^\frac{\log_{a} n}{\log_{a} b}=(a^{\log_{a}n})^\frac{1}{\log_{a}b}=n^\frac{1}{\log_{a}b}$$So, $T(n)=O(L(1))=O(O(n^\frac{1}{\log_{a}b})=O(n^\frac{1}{\log_{a}b})$.
 
 >[!note] 2
+(a)
 >>[!alg]
 >>$$\begin{align}
 &\textbf{Algorithm } \text{3-Merge}\\
