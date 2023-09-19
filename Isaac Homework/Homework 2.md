@@ -81,7 +81,7 @@ Split into three subproblems of size $\frac{n}{3}$. Merge the resulting lists wi
 &\textbf{end while}
 \end{align}$$
 >
-(f) $k$-merge has runtime $O(n\log k)$. The while loop runs $n$ times, and priority queues take $O(\log i)$ to dequeue, where $i$ is the size. A dequeue happens each iteration of the while loop. [[therefore]] $O(n\log k)$ goes into the expression for $T(n,k)$. As there are $k$ subproblems, each of size $\frac{n}{k}$, the term $kT(\frac{n}{k},k)$ must be added. The recurrence relation is given by:
+(f) $k$-merge has runtime $O(n\log k+k)$. Adding $k$ elements to the priority queue has linear run time. The while loop runs $n$ times, and priority queues take $O(\log i)$ to dequeue, where $i$ is the size. A dequeue happens each iteration of the while loop. But, since $k≤n$, $O(n\log k+ k) = O(n\log k)$. [[therefore]] $O(n\log k)$ goes into the expression for $T(n,k)$. As there are $k$ subproblems, each of size $\frac{n}{k}$, the term $kT(\frac{n}{k},k)$ must be added. The recurrence relation is given by:
 $$T(n,k)=kT\left(\frac{n}{k},k\right)+O(n\log k)$$
 There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each level, the total [[Worst Case Run Time]] of $k$-merge is $O(n\log k)$. [[therefore]] $T(n,k)=O(n\log n\log k)$.
 
@@ -89,7 +89,7 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 >[!note] 3
 
 
-(a) $(l_{1},h_{1}),(r_{1},0)$ 
+(a) $(l_{1},h_{1}),(r_{1},0)$ There is a flat line at the bottom until the left edge of the building. There is a flat line from the left edge to the right edge at the height of the building. The rest of silhouette is flat.
 
 (b) 
 
@@ -149,7 +149,7 @@ Base Case: $i=1$.
 After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $Q(1)$.
 
 Inductive Step: Let $i$ be given with $1≤i<l$. Assume that $P(i)$ is true.
-COMPLETE THIS
+A few cases must be considered.
 
 [[therefore]] by [[Principle of Mathematical Induction]], $Q(i)$ for all $i≤l$.
 
