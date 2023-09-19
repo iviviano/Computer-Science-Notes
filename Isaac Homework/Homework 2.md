@@ -89,7 +89,7 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 >[!note] 3
 
 
-(a) $(l_{1},h_{1}),(r_{1},0)$
+(a) $(l_{1},h_{1}),(r_{1},0)$ 
 
 (b) 
 
