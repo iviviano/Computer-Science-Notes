@@ -2,9 +2,9 @@
 
 $$\begin{align}
 &\text{Let }S \text{ be an empty list}\\
-&indeces=(0,0) \\
+&indices=(0,0) \\
 &\textbf{While } S_{0}[indices_{0}:]≠\emptyset\land S_{1}[indices_{1}:]≠\emptyset \textbf{ do:} \\
-&\quad cur=\text{ index of list with smaller first }x \text{-coor}\\
+&\quad \text{Pick }cur \text{ such that } S_{cur}[indices_{cur}]_{x}=\min\{S_{0}[indices_{0}]_{x},S_{1}[indices_{1}]_{x} \}  \\
 &\quad oth = !cur\\
 &\quad \textbf{If } indices_{oth}>0 \textbf{ then:}\\
 &\quad \quad y=\max\{S_{cur}[indices_{cur}]_{y},S_{oth}[indices_{oth}-1]_{y}\} \\

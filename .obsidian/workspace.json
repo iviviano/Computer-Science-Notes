@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ebcd3816c700ae77",
+        "id": "4aeeea2ffcee209b",
         "type": "tabs",
         "children": [
           {
-            "id": "2c7603e4d2e2e3ec",
+            "id": "53e30cf486905260",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,10 +137,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2c7603e4d2e2e3ec",
+  "active": "53e30cf486905260",
   "lastOpenFiles": [
-    "Isaac Homework/Homework 2.md",
     "Isaac Homework/HW 2.md",
+    "Isaac Homework/Homework 2.md",
     "Sort.md",
     "Closest Pairs Algorithm.md",
     "Screenshot 2023-09-18 at 10.40.06 AM.png",
