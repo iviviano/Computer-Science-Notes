@@ -100,13 +100,11 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 &\textbf{Algorithm } \text{Merge Two Silhouettes}\\
 &\textbf{Input: } \text{Silhouettes } S_{1},S_{2}\\
 &\textbf{Output: } \text{The merged silhouette}\\
-&\text{Let } S \text{ be a list }\\
-&\text{Add whichever starting point has smaller } x \text{ to } S\\ 
-&\text{Remove the added point from its list}\\
+&\text{Let } S \text{ be an empty list }\\
 &\textbf{While } S_{1}≠\emptyset\lor S_{2}≠\emptyset \textbf{ do:} \\
 &\quad \text{Let } S' \text{ be the list with the smaller first } x \text{ coord}\\
-&\quad \textbf{If } S[i]_{y} < S'[0]_{y} \textbf{ then:} \\
-&\quad \quad \text{Add }(S'[0]) \text{ to } S\\
+&\quad \textbf{If } S≠\emptyset \land last(S)_{y} < S'[0]_{y} \textbf{ then:} \\
+&\quad \quad \text{Append }(S'[0]) \text{ to } S\\
 &\quad \textbf{end if}\\
 &\quad \text{Remove } S'[0]\\
 &\textbf{end while}\\
@@ -139,6 +137,17 @@ Converting one building to a silhouette does not change the picture.
 
 Inductive Step: let $n>1$ be given. Assume that $P(k)$ holds for all $1≤k<n$.
 By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be merged. I shall prove that $merge$ correctly merges them. 
+
+Second Induction: 
+
+Let $P(i)$ be the statement that the silhouette is correct after the $i$th iteration of the loop.
+
+Induction on $i$:
+
+Base Case: $i=1$.
+After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $P(1)$.
+
+Inductive Step: Let $i$ be given with $1≤i<n$. Assume that $P(i)$ is true.
 
 
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
