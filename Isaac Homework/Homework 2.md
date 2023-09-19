@@ -148,7 +148,7 @@ Base Case: $i=1$.
 After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $P(1)$.
 
 Inductive Step: Let $i$ be given with $1≤i<n$. Assume that $P(i)$ is true.
-
+The silhouette with the smaller first $x$-coord is chosen. If the 
 
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
 
