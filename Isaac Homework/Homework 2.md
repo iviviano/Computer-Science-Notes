@@ -98,21 +98,18 @@ Merge $(x_{1},y_{1}),(x_{2},y_{2})$ and $(u_{1},z_{1}),(u_{2},z_{2})$ into a [[S
 
 (c)
 >[!alg]
-
-$$\begin{align}
+>$$\begin{align}
 &\textbf{Algorithm } \text{Merge Two Silhouettes}\\
 &\textbf{Input: } \text{Silhouettes } S_{1},S_{2}\\
 &\textbf{Output: } \text{The merged silhouette}\\
 &\text{Let } S \text{ be an empty list }\\
 &\textbf{While } S_{1}≠\emptyset\lor S_{2}≠\emptyset \textbf{ do:} \\
 &\quad \text{Let } i \text{ be the index of the list with the smaller first } x \text{ coord}\\
-&\quad \textbf{If } S==\emptyset\lor last\_added==i \textbf{ then:}\\
+&\quad \textbf{If } S==\emptyset\lor last\_added==i \lor last(S)_{y}<S_{i}[0]_{y} \textbf{ then:}\\
 &\quad \quad \text{Append } S_{i}[0] \text{ to } S\\
-&\quad \textbf{Else: }\textbf{If } S==\emptyset \lor last(S)_{y} < S_{i}[0]_{y} \textbf{ then:} \\
-&\quad \quad \text{Append }S_{i}[0] \text{ to } S\\
+&\quad \quad last_{added}= i\\
 &\quad \textbf{end if}\\
 &\quad \text{Remove } S_{i}[0]\\
-&\quad last\_added=i\\
 &\textbf{end while}\\
 &\text{Append } S_{1} \text{ and }S_{2} \text{ to } S \text{ }(\text{one will be empty})\\
 &\textbf{return } S\\
