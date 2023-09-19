@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
+                "file": "Isaac Homework/HW 2.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
+                "file": "Isaac Homework/HW 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
+                "file": "Isaac Homework/HW 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Isaac Homework/Homework 2.md"
+                "file": "Isaac Homework/HW 2.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   "active": "0d98e36e20f99f1c",
   "lastOpenFiles": [
     "Isaac Homework/Homework 2.md",
+    "Isaac Homework/HW 2.md",
     "Sort.md",
     "Closest Pairs Algorithm.md",
     "Screenshot 2023-09-18 at 10.40.06 AM.png",
@@ -178,7 +179,6 @@
     "Linked List",
     "Isaac Homework/Homework 0 9.md",
     "Isaac Homework/Homework 0 12.md",
-    "Isaac Homework/Homework 0 11.md",
     "Isaac Homework/Algorithms_viviano_Homework_0 9.pdf",
     "Isaac Homework/Algorithms_viviano_Homework_0 12.pdf",
     "Isaac Homework/Algorithms_viviano_Homework_0 11.pdf",
