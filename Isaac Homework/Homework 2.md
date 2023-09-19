@@ -45,7 +45,7 @@ As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=a^\
 >>$$\begin{align}
 &\textbf{Algorithm } \text{3-Merge}\\
 &\textbf{Input: } 3 \text{ sorted lists }A,B,C\\
-&\text{Output: } \text{A sorted list of all the elements of }A,B,\text{ and }C\\
+&\textbf{Output: } \text{A sorted list of all the elements of }A,B,\text{ and }C\\
 &\text{Let } S \text{ be a list} \\
 &\textbf{While } A\cup B\cup C≠\emptyset \textbf{ do:} \\
 &\quad \text{Let } D \in\{A,B,C\} \text{ such that } D[0]=\min\{A[0],B[0],C[0]\} \\
