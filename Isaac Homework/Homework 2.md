@@ -140,7 +140,7 @@ By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be m
 
 Second Induction: 
 
-Let $P(i)$ be the statement that the silhouette is correct after the $i$th iteration of the loop.
+Let $P(i)$ be the statement that the merged silhouette $S$ is correct after the $i$th iteration of the loop.
 
 Induction on $i$:
 
