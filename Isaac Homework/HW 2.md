@@ -1,9 +1,19 @@
 
 
 $$\begin{align}
-&indeces=(index_{1},index_{2}) \\
-&\textbf{While } S_{1}≠\emptyset\land S_{2}≠\emptyset \textbf{ do:} \\
-&\quad i=\text{ index of list with smaller first elt}\\
-&\quad \textbf{If } \text{one} \textbf{ then:} \\
-&\quad \quad 
+&\text{Let }S \text{ be an empty list}\\
+&indeces=(0,0) \\
+&\textbf{While } S_{0}≠\emptyset\land S_{1}≠\emptyset \textbf{ do:} \\
+&\quad cur=\text{ index of list with smaller first elt}\\
+&\quad oth = !cur\\
+&\quad \textbf{If } indices_{oth}>0 \textbf{ then:}\\
+&\quad \quad y=\max\{S_{cur}[indices_{cur}]_{y},S_{oth}[indices_{oth}-1]_{y}\} \\
+&\quad \textbf{Else:} \\
+&\quad \quad y = S_{cur}[indeces_{cur}]_y\\
+&\quad \textbf{end if} \\
+&\quad x=S_{cur}[indices_{cur}]_{x} \\
+&\quad \textbf{If } S=\emptyset\lor y>last(S)_{y} \textbf{ then:} \\
+&\quad \quad \text{Append } (x,y) \text{ to } S \\
+&\quad \textbf{end if}\\
+&\quad \text{Increment }indeces_{cur}\text{ by }1\\
 \end{align}$$
