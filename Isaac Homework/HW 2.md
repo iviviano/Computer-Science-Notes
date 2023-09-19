@@ -16,4 +16,5 @@ $$\begin{align}
 &\quad \quad \text{Append } (x,y) \text{ to } S \\
 &\quad \textbf{end if}\\
 &\quad \text{Increment }indeces_{cur}\text{ by }1\\
+&\textbf{end while} \\
 \end{align}$$
