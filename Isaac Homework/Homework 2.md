@@ -147,21 +147,19 @@ Inductive Step: let $n>1$ be given. Assume that $P(k)$ holds for all $1≤k<n$.
 By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be merged. I shall prove that $merge$ correctly merges them. 
 
 >[!proof] Second Induction: 
-Let $l$ be the sum of the lengths of $S_{1}$ and $S_{2}$.
+Let $Q(j)$ be the statement that the merged silhouette $S$ is correct after the $j$th iteration of the loop.
 >
-Let $Q(i)$ be the statement that the merged silhouette $S$ is correct after the $i$th iteration of the loop.
+Induction on $j$:
 >
-Induction on $i$:
->
-Base Case: $i=1$.
+Base Case: $j=1$.
 After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $Q(1)$.
 
-Inductive Step: Let $i$ be given with $1≤i<l$. Assume that $Q(i)$ is true.
-We are interested in the state of $S$ after the $i+1$ loop. A few cases must be considered. Case 1: $S'[0]_{y}$
-
-[[therefore]] by [[Principle of Mathematical Induction]], $Q(i)$ for all $i≤l$.
-
-In particular, the silhouette is correct after the $l$th (last) iteration of the while loop. So, $P(n)$.
+Inductive Step: Let $j≥1$ be given. Suppose that neither $S_{1}$ nor $S_{2}$ is empty and assume that $Q(i)$ is true.
+We are interested in the state of $S$ after the $j+1$ loop. A few cases must be considered. Case 1: The last element added to $S$ came from silhouette $i$. 
+>>
+[[therefore]] by [[Principle of Mathematical Induction]], $Q(j)$ for all iterations of the while loop.
+>
+In particular, the silhouette is correct after the last iteration of the while loop. Since we have reached the end of the area where $S_{1}$ and $S_{2}$ overlap, we may simply append the remaining points in the input silhouettes to complete the merge. [[therefore]] $P(n)$.
 
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
 
