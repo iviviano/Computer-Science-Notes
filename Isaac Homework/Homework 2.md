@@ -140,16 +140,16 @@ By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be m
 
 >[!proof] Second Induction: 
 Let $l$ be the sum of the lengths of $S_{1}$ and $S_{2}$.
-
+>
 Let $Q(i)$ be the statement that the merged silhouette $S$ is correct after the $i$th iteration of the loop.
-
+>
 Induction on $i$:
-
+>
 Base Case: $i=1$.
 After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $Q(1)$.
 
 Inductive Step: Let $i$ be given with $1≤i<l$. Assume that $P(i)$ is true.
-A few cases must be considered.
+A few cases must be considered. Case 1: 
 
 [[therefore]] by [[Principle of Mathematical Induction]], $Q(i)$ for all $i≤l$.
 
