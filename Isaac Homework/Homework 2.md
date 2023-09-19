@@ -92,21 +92,27 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 
 (a) $(l_{1},h_{1}),(r_{1},0)$ There is a flat line at the bottom until the left edge of the building. There is a flat line from the left edge to the right edge at the height of the building. The rest of silhouette is flat.
 
-(b) Merge $(x_{1},y_{1}),(x_{2},y_{2})$ and $(u_{1},z_{1}),(u_{2},z_{2})$ into a [[Sort]]ed [[List]]: $$(a_{1},b_{1}),(a_{2},b_{2}),(a_{3},b_{3}),(a_{4},b_{4})$$Let $S$ be an empty list. Add $(a_{1},b_{1})$ to $S$. If $b_{2}>b_{1}$, append $(a_{2},b_{2})$ to $S$. If $b_{3}>$ the $b$-coord of the last element of $S$, add $(a_{3},b_{3})$ to $S$. Append $(a_{4},b_{4})$ to $S$. $S$ is the merged silhouette. 
+(b) NOT CORRECT
+
+Merge $(x_{1},y_{1}),(x_{2},y_{2})$ and $(u_{1},z_{1}),(u_{2},z_{2})$ into a [[Sort]]ed [[List]]: $$(a_{1},b_{1}),(a_{2},b_{2}),(a_{3},b_{3}),(a_{4},b_{4})$$Let $S$ be an empty list. Add $(a_{1},b_{1})$ to $S$. If $b_{2}>b_{1}$, append $(a_{2},b_{2})$ to $S$. If $b_{3}>$ the $b$-coord of the last element of $S$, add $(a_{3},b_{3})$ to $S$. Append $(a_{4},b_{4})$ to $S$. $S$ is the merged silhouette. 
 
 (c)
 >[!alg]
->$$\begin{align}
+
+$$\begin{align}
 &\textbf{Algorithm } \text{Merge Two Silhouettes}\\
 &\textbf{Input: } \text{Silhouettes } S_{1},S_{2}\\
 &\textbf{Output: } \text{The merged silhouette}\\
 &\text{Let } S \text{ be an empty list }\\
 &\textbf{While } S_{1}≠\emptyset\lor S_{2}≠\emptyset \textbf{ do:} \\
-&\quad \text{Let } S' \text{ be the list with the smaller first } x \text{ coord}\\
-&\quad \textbf{If } S≠\emptyset \land last(S)_{y} < S'[0]_{y} \textbf{ then:} \\
-&\quad \quad \text{Append }(S'[0]) \text{ to } S\\
+&\quad \text{Let } i \text{ be the index of the list with the smaller first } x \text{ coord}\\
+&\quad \textbf{If } S==\emptyset\lor last\_added==i \textbf{ then:}\\
+&\quad \quad \text{Append } S_{i}[0] \text{ to } S\\
+&\quad \textbf{Else: }\textbf{If } S==\emptyset \lor last(S)_{y} < S_{i}[0]_{y} \textbf{ then:} \\
+&\quad \quad \text{Append }S_{i}[0] \text{ to } S\\
 &\quad \textbf{end if}\\
-&\quad \text{Remove } S'[0]\\
+&\quad \text{Remove } S_{i}[0]\\
+&\quad last\_added=i\\
 &\textbf{end while}\\
 &\text{Append } S_{1} \text{ and }S_{2} \text{ to } S \text{ }(\text{one will be empty})\\
 &\textbf{return } S\\
