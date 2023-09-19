@@ -99,6 +99,8 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 
 (b) $S$ will be the merged silhouette. Let $i$ be $1$ if $S_{1}[0]_{x}<S_{2}[0]_{x}$ and $2$ otherwise. Add $S_{i}[0]$ to $S$. Now let $j$ be $1$ if $S_{1}[1]_{x}<S_{2}[0]_{x}$ and $2$ otherwise. 
 
+Suppose $j==i$, append $S_{i}[1]$ to $S$. If $S$
+
 
 
 
