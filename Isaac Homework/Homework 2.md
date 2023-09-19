@@ -127,28 +127,33 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 \end{align}$$
 
 
->[!proof] Proof of Correctness
+>[!proof] Proof of Correctness with Double Induction
 
 Let $P(n)$ be the statement that $skyline$ [[Algorithm]] works for inputs of size $n$.
 
 Base Case: $n=1$.
-Converting one building to a silhouette does not change the picture.
+Converting one building to a silhouette does not change the picture. ...
 
 
 Inductive Step: let $n>1$ be given. Assume that $P(k)$ holds for all $1≤k<n$.
 By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be merged. I shall prove that $merge$ correctly merges them. 
 
-Second Induction: 
+>[!proof] Second Induction: 
+Let $l$ be the sum of the lengths of $S_{1}$ and $S_{2}$.
 
-Let $P(i)$ be the statement that the merged silhouette $S$ is correct after the $i$th iteration of the loop.
+Let $Q(i)$ be the statement that the merged silhouette $S$ is correct after the $i$th iteration of the loop.
 
 Induction on $i$:
 
 Base Case: $i=1$.
-After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $P(1)$.
+After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $Q(1)$.
 
-Inductive Step: Let $i$ be given with $1≤i<n$. Assume that $P(i)$ is true.
-The silhouette with the smaller first $x$-coord is chosen. If the 
+Inductive Step: Let $i$ be given with $1≤i<l$. Assume that $P(i)$ is true.
+COMPLETE THIS
+
+[[therefore]] by [[Principle of Mathematical Induction]], $Q(i)$ for all $i≤l$.
+
+In particular, the silhouette is correct after the $l$th (last) iteration of the while loop. So, $P(n)$.
 
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
 
