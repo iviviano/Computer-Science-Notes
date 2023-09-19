@@ -97,7 +97,7 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 
 (a) $(l_{1},h_{1}),(r_{1},0)$ There is a flat line at the bottom until the left edge of the building. There is a flat line from the left edge to the right edge at the height of the building. The rest of silhouette is flat.
 
-(b) There are $4$ ways for two buildings to be merged: 
+(b) There are $5$ ways for silhouettes of two buildings to be merged: 
 
 
 
