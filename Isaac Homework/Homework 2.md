@@ -149,7 +149,7 @@ Base Case: $i=1$.
 After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $Q(1)$.
 
 Inductive Step: Let $i$ be given with $1≤i<l$. Assume that $P(i)$ is true.
-A few cases must be considered. Case 1: 
+We are interested in the state of $S$ after the $i+1$ loop. A few cases must be considered. Case 1: $S'[0]_{y}$
 
 [[therefore]] by [[Principle of Mathematical Induction]], $Q(i)$ for all $i≤l$.
 
