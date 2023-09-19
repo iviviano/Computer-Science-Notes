@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e4ae01de77d3b24f",
+        "id": "77d488535222a76d",
         "type": "tabs",
         "children": [
           {
-            "id": "bab82034a599c98b",
+            "id": "0d98e36e20f99f1c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 2.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 2.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,10 +137,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bab82034a599c98b",
+  "active": "0d98e36e20f99f1c",
   "lastOpenFiles": [
-    "Sort.md",
     "Isaac Homework/Homework 2.md",
+    "Sort.md",
     "Closest Pairs Algorithm.md",
     "Screenshot 2023-09-18 at 10.40.06 AM.png",
     "Asymptotic Bounds of Sums of Functions.md",

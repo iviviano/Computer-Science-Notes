@@ -1,3 +1,8 @@
+<p align=center>
+Homework 2 <br>
+Isaac Viviano
+</p>
+
 >[!note] 1
 (a) 
 >1. $f=O(g)$
