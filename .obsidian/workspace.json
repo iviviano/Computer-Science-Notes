@@ -47,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bitwise Multiplication.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bitwise Multiplication.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bitwise Multiplication.md"
+                "file": "Isaac Homework/Homework 2.md"
               }
             }
           }
@@ -173,10 +173,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "599c5fdc3d1812d0",
+  "active": "21e0ee4f99bea844",
   "lastOpenFiles": [
-    "Isaac Homework/Homework 2.md",
     "Bitwise Multiplication.md",
+    "Isaac Homework/Homework 2.md",
     "Isaac Homework/HW 2.md",
     "Sort.md",
     "Closest Pairs Algorithm.md",
