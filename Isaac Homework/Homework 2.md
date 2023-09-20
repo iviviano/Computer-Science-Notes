@@ -98,9 +98,10 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 (a) $(l_{1},h_{1}),(r_{1},0)$ There is a flat line at the bottom until the left edge of the building. There is a flat line from the left edge to the right edge at the height of the building. The rest of silhouette is flat.
 
 (b) I am assuming that we are merging two silhouettes given by the procedure in part (a), so that $y_{2}=z_{2}=0$
-PICTURE
 
 Note: $x_{1}<u_{1}$ as the list of buildings are sorted. All possible cases are given below, with pictures illustrating why the returned silhouette is correct.
+
+![[IMG-1260.jpg | 500]]
 
 Case 1: $x_{2}>u_{2}$ and $y_{1}<z_{1}$.
 $(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},y_{1}),(x_{2},y_{2})$
