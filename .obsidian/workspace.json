@@ -33,7 +33,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/HW 2.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/HW 2.md",
+                "file": "Isaac Homework/Homework 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Isaac Homework/HW 2.md"
+                "file": "Isaac Homework/Homework 2.md"
               }
             }
           }
@@ -159,10 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "422be98dc690a33b",
+  "active": "21e0ee4f99bea844",
   "lastOpenFiles": [
-    "Isaac Homework/Homework 2.md",
     "Isaac Homework/HW 2.md",
+    "Isaac Homework/Homework 2.md",
     "Sort.md",
     "Closest Pairs Algorithm.md",
     "Screenshot 2023-09-18 at 10.40.06 AM.png",

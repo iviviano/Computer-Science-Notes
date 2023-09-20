@@ -42,7 +42,7 @@ If $n_{0}=b$ and $\alpha=2 \frac{c}{\log b}$ , for all $n≥n_{0}$, $$T(n)≤cn^
 3. $T(n)=O(n^{n})$
 The most work is done on the lowest layer, so this is the only layer that matters for the [[Asymptotic Upper Bounds]]. Formally, $$L(1)≥\alpha\sum_{i=1}^{l}L(i)$$where $l$ is the number of layers ($l\sim\log_{b}n$ CHECK) and $L(i)$ measures the [[Time Complexity]] of layer $i$. So, $T=O(\sum L(i))=O(L(1))$. 
 
-As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=a^\frac{\log_{a} n}{\log_{a} b}=(a^{\log_{a}n})^\frac{1}{\log_{a}b}=n^\frac{1}{\log_{a}b}$$So, $T(n)=O(L(1))=O(O(n^\frac{1}{\log_{a}b})=O(n^\frac{1}{\log_{a}b})$.
+As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=n^{\log_{b}a}$$So, $T(n)=O(L(1))=O(O(n^{\log_{b}a}))=O(n^{\log_{b}a})$.
 
 >[!note] 2
 (a)
