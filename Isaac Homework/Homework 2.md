@@ -39,8 +39,8 @@ as $a=b^{d}$. So, $P(n)$.
 If $n_{0}=b$ and $\alpha=2 \frac{c}{\log b}$ , for all $n≥n_{0}$, $$T(n)≤cn^{d}\log_{b}n+cn^{d}=cn^{d}\frac{\log n}{\log b}+cn^{d}≤2 \frac{c}{\log b}\log n=\alpha n\log n$$
 [[therefore]] $T(n)=O(n\log n)$.
 >
->3. $T(n)=O(n^{n})$
-The most work is done on the lowest layer, so this is the only layer that matters for the [[Asymptotic Upper Bounds]]. Formally, $$L(1)≥\alpha\sum_{i=1}^{l}L(i)$$where $l$ is the number of layers ($l\sim\log_{b}n$ CHECK) and $L(i)$ measures the [[Time Complexity]] of layer $i$. So, $T=O(\sum L(i))=O(L(1))$. 
+>3. 
+>The most work is done on the lowest layer, so this is the only layer that matters for the [[Asymptotic Upper Bounds]]. Formally, $$L(1)≥\alpha\sum_{i=1}^{l}L(i)$$where $l$ is the number of layers ($l\sim\log_{b}n$ CHECK) and $L(i)$ measures the [[Time Complexity]] of layer $i$. So, $T=O(\sum L(i))=O(L(1))$. 
 >
 As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=n^{\log_{b}a}$$This rule is given in the textbook. So, $T(n)=O(L(1))=O(O(n^{\log_{b}a}))=O(n^{\log_{b}a})$.
 
@@ -88,7 +88,7 @@ Split into three subproblems of size $\frac{n}{3}$. Merge the resulting lists wi
 \end{align}$$
 >
 (f) $k$-merge has runtime $O(n\log k+k)$. Adding $k$ elements to the priority queue has linear run time. The while loop runs $n$ times, and priority queues take $O(\log i)$ to dequeue, where $i$ is the size. A dequeue happens each iteration of the while loop. But, since $k≤n$, $O(n\log k+ k) = O(n\log k)$. [[therefore]] $O(n\log k)$ goes into the expression for $T(n,k)$. As there are $k$ subproblems, each of size $\frac{n}{k}$, the term $kT(\frac{n}{k},k)$ must be added. The recurrence relation is given by:
-$$T(n,k)=kT\left(\frac{n}{k},k\right)+O(n\log k)$$
+$$T(n,k)=kT\left(\frac{n}{k},\min\left\{k,\frac{n}{k}\right\}\right)+O(n\log k)$$
 There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each level, the total [[Worst Case Run Time]] of $k$-merge is $O(n\log k)$. [[therefore]] $T(n,k)=O(n\log n\log k)$.
 
 
