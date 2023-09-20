@@ -164,6 +164,8 @@ After the first iteration of the loop, we have added one point to the skyline $S
 Inductive Step: Let $j$ with $1≤j<l$ be given. Assume that $Q(i)$ is true.
 We are interested in the state of $S$ after the $j+1$ loop. A few cases must be considered. 
 Case 1: we have only added points from one of the silhouettes. If the next point is from that same silhouette, clearly we can just add it (which is what happens as two consecutive points in the same silhouette cannot have the same height). Otherwise the point must be in the new silhouette. 
+
+Case 2: 
 >>
 [[therefore]] by [[Principle of Mathematical Induction]], $Q(j)$ for all iterations of the while loop.
 >
