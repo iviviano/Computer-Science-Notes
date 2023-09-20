@@ -7,6 +7,9 @@ Problem: multiply two numbers $x,y$ from their bitwise representation (each $n$ 
 >[!question]
 >Is there a [[Divide and Conquer Paradigm]] [[Algorithm]] that beats the naive $O(n^{2})$?
 
+>[!note]
+>Shifting is much faster than addition or multiplication
+
 Idea: divide $x,y$ into higher and lower order bits.
 - Let $x,y$ be $n$-bit numbers
 	- Let $k=\frac{n}{2}$
