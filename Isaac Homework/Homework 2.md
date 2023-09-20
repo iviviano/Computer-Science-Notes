@@ -165,7 +165,9 @@ Inductive Step: Let $j$ with $1≤j<l$ be given. Assume that $Q(i)$ is true.
 We are interested in the state of $S$ after the $j+1$ loop. A few cases must be considered. 
 Case 1: we have only added points from one of the silhouettes. If the next point is from that same silhouette, clearly we can just add it (which is what happens as two consecutive points in the same silhouette cannot have the same height). Otherwise the point must be in the new silhouette. If the $y$-coord of the first point of the new silhouette is less than or equal to the $y$-value of the last point added to the merged silhouette, then the first point of the new silhouette should not be added to the skyline. Since in this case, $indices_{oth}>0,y=S_{oth}[indices_{oth}]_{y}=last(S)_{y}$, the point will not be added. If the $y$-coord of the first point of the new silhouette is greater than the $y$-coord of the last point added to the merged silhouette, then we need to add the first point of the new silhouette to the skyline. This will happen as $indices_{oth}>0,y=S_{cur}[indices_{cur}]_{y}≠last(S)_{y}$. 
 
-Case 2: we have already added points from both silhouettes. By the inductive hypothesis, $S$ is the correct silhouette so far. There are two sub-cases to this case. If $y$ 
+Case 2: we have already added points from both silhouettes. By the inductive hypothesis, $S$ is the correct silhouette so far. There are two sub-cases to this case. If $y=S_{cur}[indices_{cur}]_{y}$, 
+
+Otherwise $y=S_{oth}[indices_{oth}-1]_{y}$ as this is the larger height of either silhouette at $x$. Of course, $(x,y)$ should only be added to $S$ if $y≠last(S)$. 
 >>
 [[therefore]] by [[Principle of Mathematical Induction]], $Q(j)$ for all iterations of the while loop.
 >
