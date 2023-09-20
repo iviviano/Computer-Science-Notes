@@ -100,6 +100,8 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 (b) I am assuming that we are merging two silhouettes given by the procedure in part (a), so that $y_{2}=z_{2}=0$
 PICTURE
 
+Note: $x_{1}<u_{1}$ as 
+
 Case 1: $x_{2}>u_{2}$ and $y_{1}<z_{1}$.
 
 Case 2: $u_{1}≤x_{2}≤u_{2}$ and $z_{1}>y_{1}$.
