@@ -83,7 +83,8 @@
       "command": false,
       "title": "Algorithm",
       "injectColor": false,
-      "noTitle": false
+      "noTitle": false,
+      "copy": false
     },
     "ds": {
       "type": "ds",

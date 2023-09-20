@@ -40,13 +40,13 @@ If $n_{0}=b$ and $\alpha=2 \frac{c}{\log b}$ , for all $n≥n_{0}$, $$T(n)≤cn^
 [[therefore]] $T(n)=O(n\log n)$.
 >
 >3. 
->The most work is done on the lowest layer, so this is the only layer that matters for the [[Asymptotic Upper Bounds]]. Formally, $$L(1)≥\alpha\sum_{i=1}^{l}L(i)$$where $l$ is the number of layers ($l\sim\log_{b}n$ CHECK) and $L(i)$ measures the [[Time Complexity]] of layer $i$. So, $T=O(\sum L(i))=O(L(1))$. 
+>The most work is done on the lowest layer of the recursion tree, which I will call $1$. So, this is the only layer that matters for the [[Asymptotic Upper Bounds]]. Formally, $$L(1)≥\alpha\sum_{i=1}^{l}L(i)$$where $l$ is the number of layers ($l\sim\log_{b}n$ CHECK) and $L(i)$ measures the [[Time Complexity]] of layer $i$. So, $T=O(\sum L(i))=O(L(1))$. 
 >
 As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=a^\frac{\log_{a}n}{\log_{a}b}=(a^{\log_{a}n})^\frac{1}{\log_{a}b}=n^\frac{1}{\log_{a}b}=n^{\log_{b}a}$$So, $T(n)=O(L(1))=O(O(n^{\log_{b}a}))=O(n^{\log_{b}a})$.
 
 >[!note] 2
 (a)
->>[!alg]
+>>[!alg] Algorithm
 >>$$\begin{align}
 &\textbf{Algorithm } \text{3-Merge}\\
 &\textbf{Input: } 3 \text{ sorted lists }A,B,C\\
@@ -68,7 +68,7 @@ Split into three subproblems of size $\frac{n}{3}$. Merge the resulting lists wi
 (d) As $d=1,a=3,b=3$, $T(n)=O(n\log n)$ by (1)
 >
 (e)
->>[!alg]
+>>[!alg] Algorithm
 >>$$\begin{align}
 &\textbf{Algorithm } k\text{-Merge} \\
 &\textbf{Input: } k\text{ sorted lists} \\
@@ -91,39 +91,36 @@ Split into three subproblems of size $\frac{n}{3}$. Merge the resulting lists wi
 $$T(n,k)=kT\left(\frac{n}{k},\min\left\{k,\frac{n}{k}\right\}\right)+O(n\log k)$$
 There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each level, the total [[Worst Case Run Time]] of $k$-merge is $O(n\log k)$. [[therefore]] $T(n,k)=O(n\log n\log k)$.
 
-
 >[!note] 3
-
-
 (a) $(l_{1},h_{1}),(r_{1},0)$ There is a flat line at the bottom until the left edge of the building. There is a flat line from the left edge to the right edge at the height of the building. The rest of silhouette is flat.
-
+>
 (b) I am assuming that we are merging two silhouettes given by the procedure in part (a), so that $y_{2}=z_{2}=0$
-
+>
 Note: $x_{1}<u_{1}$ as the list of buildings are sorted. All possible cases are given below, with pictures illustrating why the returned silhouette is correct.
-
+>
 ![[IMG-1260.jpg | 500]]
-
+>
 Case 1: $x_{2}>u_{2}$ and $y_{1}<z_{1}$.
 $(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},y_{1}),(x_{2},y_{2})$
-
+>
 Case 2: $u_{1}≤x_{2}≤u_{2}$ and $z_{1}>y_{1}$.
 $(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},z_{2})$
-
+>
 Case 3: $u_{1}≤x_{2}≤u_{2}$ and $y_{1}>z_{1}$
 $(x_{1},y_{1}),(x_{2},z_{1}),(u_{2},z_{2})$
-
+>
 Case 4: $u_{1}>x_{2}$ 
 $(x_{1},y_{1}),(x_{2},y_{2}),(u_{1},z_{1}),(u_{2},z_{2})$
-
+>
 Case 5: $u_{2}≤x_{2}$ and $y_{1}≥z_{1}$.
 $(x_{1},y_{1},x_{2},y_{2})$
-
+>
 Case 6: $u_{1}≤x_{2}≤u_{2}$ and $y_{1}=z_{1}$
 $(x_{1},y_{1}),(u_{2},z_{2})$
-
+>
 (c)
->[!alg]
->$$\begin{align}
+>>[!alg] Algorithm
+>>$$\begin{align}
 &\textbf{Algorithm } \text{Merge} \\
 &\textbf{Input: } \text{Two silhouettes }S_{0},S_{1}\\
 &\textbf{Output: } \text{The merged silhouette}\\
@@ -144,9 +141,9 @@ $(x_{1},y_{1}),(u_{2},z_{2})$
 &\quad \text{Increment }indices_{cur}\text{ by }1\\
 &\textbf{end while} \\
 \end{align}$$
-
->[!alg]
->$$\begin{align}
+>
+>>[!alg] Algorithm
+>>$$\begin{align}
 &\textbf{Algorithm } \text{Skyline}\\
 &\textbf{Input: } \text{List } B \text{ of buildings}\\
 &\textbf{Output: } \text{List of points constituting the skyline}\\
@@ -158,7 +155,6 @@ $(x_{1},y_{1}),(u_{2},z_{2})$
 &\text{Let }S_{1}=skyline\left(\left[\frac{\text{len }B}{2}:\text{len }B\right]\right)\\
 &\textbf{return } merge(S_{0},S_{1})\\
 \end{align}$$
-
 
 >[!proof] Proof of Correctness with Double Induction
 Let $P(n)$ be the statement that $skyline$ [[Algorithm]] works for inputs of size $n$.
@@ -194,20 +190,17 @@ In particular, the silhouette is correct after the last iteration of the while l
 >
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
 
-
-Runtime Analysis
-
-
+>[!question] Runtime Analysis
 Recurrence Relation: $$T(n)≤2T\left(\frac{n}{2}\right)+dn$$ for $n≥2$ where $d$ is fixed by the definition of an [[Asymptotic Upper Bounds]]. Pick $c\in \mathbb{R}$ such that $T(1)≤c≥d$. The recurrence relation holds, as the merge step only requires iterating through two lists each of size $\frac{n}{2}$. Clearly, merge runs in linear time. The rest of the computational steps come from the two recursive calls with the first and second half of the list of buildings. So, $T$ does satisfy the recurrence.
-
->[!proof]
+>
+>>[!proof]
 Let $P(n)$ be that $T(n)≤cn\log_{2}(n)+dn$.
->
+>>
 Induction on $n$:
->
+>>
 Base Case: $n=2$.
 By the recurrence relation, $$T(2)=2T(1)+2d=2c+2d≤2c\log_{2}(2)+2d$$so $P(2)$.
-> 
+>>
 Inductive Step: let $n>2$. Assume that $P(k)$ holds for all $2≤k<n$.
 $$T(n)≤2T\left(\frac{n}{2}\right)+dn≤2\left(c\frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+ d\frac{n}{2}\right)+dn$$by the inductive hypothesis. 
 >$$\begin{align}
@@ -215,17 +208,13 @@ $$T(n)≤2T\left(\frac{n}{2}\right)+dn≤2\left(c\frac{n}{2}\log_{2}\left(\frac{
 &=2\left(c \frac{n}{2}\log_{2}(n)\right)-cn+2dn=cn\log_{2}(n) -cn+2dn≤cn\log_{2}n+dn\\
 \end{align}$$
 so, $P(n)$.
->
+>>
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n≥2$.
-
+>
 Justify $O(n\log n)$:
-
+>
 Let $n_{0}=2,\alpha=2\cdot \frac{c}{\log2}$. Then, if $n≥n_{0}$, $$\alpha n\log n=2 \frac{c}{\log2}n\log n≥ \frac{c}{\log2} n\log n+cn≥cn\log_{2} n+dn≥T(n)$$
 So, $T(n)=O(n\log n)$.
-
-
-
-
 
 
 I have adhered to the Honor Code. Isaac Viviano
