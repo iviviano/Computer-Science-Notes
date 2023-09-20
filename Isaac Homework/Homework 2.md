@@ -97,13 +97,20 @@ There are $\log_{k}n$ levels to the recursion tree of $k$-mergesort. At each lev
 
 (a) $(l_{1},h_{1}),(r_{1},0)$ There is a flat line at the bottom until the left edge of the building. There is a flat line from the left edge to the right edge at the height of the building. The rest of silhouette is flat.
 
-(b) $S$ will be the merged silhouette. Let $i$ be $1$ if $S_{1}[0]_{x}<S_{2}[0]_{x}$ and $2$ otherwise. Add $S_{i}[0]$ to $S$. Now let $j$ be $1$ if $S_{1}[1]_{x}<S_{2}[0]_{x}$ and $2$ otherwise. 
+(b) I am assuming that we are merging two silhouettes given by the procedure in part (a), so that $y_{2}=z_{2}=0$
+PICTURE
 
-Suppose $j==i$, append $S_{i}[1]$ to $S$. If $S$
+Case 1: $x_{2}>u_{2}$ and $y_{1}<z_{1}$.
 
+Case 2: $u_{1}≤x_{2}≤u_{2}$ and $z_{1}>y_{1}$.
 
+Case 3: $u_{1}≤x_{2}≤u_{2}$ and $y_{1}>z_{1}$
 
+Case 4: $u_{1}>x_{2}$ 
 
+Case 5: $u_{2}≤x_{2}$ and $y_{1}≥z_{1}$.
+
+Case 6: $u_{1}≤x_{2}$ and $y_{1}=z_{1}$
 
 
 (c)
@@ -146,39 +153,37 @@ Suppose $j==i$, append $S_{i}[1]$ to $S$. If $S$
 
 
 >[!proof] Proof of Correctness with Double Induction
-
 Let $P(n)$ be the statement that $skyline$ [[Algorithm]] works for inputs of size $n$.
-
+>
 Base Case: $n=1$.
 Converting one building to a silhouette does not change the picture. ...
-
-
+>
 Inductive Step: let $n>1$ be given. Assume that $P(k)$ holds for all $1≤k<n$.
 By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be merged. I shall prove that $merge$ correctly merges them. 
-
->[!proof] Second Induction: 
+>
+>>[!proof] Second Induction: 
 Let $l$ be the sum of the lengths of $S_{1}$ and $S_{2}$.
->
+>>
 Let $Q(j)$ be the statement that the merged silhouette $S$ is correct after the $j$th iteration of the loop.
->
+>>
 Induction on $j$:
->
+>>
 Base Case: $j=1$.
 After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $Q(1)$.
-
+>>
 Inductive Step: Let $j$ with $1≤j<l$ be given. Assume that $Q(i)$ is true.
 We are interested in the state of $S$ after the $j+1$ loop. A few cases must be considered. 
 Case 1: we have only added points from one of the silhouettes. If the next point is from that same silhouette, clearly we can just add it (which is what happens as two consecutive points in the same silhouette cannot have the same height). Otherwise the point must be in the new silhouette. If the $y$-coord of the first point of the new silhouette is less than or equal to the $y$-value of the last point added to the merged silhouette, then the first point of the new silhouette should not be added to the skyline. Since in this case, $indices_{oth}>0,y=S_{oth}[indices_{oth}]_{y}=last(S)_{y}$, the point will not be added. If the $y$-coord of the first point of the new silhouette is greater than the $y$-coord of the last point added to the merged silhouette, then we need to add the first point of the new silhouette to the skyline. This will happen as $indices_{oth}>0,y=S_{cur}[indices_{cur}]_{y}≠last(S)_{y}$. 
-
-Case 2: we have already added points from both silhouettes. By the inductive hypothesis, $S$ is the correct silhouette so far. To add the next point to $S$, we choose the larger $y$ value of $S_{1}$ and $S_{2}$ at the $x$. The $y$-value of $S_{cur}$ at $x$ is given by $S_{cur}[indices_{cur}]_{y}$. The $y$ value of $S_{oth}$ at $x$ is given by $S_{oth}[indices_{oth}-1]_{y}$, since this is the $y$-coord of the previous point in $S_{oth}$. [[therefore]] $y=\max\{S_{cur}[indices_{cur}]_{y},S_{oth}[indices_{oth}-1]_{y}\}$ correctly gives the height of the taller silhouette at $x$. 
-
+>>
+Case 2: we have already added points from both silhouettes. By the inductive hypothesis, $S$ is the correct silhouette so far. To add the next point to $S$, we choose the larger $y$ value of $S_{1}$ and $S_{2}$ at the $x$. The $y$-value of $S_{cur}$ at $x$ is given by $S_{cur}[indices_{cur}]_{y}$. The $y$ value of $S_{oth}$ at $x$ is given by $S_{oth}[indices_{oth}-1]_{y}$, since this is the $y$-coord of the previous point in $S_{oth}$. [[therefore]] $y=\max\{S_{cur}[indices_{cur}]_{y},S_{oth}[indices_{oth}-1]_{y}\}$ correctly gives the height of the taller silhouette at $x$. If and only if $y≠last(S)_{y}$, $(x,y)$ is appended to $S$. This correctly adds the new point only if it changes the height of the silhouette at $x$.
+>>
 [[therefore]] The $j+1$ point is correctly added to $S$, implying $Q(j+1)$.
-
+>>
 >>
 [[therefore]] by [[Principle of Mathematical Induction]], $Q(j)$ for all iterations of the while loop.
 >
 In particular, the silhouette is correct after the last iteration of the while loop. Since we have reached the end of the area where $S_{1}$ and $S_{2}$ overlap, we may simply append the remaining points in the input silhouettes to complete the merge. [[therefore]] $P(n)$.
-
+>
 [[therefore]] by [[Principle of Mathematical Induction]], $P(n)$ for all $n\in \mathbb{N}$.
 
 
