@@ -153,9 +153,9 @@ $(x_{1},y_{1}),(u_{2},z_{2})$
 &\quad l=B[0][0]; h=B[0][1]; r=B[0][2]\\
 &\quad \textbf{return } \text{List }((l,h),(r,0))\\
 &\textbf{end if}\\
-&\text{Let }S_{1}=skyline\left(B\left[0:\frac{\text{len }B}{2}\right]\right)\\
-&\text{Let }S_{2}=skyline\left(\left[\frac{\text{len }B}{2}:\text{len }B\right]\right)\\
-&\textbf{return } merge(S_{1},S_{2})\\
+&\text{Let }S_{0}=skyline\left(B\left[0:\frac{\text{len }B}{2}\right]\right)\\
+&\text{Let }S_{1}=skyline\left(\left[\frac{\text{len }B}{2}:\text{len }B\right]\right)\\
+&\textbf{return } merge(S_{0},S_{1})\\
 \end{align}$$
 
 
