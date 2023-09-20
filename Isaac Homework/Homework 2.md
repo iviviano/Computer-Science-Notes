@@ -109,20 +109,25 @@ Suppose $j==i$, append $S_{i}[1]$ to $S$. If $S$
 (c)
 >[!alg]
 >$$\begin{align}
-&\textbf{Algorithm } \text{Merge Two Silhouettes}\\
-&\textbf{Input: } \text{Silhouettes } S_{1},S_{2}\\
+&\textbf{Algorithm } \text{Merge} \\
+&\textbf{Input: } \text{Two silhouettes }S_{0},S_{1}\\
 &\textbf{Output: } \text{The merged silhouette}\\
-&\text{Let } S \text{ be an empty list }\\
-&\textbf{While } S_{1}≠\emptyset\lor S_{2}≠\emptyset \textbf{ do:} \\
-&\quad \text{Let } i \text{ be the index of the list with the smaller first } x \text{ coord}\\
-&\quad \textbf{If } S==\emptyset\lor last\_added==i \lor last(S)_{y}<S_{i}[0]_{y} \textbf{ then:}\\
-&\quad \quad \text{Append } S_{i}[0] \text{ to } S\\
-&\quad \quad last\_added= i\\
+&\text{Let }S \text{ be an empty list}\\
+&indices=(0,0) \\
+&\textbf{While } S_{0}[indices_{0}:]≠\emptyset\lor S_{1}[indices_{1}:]≠\emptyset \textbf{ do:} \\
+&\quad \text{Pick }cur \text{ such that } S_{cur}[indices_{cur}]_{x}=\min\{S_{0}[indices_{0}]_{x},S_{1}[indices_{1}]_{x} \}  \\
+&\quad oth = !cur\\
+&\quad \textbf{If } indices_{oth}>0 \textbf{ then:}\\
+&\quad \quad y=\max\{S_{cur}[indices_{cur}]_{y},S_{oth}[indices_{oth}-1]_{y}\} \\
+&\quad \textbf{Else:} \\
+&\quad \quad y = S_{cur}[indices_{cur}]_y\\
+&\quad \textbf{end if} \\
+&\quad x=S_{cur}[indices_{cur}]_{x} \\
+&\quad \textbf{If } S==\emptyset\lor y≠last(S)_{y} \textbf{ then:} \\
+&\quad \quad \text{Append } (x,y) \text{ to } S \\
 &\quad \textbf{end if}\\
-&\quad \text{Remove } S_{i}[0]\\
-&\textbf{end while}\\
-&\text{Append } S_{1} \text{ and }S_{2} \text{ to } S \text{ }(\text{one will be empty})\\
-&\textbf{return } S\\
+&\quad \text{Increment }indices_{cur}\text{ by }1\\
+&\textbf{end while} \\
 \end{align}$$
 
 >[!alg]
