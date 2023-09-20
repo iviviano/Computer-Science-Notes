@@ -31,3 +31,10 @@ Idea: fewer subproblems.
 >- $Z=(x_{H}+x_{L})(y_{H}+y_{L})-H-L$
 [[Worst Case Run Time]] recurrence relation: $$T(n)=3T\left(\frac{n}{2}\right)+O(n)$$
 So, $T(n)=O(n^{\log_{2}3})$.
+
+Proof Idea: 
+Base Case: $n=1$ 
+Hardcode this: $O(1)$
+
+Inductive Step: Let $n>1$ be given. Assume that it works on inputs with length $n>k≥1$.
+Let $x,y$ be $n$ bits long. By inductive hypothesis, $H,L,P$ are correct. By algebra, merge step is correct.
