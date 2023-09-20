@@ -152,6 +152,8 @@ Inductive Step: let $n>1$ be given. Assume that $P(k)$ holds for all $1≤k<n$.
 By the inductive hypothesis, $S_{1}$ and $S_{2}$ are two skylines that must be merged. I shall prove that $merge$ correctly merges them. 
 
 >[!proof] Second Induction: 
+Let $l$ be the sum of the lengths of $S_{1}$ and $S_{2}$.
+>
 Let $Q(j)$ be the statement that the merged silhouette $S$ is correct after the $j$th iteration of the loop.
 >
 Induction on $j$:
