@@ -29,3 +29,5 @@ Idea: fewer subproblems.
 >- Compute $H$
 >- Compute $L$
 >- $Z=(x_{H}+x_{L})(y_{H}+y_{L})-H-L$
+[[Worst Case Run Time]] recurrence relation: $$T(n)=3T\left(\frac{n}{2}\right)+O(n)$$
+So, $T(n)=O(n^{\log_{2}3})$.
