@@ -103,22 +103,22 @@ PICTURE
 Note: $x_{1}<u_{1}$ as the list of buildings are sorted. All possible cases are given below, with pictures illustrating why the returned silhouette is correct.
 
 Case 1: $x_{2}>u_{2}$ and $y_{1}<z_{1}$.
-$(x_{1},y_{1})$
+$(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},y_{1}),(x_{2},y_{2})$
 
 Case 2: $u_{1}≤x_{2}≤u_{2}$ and $z_{1}>y_{1}$.
-$(x_{1},y_{1})$
+$(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},z_{2})$
 
 Case 3: $u_{1}≤x_{2}≤u_{2}$ and $y_{1}>z_{1}$
 $(x_{1},y_{1})$
 
 Case 4: $u_{1}>x_{2}$ 
-$(x_{1},y_{1})$
+$(x_{1},y_{1}),(x_{2},y_{2}),(u_{1},z_{1}),(u_{2},z_{2})$
 
 Case 5: $u_{2}≤x_{2}$ and $y_{1}≥z_{1}$.
-$(x_{1},y_{1})$
+$(x_{1},y_{1},x_{2},y_{2})$
 
-Case 6: $u_{1}≤x_{2}$ and $y_{1}=z_{1}$
-$(x_{1},y_{1})$
+Case 6: $u_{1}≤x_{2}≤u_{2}$ and $y_{1}=z_{1}$
+$(x_{1},y_{1}),(u_{2},z_{2})$
 
 (c)
 >[!alg]
