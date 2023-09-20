@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4aeeea2ffcee209b",
+        "id": "8f502e6124bdf3ce",
         "type": "tabs",
         "children": [
           {
-            "id": "53e30cf486905260",
+            "id": "422be98dc690a33b",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,7 +137,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "53e30cf486905260",
+  "active": "422be98dc690a33b",
   "lastOpenFiles": [
     "Isaac Homework/HW 2.md",
     "Isaac Homework/Homework 2.md",
