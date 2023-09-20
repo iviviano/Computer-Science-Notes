@@ -101,22 +101,22 @@ Note: $x_{1}<u_{1}$ as the list of buildings are sorted. All possible cases are 
 ![[IMG-1260.jpg | 500]]
 >
 Case 1: $x_{2}>u_{2}$ and $y_{1}<z_{1}$.
-$(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},y_{1}),(x_{2},y_{2})$
+Return $(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},y_{1}),(x_{2},y_{2})$
 >
 Case 2: $u_{1}≤x_{2}≤u_{2}$ and $z_{1}>y_{1}$.
-$(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},z_{2})$
+Return $(x_{1},y_{1}),(u_{1},z_{1}),(u_{2},z_{2})$
 >
 Case 3: $u_{1}≤x_{2}≤u_{2}$ and $y_{1}>z_{1}$
-$(x_{1},y_{1}),(x_{2},z_{1}),(u_{2},z_{2})$
+Return $(x_{1},y_{1}),(x_{2},z_{1}),(u_{2},z_{2})$
 >
 Case 4: $u_{1}>x_{2}$ 
-$(x_{1},y_{1}),(x_{2},y_{2}),(u_{1},z_{1}),(u_{2},z_{2})$
+Return $(x_{1},y_{1}),(x_{2},y_{2}),(u_{1},z_{1}),(u_{2},z_{2})$
 >
 Case 5: $u_{2}≤x_{2}$ and $y_{1}≥z_{1}$.
-$(x_{1},y_{1}),(x_{2},y_{2})$
+Return $(x_{1},y_{1}),(x_{2},y_{2})$
 >
 Case 6: $u_{1}≤x_{2}≤u_{2}$ and $y_{1}=z_{1}$
-$(x_{1},y_{1}),(u_{2},z_{2})$
+Return $(x_{1},y_{1}),(u_{2},z_{2})$
 >
 (c)
 >>[!alg] Algorithm
@@ -203,7 +203,7 @@ By the recurrence relation, $$T(2)=2T(1)+2d=2c+2d≤2c\log_{2}(2)+2d$$so $P(2)$.
 >>
 Inductive Step: let $n>2$. Assume that $P(k)$ holds for all $2≤k<n$.
 $$T(n)≤2T\left(\frac{n}{2}\right)+dn≤2\left(c\frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+ d\frac{n}{2}\right)+dn$$by the inductive hypothesis. 
->$$\begin{align}
+>>$$\begin{align}
 &2\left(c \frac{n}{2}\log_{2}\left(\frac{n}{2}\right)+d \frac{n}{2}\right)+dn=2\left(c \frac{n}{2}\log_{2}\left(n\right)-c \frac{n}{2}\log_{2}(2)\right)+2dn\\
 &=2\left(c \frac{n}{2}\log_{2}(n)\right)-cn+2dn=cn\log_{2}(n) -cn+2dn≤cn\log_{2}n+dn\\
 \end{align}$$
@@ -217,4 +217,5 @@ Let $n_{0}=2,\alpha=2\cdot \frac{c}{\log2}$. Then, if $n≥n_{0}$, $$\alpha n\lo
 So, $T(n)=O(n\log n)$.
 
 
+Collaborators: Elinor Frost
 I have adhered to the Honor Code. Isaac Viviano
