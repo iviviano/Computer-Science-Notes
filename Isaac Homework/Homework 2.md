@@ -38,11 +38,11 @@ as $a=b^{d}$. So, $P(n)$.
 >
 If $n_{0}=b$ and $\alpha=2 \frac{c}{\log b}$ , for all $n≥n_{0}$, $$T(n)≤cn^{d}\log_{b}n+cn^{d}=cn^{d}\frac{\log n}{\log b}+cn^{d}≤2 \frac{c}{\log b}\log n=\alpha n\log n$$
 [[therefore]] $T(n)=O(n\log n)$.
-
-3. $T(n)=O(n^{n})$
+>
+>3. $T(n)=O(n^{n})$
 The most work is done on the lowest layer, so this is the only layer that matters for the [[Asymptotic Upper Bounds]]. Formally, $$L(1)≥\alpha\sum_{i=1}^{l}L(i)$$where $l$ is the number of layers ($l\sim\log_{b}n$ CHECK) and $L(i)$ measures the [[Time Complexity]] of layer $i$. So, $T=O(\sum L(i))=O(L(1))$. 
-
-As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=n^{\log_{b}a}$$So, $T(n)=O(L(1))=O(O(n^{\log_{b}a}))=O(n^{\log_{b}a})$.
+>
+As there are $a^{\log_{b}n}$ subproblems on the first layer. $$a^{\log_{b}n}=n^{\log_{b}a}$$This rule is given in the textbook. So, $T(n)=O(L(1))=O(O(n^{\log_{b}a}))=O(n^{\log_{b}a})$.
 
 >[!note] 2
 (a)
