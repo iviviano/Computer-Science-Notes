@@ -18,3 +18,4 @@ Idea: divide $x,y$ into higher and lower order bits.
 - Note: $x=x_{H}\cdot2^{k}+x_{L}$ so,
 $$x\cdot y=(x_{H}2^{k}+x_{L})(y_{H}2^{k}+y_{L})=x_{H}y_{H}2^{n}+2^{k}(x_{L}y_{L}+x_{L}y_{H})+x_{L}y_{L}$$
 [[Worst Case Run Time]] recurrence relation: $$T(n)=4T\left(\frac{n}{2}\right)+O(n)$$
+From [[Homework 2]], $T(n)=O(n^{\log_{2}4})=O(n^{2})$
