@@ -162,7 +162,7 @@ Base Case: $j=1$.
 After the first iteration of the loop, we have added one point to the skyline $S$. If the first element of $S_{1}$ had a smaller $x$-value than the first element of $S_{2}$, then that point would be the first point in the skyline regardless of their $y$-values. The reverse is also true. [[therefore]] $Q(1)$.
 
 Inductive Step: Let $j$ with $1≤j<l$ be given. Assume that $Q(i)$ is true.
-We are interested in the state of $S$ after the $j+1$ loop. A few cases must be considered. Case 1: we have only added points from one of the silhouettes. If the next point is from that same silhouette, clearly we can just add it. 
+We are interested in the state of $S$ after the $j+1$ loop. A few cases must be considered. Case 1: we have only added points from one of the silhouettes. If the next point is from that same silhouette, clearly we can just add it (which is what happens as two consecutive )
 >>
 [[therefore]] by [[Principle of Mathematical Induction]], $Q(j)$ for all iterations of the while loop.
 >
