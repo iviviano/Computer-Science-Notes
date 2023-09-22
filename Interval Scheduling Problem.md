@@ -27,3 +27,15 @@ Naive Algorithm:
 [[Greedy Paradigm]] solution:
 1. Choose a dimension of input 
 2. Repeatedly add compatible tasks minimizing that input
+How to minimize?
+1. Pick earliest finish time
+
+>[!alg]
+
+$$\begin{align}
+&\text{Let }S=\emptyset\\
+&\text{Sort jobs by finish time } \\
+&\textbf{For } j\in J \textbf{ do:} \\
+&\quad \textbf{If } j \text{ is compatible with } S\textbf{ then:} \\
+&\quad \quad \text{Append }j \text{ to } S\\
+\end{align}$$

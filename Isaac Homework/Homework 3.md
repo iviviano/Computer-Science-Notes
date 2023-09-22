@@ -30,13 +30,15 @@ $$\begin{align}
 &\text{Let } A \text{ be an array of length }n+1 \text{ of }0\text{'s}\\
 &A[0]=1;A[1]=k;A[2]=k\cdot k \\
 &total\_remainder =0 \\
-&partial = fun(n,k) \\
+&partial = fun(k) \\
 &\textbf{return } total\\
-&fun: \\
+&fun(k): \\
 &\quad \textbf{If } k<3 \textbf{ then:} \\
 &\quad \quad \textbf{return } A[k]\\
 &\quad total\_remainder =total\_remainder +k\%3\\
-&\quad \textbf{return } \text{alien\_prod}()
+&\quad prev=fun\left(\left\lfloor \frac{k}{3}\right\rfloor\right) \\
+&\quad A\left[\left\lfloor \frac{k}{3}\right\rfloor \right] =prev\\
+&\quad \textbf{return } \text{alien\_prod}(prev,prev,prev)\\
 \end{align}$$
 
 >[!alg] Algorithm 1
