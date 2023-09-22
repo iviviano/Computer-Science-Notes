@@ -34,8 +34,8 @@ How to minimize?
 
 $$\begin{align}
 &\text{Let }S=\emptyset\\
-&\text{Sort jobs by finish time } \\
+&\text{Sort jobs by finish time } (O(n\log n))\\
 &\textbf{For } j\in J \textbf{ do:} \\
-&\quad \textbf{If } j \text{ is compatible with } S\textbf{ then:} \\
+&\quad \textbf{If } j \text{ is compatible with } S\textbf{ then:}\text{ }O(n) \\
 &\quad \quad \text{Append }j \text{ to } S\\
 \end{align}$$
