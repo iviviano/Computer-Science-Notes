@@ -44,3 +44,6 @@ Correctness. Must show
 - Feasibility (returns compatible schedule)
 - Optimality (returns largest set)
 
+>[!proof] Proof of Optimality
+
+Let $ALG$ be our solution and let $ALT$ be any other solution. 
