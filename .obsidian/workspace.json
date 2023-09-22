@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "db1f6bce3b4c04df",
+        "id": "4f74806ce9c229d9",
         "type": "tabs",
         "children": [
           {
-            "id": "14f8adbb34edbc00",
+            "id": "80883c349ee7b715",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 3.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 3.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 3.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,7 +137,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "14f8adbb34edbc00",
+  "active": "80883c349ee7b715",
   "lastOpenFiles": [
     "Isaac Homework/Homework 3.md",
     "Isaac Homework/Homework 2.md",
