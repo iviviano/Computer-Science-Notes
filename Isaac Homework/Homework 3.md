@@ -21,3 +21,25 @@ Let $T(k)$ count the number of multiplications required to compute $n^{k}$. $T(k
 $T(k)=O(\log k)$
 
 (b) 
+
+>[!alg] Algorithm 1
+
+$$\begin{align}
+&\textbf{Algorithm } \text{Tutor Hogging} \\
+&\textbf{Input: } \text{Array} A \text{ of length }n\\
+&\textbf{Output: } \text{} \\
+&\text{Let } map \text{ be a hashmap from names to number of slots signed up for} \\
+&\textbf{For } student\in A \textbf{ do:} \\
+&\quad \textbf{If } student\in A \textbf{ then:} \\
+&\quad \quad x = \text{ value associated with } student \\
+&\quad \quad \textbf{If } x> \frac{n}{2} \textbf{ then:} \\
+&\quad \quad \quad \textbf{return } student \\
+&\quad \quad \textbf{end if}\\
+&\quad \textbf{Else:} \\
+&\quad \quad \text{Put }(student,1) \text{ in } map \\
+&\quad \textbf{end if} \\
+&\textbf{end for} \\
+&\textbf{return } \text{false} \\
+\end{align}$$
+
+Need $n=1$ case
