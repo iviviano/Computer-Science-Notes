@@ -90,3 +90,4 @@ Here is an algorithm that has guaranteed runtime $O(n\log n)$, since [[AVL tree]
 \end{align}$$
 
 (b) This [[Algorithm]] is easily generalizable to the $\frac{n}{3}$ or $\frac{n}{k}$ case. Simply replace the $$\textbf{If } x>\frac{n}{2}$$ with $$\textbf{If }x>\frac{n}{3}\text{ or }\textbf{If }x>\frac{n}{k}$$
+and add the appropriate base cases.
