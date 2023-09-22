@@ -36,7 +36,7 @@ $$\begin{align}
 &\quad \textbf{If } k<3 \textbf{ then:} \\
 &\quad \quad \textbf{return } A[k]\\
 &\quad total\_remainder =total\_remainder +k\%3\\
-&\quad \textbf{return } \text{}
+&\quad \textbf{return } \text{alien\_prod}()
 \end{align}$$
 
 >[!alg] Algorithm 1
