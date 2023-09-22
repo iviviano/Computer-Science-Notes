@@ -36,9 +36,10 @@ $$\begin{align}
 &\quad \textbf{If } k<3 \textbf{ then:} \\
 &\quad \quad \textbf{return } A[k]\\
 &\quad total\_remainder =total\_remainder +k\%3\\
-&\quad prev=fun\left(\left\lfloor \frac{k}{3}\right\rfloor\right) \\
-&\quad A\left[\left\lfloor \frac{k}{3}\right\rfloor \right] =prev\\
-&\quad \textbf{return } \text{alien\_prod}(prev,prev,prev)\\
+&\quad subproblem\_size=\left\lfloor \frac{k}{3}\right\rfloor \\
+&\quad subproblem\_result=fun\left(subproblem\_size\right) \\
+&\quad A\left[subproblem\_size\right] =subproblem\_result\\
+&\quad \textbf{return } \text{alien\_prod}(subproblem\_result,subproblem\_result,subproblem\_result)\\
 \end{align}$$
 
 
