@@ -21,6 +21,23 @@ Let $T(k)$ count the number of multiplications required to compute $n^{k}$. $T(k
 $T(k)=O(\log k)$
 
 (b) 
+>[!alg]
+
+$$\begin{align}
+&\textbf{Algorithm } \text{Exponentiation with Alien Chip} \\
+&\textbf{Input: } \text{Integers }n,k \\
+&\textbf{Output: } n^{k} \\
+&\text{Let } A \text{ be an array of length }n+1 \text{ of }0\text{'s}\\
+&A[0]=1;A[1]=k;A[2]=k\cdot k \\
+&total\_remainder =0 \\
+&partial = fun(n,k) \\
+&\textbf{return } total\\
+&fun: \\
+&\quad \textbf{If } k<3 \textbf{ then:} \\
+&\quad \quad \textbf{return } A[k]\\
+&\quad total\_remainder =total\_remainder +k\%3\\
+&\quad \textbf{return } \text{}
+\end{align}$$
 
 >[!alg] Algorithm 1
 

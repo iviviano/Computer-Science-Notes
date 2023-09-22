@@ -1,0 +1,29 @@
+---
+mathLink: interval scheduling
+---
+
+Time Constraints: 
+- tasks have start/end times
+- one task runs at a time
+- too many tasks to run
+---
+
+Goal: Schedule as many tasks as possible
+
+---
+Formal Problem Statement:
+- Input: $n$ jobs
+	- job $i$ has start $S_{i}$ and finish $F_{i}$
+	- job $i$ runs in interval $[S_{i},F_{i}]$
+- Two jobs *conflict* if there run intervals [[Intersects]]
+- Output: a [[Set]] of jobs $S$ such that
+	- no jobs in $S$ conflict
+	- $S$ is as large as possible
+---
+Naive Algorithm:
+1. Compute all possible output sets $S$
+2. Return the largest $S$
+---
+[[Greedy Paradigm]] solution:
+1. Choose a dimension of input 
+2. Repeatedly add compatible tasks minimizing that input
