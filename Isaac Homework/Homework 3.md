@@ -15,7 +15,7 @@
 &\textbf{return } x\cdot x \\
 \end{align}$$
 
-Let $T(k)$ count the number of multiplications required to compute $n^{k}$. $T(k)$ satisfies the recurrence relation: $$T(k)≤T\left(\left\lfloor \frac{k}{2}\right\rfloor\right)+3≤T\left(\frac{k}{2}\right)+3$$as at most $3$ multiplications occur at any particular level. So, 
+Let $T(k)$ count the number of multiplications required to compute $n^{k}$. $T(k)$ satisfies the recurrence relation: $$T(k)≤T\left(\left\lfloor \frac{k}{2}\right\rfloor\right)+3≤T\left(\frac{k}{2}\right)+2$$as at most $2$ multiplications occur at any particular level. So, 
 ...
 
 $T(k)=O(\log k)$
