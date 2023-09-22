@@ -31,11 +31,16 @@ How to minimize?
 1. Pick earliest finish time
 
 >[!alg]
-
-$$\begin{align}
+>$$\begin{align}
 &\text{Let }S=\emptyset\\
 &\text{Sort jobs by finish time } (O(n\log n))\\
 &\textbf{For } j\in J \textbf{ do:} \\
 &\quad \textbf{If } j \text{ is compatible with } S\textbf{ then:}\text{ }O(n) \\
 &\quad \quad \text{Append }j \text{ to } S\\
 \end{align}$$
+
+---
+Correctness. Must show
+- Feasibility (returns compatible schedule)
+- Optimality (returns largest set)
+

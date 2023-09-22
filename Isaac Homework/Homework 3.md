@@ -28,7 +28,7 @@ $$\begin{align}
 &\textbf{Input: } \text{Integers }n,k \\
 &\textbf{Output: } n^{k} \\
 &\text{Let } A \text{ be an array of length }n+1 \text{ of }0\text{'s}\\
-&A[0]=1;A[1]=k;A[2]=\text{alien\_product}(k, k, 1) \\
+&A[0]=1;A[1]=k;A[2]=\text{alien\_prod}(k, k, 1) \\
 &total\_remainder =0 \\
 &partial = fun(k) \\
 &\textbf{return } total\\
