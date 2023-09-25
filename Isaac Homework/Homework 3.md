@@ -58,7 +58,6 @@ Note: there are at most $\left\lceil\log_{3}k\right\rceil$ calls to $fun$.
 >
 One of the calls to $fun$ does not require a multiplication, so I will add $\log_{3}k$ multiplications from $fun$. Clearly, there are $2$ multiplications outside of $fun$. Therefore, at most $$\log_{3}k+2$$multiplications happen.
 
-(2)
 >[!note] 2
 >(a) 
 >>[!alg] Algorithm 1
