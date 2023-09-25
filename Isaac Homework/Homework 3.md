@@ -22,12 +22,11 @@ $T(k)=O(\log k)$
 
 (b) 
 >[!alg]
-
-$$\begin{align}
+>$$\begin{align}
 &\textbf{Algorithm } \text{Exponentiation with Alien Chip} \\
 &\textbf{Input: } \text{Integers } n,k\\
 &\textbf{Output: } n^{k}\\
-&cur_{remainder}=0\\
+&cur\_{remainder}=0\\
 &\text{Let }A \text{ be an array of length }3\\
 &A[0]=1;A[1]=n;A[2]=\text{alien\_prod}(n,n,1)\\
 &partial=fun(k)\\
@@ -52,32 +51,21 @@ $$\begin{align}
 &\quad \textbf{return } \text{alien\_prod}(res,res,res)
 \end{align}$$
 
-
-$$\begin{align}
-&\textbf{Algorithm } \text{Exponentiation with Alien Chip} \\
-&\textbf{Input: } \text{Integers }n,k \\
-&\textbf{Output: } n^{k} \\
-&\text{Let } A \text{ be an array of length }n+1 \text{ of }0\text{'s}\\
-&A[0]=1;A[1]=k;A[2]=\text{alien\_prod}(k, k, 1) \\
-&total\_remainder =0 \\
-&partial = fun(k) \\
-&\textbf{return } total\\
-&fun(k): \\
-&\quad \textbf{If } k<3 \textbf{ then:} \\
-&\quad \quad \textbf{return } A[k]\\
-&\quad total\_remainder =total\_remainder +k\%3\\
-&\quad subproblem\_size=\left\lfloor \frac{k}{3}\right\rfloor \\
-&\quad subproblem\_result=fun\left(subproblem\_size\right) \\
-&\quad A\left[subproblem\_size\right] =subproblem\_result\\
-&\quad \textbf{return } \text{alien\_prod}(subproblem\_result,subproblem\_result,subproblem\_result)\\
-\end{align}$$
+The base case of $fun$ ensures that 
 
 
+
+Note: there are at most $\left\lceil\log_{3}k\right\rceil$ calls to $fun$ ...
+
+One of the calls to $fun$ does not require a multiplication, so I will add $\log_{3}k$ multiplications from $fun$. Clearly, there are $2$ multiplications outside of $fun$. Therefore, at most $$\log_{3}k+2$$multiplications happen.
+
+
+(1)
 (a) 
 >[!alg] Algorithm 1
 >$$\begin{align}
 &\textbf{Algorithm } \text{Tutor Hogging} \\
-&\textbf{Input: } \text{Array} A \text{ of length }n\\
+&\textbf{Input: } \text{Array } A \text{ of length }n\\
 &\textbf{Output: } \text{} \\
 &\textbf{If } n==1 \textbf{ then:} \\
 &\quad \textbf{return } \text{false} \\
