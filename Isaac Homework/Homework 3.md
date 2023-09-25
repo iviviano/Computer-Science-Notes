@@ -54,7 +54,7 @@ $T(k)=O(\log k)$
 The base case of $fun$ ensures that powers of $n$ less than $3$ are correct. 
 
 
-If after the calls to $fun$, the current remainder is nonzero, the ```switch``` ensures that 
+If after the calls to $fun$, the $fun$ is correct. 
 
 
 
