@@ -54,7 +54,7 @@ $T(k)=O(\log k)$
 Here's the idea of the inductive proof:
 The base case of $fun$ ensures that powers of $n$ less than $3$ are correct. 
 
-$cur\_remainder$ remains correct at all times: If it is currently greater than or equal to $3$, then the current $k$ is not divisible by $3$. So, $$\left\lfloor \frac{k}{3}\right\rfloor < \frac{k}{3} < \left\lceil \frac{k}{3}\right\rceil\implies\left\lfloor \frac{k}{3}\right\rfloor +1=\left\lceil \frac{k}{3}\right\rceil$$so, $$fun\left(\left\lceil \frac{k}{3}\right\rceil\right)=kfun\left(\left\lfloor \frac{k}{3}\right\rfloor\right)$$so 
+$cur\_remainder$ remains correct at all times: If it is currently greater than or equal to $3$, then the current $k$ is not divisible by $3$. So, $$\left\lfloor \frac{k}{3}\right\rfloor < \frac{k}{3} < \left\lceil \frac{k}{3}\right\rceil\implies\left\lfloor \frac{k}{3}\right\rfloor +1=\left\lceil \frac{k}{3}\right\rceil$$so, $$fun\left(\left\lceil \frac{k}{3}\right\rceil\right)=kfun\left(\left\lfloor \frac{k}{3}\right\rfloor\right)$$so taking the product at the end does indeed reduce the current remainder by $3$.
 
 Cleanup after $fun$: If after the calls to $fun$, $partial$ is the correct result, so it is returned. If there is a remainder, then we must use the alien chip to multiply in the missing terms, which is done.
 
