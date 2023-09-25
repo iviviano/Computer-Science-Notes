@@ -25,6 +25,36 @@ $T(k)=O(\log k)$
 
 $$\begin{align}
 &\textbf{Algorithm } \text{Exponentiation with Alien Chip} \\
+&\textbf{Input: } \text{Integers } n,k\\
+&\textbf{Output: } n^{k}\\
+&cur_{remainder}=0\\
+&\text{Let }A \text{ be an array of length }3\\
+&A[0]=1;A[1]=n;A[2]=\text{alien\_prod}(n,n,1)\\
+&partial=fun(k)\\
+&\textbf{Switch } cur\_remainder \textbf{ do:} \\
+&\quad \textbf{Case }0 \textbf{:} \\
+&\quad \quad \textbf{return } partial \\
+&\quad \textbf{Case } 1 \textbf{:}\\
+&\quad \quad \textbf{return } \text{alien\_prod}(partial,n, 1) \\
+&\quad \textbf{Case } 2 \textbf{:}\\
+&\quad \quad \textbf{return } \text{alien\_prod}(partial, n, n) \\
+&\text{} \\
+&fun(k):\\
+&\quad \textbf{If } k<3 \textbf{ then:} \\
+&\quad \quad \textbf{return } A[k]\\
+&\quad cur\_remainder=cur\_remainder+k\%3\\
+&\quad \textbf{If } cur\_remainder≥3 \textbf{ then:} \\
+&\quad \quad cur\_remainder=cur\_remainder-3\\
+&\quad \quad res = fun\left(\left\lceil \frac{k}{3}\right\rceil\right)\\
+&\quad \textbf{Else:} \\
+&\quad \quad res=fun\left(\left\lfloor \frac{k}{3}\right\rfloor\right)\\
+&\quad \textbf{end if} \\
+&\quad \textbf{return } \text{alien\_prod}(res,res,res)
+\end{align}$$
+
+
+$$\begin{align}
+&\textbf{Algorithm } \text{Exponentiation with Alien Chip} \\
 &\textbf{Input: } \text{Integers }n,k \\
 &\textbf{Output: } n^{k} \\
 &\text{Let } A \text{ be an array of length }n+1 \text{ of }0\text{'s}\\
