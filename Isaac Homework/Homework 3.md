@@ -51,7 +51,10 @@ $T(k)=O(\log k)$
 &\quad \textbf{return } \text{alien\_prod}(res,res,res)
 \end{align}$$
 
-The base case of $fun$ ensures that 
+The base case of $fun$ ensures that powers of $n$ less than $3$ are correct. 
+
+
+If after the calls to $fun$, the current remainder is nonzero, the ```switch``` ensures that 
 
 
 
