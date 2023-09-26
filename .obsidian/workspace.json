@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1a26a47884a7a500",
+        "id": "07348ed08c1c1e33",
         "type": "tabs",
         "children": [
           {
-            "id": "f695eafc80f5465f",
+            "id": "d0338a9deca423f1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -137,7 +137,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f695eafc80f5465f",
+  "active": "d0338a9deca423f1",
   "lastOpenFiles": [
     "Isaac Homework/Homework 3.md",
     "Greedy Paradigm.md",
