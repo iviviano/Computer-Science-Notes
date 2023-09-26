@@ -15,7 +15,30 @@
 \end{align}$$
 >
 Let $T(k)$ count the number of multiplications required to compute $n^{k}$. $T(k)$ satisfies the recurrence relation: $$T(k)≤T\left(\left\lfloor \frac{k}{2}\right\rfloor\right)+3≤T\left(\frac{k}{2}\right)+2≤3T\left(\frac{k}{2}\right)$$as at most $2$ multiplications occur at any particular level. So, clearly $T(k)=O(\log k)$
->
+
+$$\begin{align}
+&\textbf{Algorithm } \text{Exponentiation with Alien Chip} \\
+&\textbf{Input: } \text{Integers } n,k\\
+&\textbf{Output: } n^{k}\\
+&\textbf{If } k==0 \textbf{ then:} \\
+&\quad \textbf{return } 1 \\
+&\textbf{If } k==1 \textbf{ then:} \\
+&\quad \textbf{return } n \\
+&\textbf{If } k==2 \textbf{ then:} \\
+&\quad \textbf{return } \text{alien\_prod}(n,n,1)\\
+&x= exp\left(n,\left\lfloor \frac{k}{3}\right\rfloor\right) \\
+&\textbf{If } k\%3==2 \textbf{ then:} \\
+&\quad \textbf{return } \text{alien\_prod}(\text{alien\_prod}(x,x,x),n,n)\\
+&\textbf{If } k\%3==1 \textbf{ then:} \\
+&\quad \textbf{return } \text{alien\_prod}(\text{alien\_prod}(x,x,x),n,1)\\
+&\textbf{return } \text{alien\_prod}(x,x,x)
+\end{align}$$
+Here's the idea of an inductive proof with induction on $k$.
+
+The base cases are $k=0,1,2$, which are clearly handled correctly. For the inductive step, we take the strong induction hypothesis for some $k>2$. Then $\left\lfloor \frac{k}{3}\right\rfloor<k$, so 
+
+We can write a very similar recurrence to part (a): $$T(k)≤T\left(\frac{k}{3}\right)+2\text{ for }k≥3$$as $1-2$ alien chip calls occur at every level besides the base case. I will give the number of calls for the worst input case: $k=3^{l}-1$ for some $l$. There are $\lfloor\log_{3}(k)\rfloor$ recursive layers to the function. For our worst case, $2$ alien chip calls occur at every layer besides the base case (where one occurs). [[therefore]] $T(k)≤2\lfloor\log_{3}k\rfloor-1$ with equality holding only if $k=3^{l}-1$.
+
 >(b) 
 >>[!alg]
 >>$$\begin{align}
