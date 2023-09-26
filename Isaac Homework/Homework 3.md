@@ -33,9 +33,7 @@ $$\begin{align}
 &\quad \textbf{return } \text{alien\_prod}(\text{alien\_prod}(x,x,x),n,1)\\
 &\textbf{return } \text{alien\_prod}(x,x,x)
 \end{align}$$
-Here's the idea of an inductive proof with induction on $k$.
-
-The base cases are $k=0,1,2$, which are clearly handled correctly. For the inductive step, we take the strong induction hypothesis for some $k>2$. Then $\left\lfloor \frac{k}{3}\right\rfloor<k$, so 
+Here's the idea of an inductive proof with induction on $k$. The base cases are $k=0,1,2$, which are clearly handled correctly. For the inductive step, we take the strong induction hypothesis for some $k>2$. Then $\left\lfloor \frac{k}{3}\right\rfloor<k$, so $x$ takes the correct value by the inductive hypothesis. Then the conditionals take care of the remainder. So, [[Principle of Mathematical Induction]] implies that the algorithm works for all $k$.
 
 We can write a very similar recurrence to part (a): $$T(k)≤T\left(\frac{k}{3}\right)+2\text{ for }k≥3$$as $1-2$ alien chip calls occur at every level besides the base case. I will give the number of calls for the worst input case: $k=3^{l}-1$ for some $l$. There are $\lfloor\log_{3}(k)\rfloor$ recursive layers to the function. For our worst case, $2$ alien chip calls occur at every layer besides the base case (where one occurs). [[therefore]] $T(k)≤2\lfloor\log_{3}k\rfloor-1$ with equality holding only if $k=3^{l}-1$.
 
