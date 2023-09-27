@@ -110,8 +110,7 @@ Unfortunately, while this algorithm has expected runtime $O(n)$, [[Hashmap]] ope
 Here is an algorithm that has guaranteed runtime $O(n\log n)$, since [[AVL tree]] operations are $O(\log n)$.
 >
 >>[!alg] Algorithm 2
-
-$$\begin{align}
+>>$$\begin{align}
 &\textbf{Algorithm } \text{Tutor Hogging} \\
 &\textbf{Input: } \text{Array} A \text{ of length }n\\
 &\textbf{Output: } \text{} \\
