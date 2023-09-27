@@ -7,3 +7,7 @@ Time constraints:
 - and deadlines $d_{i}$
 A solution is a choice of start times $s_{i}$ for each task such that no tasks overlap
 
+Finish times are given by $f_{i}=s_{i}+t_{i}$
+
+Lateness penalty: $l_{i}=f_{i}-d_{i}$
+
