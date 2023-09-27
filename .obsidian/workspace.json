@@ -4,50 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "07348ed08c1c1e33",
+        "id": "e2fb42cf307ce674",
         "type": "tabs",
         "children": [
           {
-            "id": "d0338a9deca423f1",
+            "id": "9f6797cde1eeddaa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 3.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cbc187757ffb8e05",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interval Scheduling Problem.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f6a1c713a8831073",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Flexible Scheduling Problem.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flexible Scheduling Problem.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -130,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flexible Scheduling Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -152,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Flexible Scheduling Problem.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -173,10 +137,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6a1c713a8831073",
+  "active": "9f6797cde1eeddaa",
   "lastOpenFiles": [
-    "Interval Scheduling Problem.md",
     "Flexible Scheduling Problem.md",
+    "Interval Scheduling Problem.md",
     "Isaac Homework/Homework 3.md",
     "Greedy Paradigm.md",
     "Isaac Homework/Homework 2.md",
