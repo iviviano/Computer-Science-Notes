@@ -46,4 +46,4 @@ Correctness. Must show
 
 >[!proof] Proof of Optimality
 
-Let $ALG$ be our solution and let $ALT$ be any other solution. We will show $$|ALG|≥|ALT|$$Let $ALG=\{a_{1},\ldots,a_{n}\}$ be [[Sort]]ed by finish time. Let $ALT=\{b_{1},\ldots,b_{k}\}$. 
+Let $ALG$ be our solution and let $ALT$ be any other solution. We will show $$|ALG|≥|ALT|$$Let $ALG=\{a_{1},\ldots,a_{n}\}$ be [[Sort]]ed by finish time. Let $ALT=\{b_{1},\ldots,b_{k}\}$. Claim: for all $k:f_{a_{i}}<f_{b_{i}}$. 
