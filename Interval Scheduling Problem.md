@@ -54,4 +54,4 @@ Inductive Step: assume that for some $i≥1$, $f_{a_{i}}≤f_{b_{i}}$. Suppose t
 
 So, [[Principle of Mathematical Induction]] [[implies]] claim 1 is true.
 
-Suppose that $|ALG|<|ALT|$ ie $k>n$.
+Suppose that $|ALG|<|ALT|$ ie $k>n$. Look at $a_{n},b_{n}$. Note: $f_{a_{n}}≤f_{b_{n}}$. So, $b_{n+1}\in ALT$ is compatible with $ALG$ solution. This contradicts the algorithm ending when no jobs are compatible. 
