@@ -50,4 +50,6 @@ Let $ALG$ be our solution and let $ALT$ be any other solution. We will show $$|A
 
 Base case: clearly $f_{a_{1}}≤f_{b_{1}}$ as this was our criteria for selecting the first job.
 
-Inductive Step: assume that for some $i≥1$, $f_{a_{i}}≤f_{b_{i}}$. 
+Inductive Step: assume that for some $i≥1$, $f_{a_{i}}≤f_{b_{i}}$. Suppose that $f_{a_{i+1}}>f_{b_{i+1}}$. Then, $b_{i+1}$ starts after $a_{i}$ so it is compatible with $a_{i}$. As it ends earlier than $a_{i+1}$, we would have chosen $b_{i+1}$ over $a_{i+1}$, so $f_{a_{i+1}}≤f_{b_{i+1}}$.
+
+So, [[Principle of Mathematical Induction]] [[implies]] claim 1 is true.
