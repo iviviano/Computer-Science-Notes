@@ -32,9 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f6a1c713a8831073",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Flexible Scheduling Problem.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -100,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interval Scheduling Problem.md",
+                "file": "Flexible Scheduling Problem.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interval Scheduling Problem.md",
+                "file": "Flexible Scheduling Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -140,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interval Scheduling Problem.md"
+                "file": "Flexible Scheduling Problem.md"
               }
             }
           }
@@ -160,11 +173,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cbc187757ffb8e05",
+  "active": "f6a1c713a8831073",
   "lastOpenFiles": [
+    "Interval Scheduling Problem.md",
+    "Flexible Scheduling Problem.md",
     "Isaac Homework/Homework 3.md",
     "Greedy Paradigm.md",
-    "Interval Scheduling Problem.md",
     "Isaac Homework/Homework 2.md",
     "Pictures/IMG-1260.jpg",
     "Bitwise Multiplication.md",
@@ -191,7 +205,6 @@
     "Pictures/81C7E693-4E99-41EA-8D75-472288FDC15E_1_105_c.jpeg",
     "Pictures/FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg",
     "Class Notes/Fibonacci Sequence.md",
-    "Test.md",
     "Linked List 2",
     "Linked List",
     "Isaac Homework/Algorithms_viviano_Homework_0 9.pdf",
