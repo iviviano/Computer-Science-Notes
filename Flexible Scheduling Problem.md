@@ -9,5 +9,6 @@ A solution is a choice of start times $s_{i}$ for each task such that no tasks o
 
 Finish times are given by $f_{i}=s_{i}+t_{i}$
 
-Lateness penalty: $l_{i}=f_{i}-d_{i}$
+Lateness penalty: $l_{i}=\max\{0,f_{i}-d_{i}\}$
+
 
