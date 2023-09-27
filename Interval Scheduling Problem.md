@@ -46,4 +46,8 @@ Correctness. Must show
 
 >[!proof] Proof of Optimality
 
-Let $ALG$ be our solution and let $ALT$ be any other solution. We will show $$|ALG|≥|ALT|$$Let $ALG=\{a_{1},\ldots,a_{n}\}$ be [[Sort]]ed by finish time. Let $ALT=\{b_{1},\ldots,b_{k}\}$. Claim: for all $k:f_{a_{i}}<f_{b_{i}}$. 
+Let $ALG$ be our solution and let $ALT$ be any other solution. We will show $$|ALG|≥|ALT|$$Let $ALG=\{a_{1},\ldots,a_{n}\}$ be [[Sort]]ed by finish time. Let $ALT=\{b_{1},\ldots,b_{k}\}$. Claim: for all $k:f_{a_{i}}<f_{b_{i}}$. We will prove this claim by induction on $i$.
+
+Base case: clearly $f_{a_{1}}≤f_{b_{1}}$ as this was our criteria for selecting the first job.
+
+Inductive Step: assume that for some $i≥1$, $f_{a_{i}}≤f_{b_{i}}$. 
