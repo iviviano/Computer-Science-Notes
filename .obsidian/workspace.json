@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
+                "file": "Isaac Homework/Homework 3.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
+                "file": "Isaac Homework/Homework 3.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 2.md",
+                "file": "Isaac Homework/Homework 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Isaac Homework/Homework 2.md"
+                "file": "Isaac Homework/Homework 3.md"
               }
             }
           }
@@ -148,11 +148,11 @@
   },
   "active": "9f6797cde1eeddaa",
   "lastOpenFiles": [
+    "Isaac Homework/Homework 2.md",
     "Flexible Scheduling Problem.md",
     "Interval Scheduling Problem.md",
     "Isaac Homework/Homework 3.md",
     "Greedy Paradigm.md",
-    "Isaac Homework/Homework 2.md",
     "Pictures/IMG-1260.jpg",
     "Bitwise Multiplication.md",
     "Isaac Homework/HW 2.md",

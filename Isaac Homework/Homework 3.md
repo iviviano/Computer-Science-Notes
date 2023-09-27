@@ -110,7 +110,8 @@ Unfortunately, while this algorithm has expected runtime $O(n)$, [[Hashmap]] ope
 Here is an algorithm that has guaranteed runtime $O(n\log n)$, since [[AVL tree]] operations are $O(\log n)$.
 >
 >>[!alg] Algorithm 2
->>$$\begin{align}
+
+$$\begin{align}
 &\textbf{Algorithm } \text{Tutor Hogging} \\
 &\textbf{Input: } \text{Array} A \text{ of length }n\\
 &\textbf{Output: } \text{} \\
@@ -119,10 +120,11 @@ Here is an algorithm that has guaranteed runtime $O(n\log n)$, since [[AVL tree]
 &\text{Let } map \text{ be an AVL treemap from names to number of slots signed up for} \\
 &\textbf{For } student\in A \textbf{ do:} \\
 &\quad \textbf{If } student\in A \textbf{ then:} \\
-&\quad \quad x = \text{ value associated with } student \\
+&\quad \quad x = \text{ value associated with } student +1\\
 &\quad \quad \textbf{If } x> \frac{n}{2} \textbf{ then:} \\
 &\quad \quad \quad \textbf{return } student \\
 &\quad \quad \textbf{end if}\\
+&\quad \quad \text{Put }(student,x) \text{ in } map \\
 &\quad \textbf{Else:} \\
 &\quad \quad \text{Put }(student,1) \text{ in } map \\
 &\quad \textbf{end if} \\
