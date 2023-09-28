@@ -20,9 +20,8 @@ Note: this problem uses $1$-indexing.
 
 Suppose that the algorithm returns true. I will show that $g$ gives an increasing function from $[n]$ to $[m]$.
 
-Claim 1: $g$ is an increasing array. 
 
-Base case: 
+(c) Claim: $g[j]≤f(j)$ for $j\in[m]$. 
 
 
 >[!note] 3
