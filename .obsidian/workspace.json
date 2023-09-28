@@ -11,8 +11,13 @@
             "id": "fa945e03570df112",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Isaac Homework/Homework 4.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Isaac Homework/Homework 4.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Isaac Homework/Homework 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Isaac Homework/Homework 4.md"
+              }
             }
           }
         ]
@@ -139,6 +148,7 @@
   },
   "active": "fa945e03570df112",
   "lastOpenFiles": [
+    "Isaac Homework/Homework 4.md",
     "Isaac Homework/Homework 3.md",
     "Isaac Homework/Homework 2.md",
     "Flexible Scheduling Problem.md",
@@ -168,7 +178,6 @@
     "Class Notes/Fibonacci Sequence 9.md",
     "Pictures/81C7E693-4E99-41EA-8D75-472288FDC15E_1_105_c.jpeg",
     "Pictures/FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg",
-    "Class Notes/Fibonacci Sequence.md",
     "Linked List 2",
     "Linked List",
     "Isaac Homework/Algorithms_viviano_Homework_0 9.pdf",
