@@ -11,7 +11,16 @@
 
 >[!note] 2
 
+Note: this problem uses $1$-indexing.
 
+(a) $g[1]=2,g[2]=7,g[3]=9,g[3]=10$
+
+(b)
+>[!proof]
+
+Claim 1: $g$ is an increasing array. 
+
+Base case: 
 
 
 >[!note] 3
