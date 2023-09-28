@@ -21,15 +21,17 @@ Note: this problem uses $1$-indexing.
 Suppose that the algorithm returns true. I will show that $g$ gives an increasing function from $[n]$ to $[m]$.
 
 
-(c) Claim: $g[j]≤f(j)$ for $j\in[m]$. 
+(c) Claim: If $f:[m]\rightarrow[n]$ is an increasing map with $t_{j}=w_f(j)$ for all $j\in[m]$, then $g[j]≤f(j)$ for $j\in[m]$. 
 
 Base case: $j=1$.
 $g[1]$ is assigned to $i$ if $w_{i}=t_{1}$. By the definition of $f$, this is the value of $i$ that equals $f(1)$. So, $g[1]≤f(1)$.
 
 Inductive Step: Suppose that for some $j\in[m-1]$, $g[j]≤f(j)$.
-As $T$ is a valid secrete message, $f(j)<f(j+1)$. 
+Suppose that $g[j+1]>f(j+1)$. Then, if $g[j]<i≤f(j+1)$, $t_{j+1}≠w_{i}$. In particular, if $i=f(j+1)$, $t_{j+1}≠w_{i}$. But this contradicts our that $t_{j+1}=w_{f(j+1)}$. So, $g[j+1]≤f(j+1)$.
 
+[[therefore]] by [[Principle of Mathematical Induction]], $g[j]≤f(j)$ for all $j\in[m]$.
 
+(d) Suppose that $T$ is a valid secret message. Pick an increasing function $f:[m]\rightarrow[n]$ such that $t_{j}=w_{f(j)}$ for all $j\in[m]$. Then, for all $j\in[m]$, $g[j]≤f(j)$ by (c). In particular, $g[m]≤f(m)≤n<\infty$, so the algorithm will return true.
 
 
 >[!note] 3
