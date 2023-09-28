@@ -18,6 +18,8 @@ Note: this problem uses $1$-indexing.
 (b)
 >[!proof]
 
+Suppose that the algorithm returns true. I will show that $g$ gives an increasing function from $[n]$ to $[m]$.
+
 Claim 1: $g$ is an increasing array. 
 
 Base case: 
