@@ -23,6 +23,14 @@ Suppose that the algorithm returns true. I will show that $g$ gives an increasin
 
 (c) Claim: $g[j]≤f(j)$ for $j\in[m]$. 
 
+Base case: $j=1$.
+$g[1]$ is assigned to $i$ if $w_{i}=t_{1}$. By the definition of $f$, this is the value of $i$ that equals $f(1)$. So, $g[1]≤f(1)$.
+
+Inductive Step: Suppose that for some $j\in[m-1]$, $g[j]≤f(j)$.
+As $T$ is a valid secrete message, $f(j)<f(j+1)$. 
+
+
+
 
 >[!note] 3
 
