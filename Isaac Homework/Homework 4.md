@@ -17,9 +17,13 @@ Note: this problem uses $1$-indexing.
 
 (b)
 >[!proof]
-
-Suppose that the algorithm returns true. I will show that $g$ gives an increasing function from $[n]$ to $[m]$.
-
+Suppose that the algorithm returns true. I will show that $g$ gives an increasing function from $[n]$ to $[m]$. 
+>
+Clearly, $g[j]<g[j+1]$ for all $j\in[m-1]$. No index of $g$ can be $\infty$, as the algorithm only returns true if the last index of $g$ is finite and indices of $g$ are reassigned sequentially. $i$ is monotonic as it is incremented each iteration of the loop. As each index of $g$ is assigned to a value of $i$, and at most one index of $g$ is assigned per iteration of the loop, the indices of $g$ must be monotonic increasing.
+>
+Also, $t_{j}=w_{g[j]}$ as $g[j]$ is assigned to $i$ only if $t_{j}=w_{i}$, and each index of $g$ was assigned to a value of $i$ since the algorithm returned true.
+>
+[[therefore]] $f:[m]\rightarrow [n]$ given by the [[Rule of Assignment]] $f(j)=g[j]$ is a monotonic increasing function with $t_{j}=w_{g[j]}$. So, $T$ is a valid secret message.
 
 (c) Claim: If $f:[m]\rightarrow[n]$ is an increasing map with $t_{j}=w_f(j)$ for all $j\in[m]$, then $g[j]≤f(j)$ for $j\in[m]$. 
 
