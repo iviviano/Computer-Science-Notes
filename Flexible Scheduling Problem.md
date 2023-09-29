@@ -17,4 +17,6 @@ Goal: minimize largest late penalty: $L=\max\{l_{i}\}$
 1. Longest job first
 2. Shortest job first, counterexample: $t=(1,2),d=(3,2)$
 3. Smallest slack time first (slack time = $d_{i}-t_{i}$), counterexample: $t=(1,3),d=(3,4)$
-4. Earliest deadline
+4. Earliest deadline 
+
+>[!proof]
