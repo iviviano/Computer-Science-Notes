@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2ee063efdb938297",
+        "id": "496ed84789713fb7",
         "type": "tabs",
         "children": [
           {
-            "id": "26169277eed4d5a3",
+            "id": "5a7bee9d3f1e4c10",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 4.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 4.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 4.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,9 +137,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "26169277eed4d5a3",
+  "active": "5a7bee9d3f1e4c10",
   "lastOpenFiles": [
     "Isaac Homework/Homework 4.md",
+    "IMG-1266.jpg",
+    "IMG-1265.jpg",
+    "IMG-1264.jpg",
+    "IMG-1263.jpg",
     "Isaac Homework/Homework 3.md",
     "Isaac Homework/Homework 2.md",
     "Flexible Scheduling Problem.md",
@@ -175,7 +170,6 @@
     "Asymptotic Tight Bound for Polynomials Proposition.md",
     "Asymptotic Upper Bounds.md",
     "Asymptotic Bound of Compositions of Functions Proposition.md",
-    "Class Notes/Fibonacci Sequence 9.md",
     "Pictures/81C7E693-4E99-41EA-8D75-472288FDC15E_1_105_c.jpeg",
     "Pictures/FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg",
     "Linked List 2",
@@ -190,10 +184,6 @@
     "Set-Theory/Preimage.md.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak.bak 3.bak",
     "Pictures/IMG_2504 3.jpg",
     "Pictures/IMG_2504 4.jpg",
-    "Pictures/B6609288-F0CA-4D3B-8702-E489DCF84143_1_105_c 4.jpeg",
-    "Pictures/B6609288-F0CA-4D3B-8702-E489DCF84143_1_105_c 3.jpeg",
-    "Pictures/IMG_2504 2.jpg",
-    "Pictures/B6609288-F0CA-4D3B-8702-E489DCF84143_1_105_c 2.jpeg",
     "Untitled.canvas"
   ]
 }
