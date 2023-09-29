@@ -12,3 +12,5 @@ Finish times are given by $f_{i}=s_{i}+t_{i}$
 Lateness penalty: $l_{i}=\max\{0,f_{i}-d_{i}\}$
 
 Goal: minimize largest late penalty: $\max\{l_{i}\}$
+- Note: there are other possible cost functions that might lead to different algorithms
+
