@@ -19,4 +19,8 @@ Goal: minimize largest late penalty: $L=\max\{l_{i}\}$
 3. Smallest slack time first (slack time = $d_{i}-t_{i}$), counterexample: $t=(1,3),d=(3,4)$
 4. Earliest deadline 
 
->[!proof]
+>[!proof] Proof via [[Exchange Argument]]
+
+Simple Case: $2$ jobs:
+Assume $d_{1}≤d_{2}$. Claim: Solution $A$ (ours) has lower cost than solution $B$
+Let $l_{i}^{A},l_{i}^{B}$ be the lateness in $A,B$ respectively. 

@@ -7,5 +7,3 @@ mathLink: Exchange Argument
 >2. Exchange the order of the jobs without increasing the solution's cost
 >3. Exchange until the result matches ours
 
-
-

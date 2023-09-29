@@ -47,7 +47,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exchange Argument.md",
+                "file": "Flexible Scheduling Problem.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exchange Argument.md",
+                "file": "Flexible Scheduling Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exchange Argument.md"
+                "file": "Flexible Scheduling Problem.md"
               }
             }
           }
@@ -173,10 +173,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f8ad842c6ad0fde0",
+  "active": "150dc64e02a84ef4",
   "lastOpenFiles": [
-    "Flexible Scheduling Problem.md",
     "Exchange Argument.md",
+    "Flexible Scheduling Problem.md",
     "Isaac Homework/Homework 4.md",
     "IMG-1266.jpg",
     "IMG-1265.jpg",
