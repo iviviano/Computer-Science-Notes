@@ -16,5 +16,5 @@ Goal: minimize largest late penalty: $L=\max\{l_{i}\}$
 [[Greedy Paradigm]] [[Algorithm]] ideas:
 1. Longest job first
 2. Shortest job first, counterexample: $t=(1,2),d=(3,2)$
-3. Smallest slack time first (slack time = $d_{i}-t_{i}$), counterexample: $t=(1,2),d=(1,2)$
+3. Smallest slack time first (slack time = $d_{i}-t_{i}$), counterexample: $t=(1,4),d=(4,5)$
 4. Earliest deadline
