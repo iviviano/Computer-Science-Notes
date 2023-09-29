@@ -13,3 +13,8 @@ Lateness penalty: $l_{i}=\max\{0,f_{i}-d_{i}\}$
 Goal: minimize largest late penalty: $L=\max\{l_{i}\}$
 - Note: there are other possible cost functions that might lead to different algorithms
 
+[[Greedy Paradigm]] [[Algorithm]] ideas:
+1. Longest job first
+2. Shortest job first, counterexample: $t=(1,2),d=(3,2)$
+3. Smallest slack time first (slack time = $d_{i}-t_{i}$), counterexample: $t=()$
+4. Earliest deadline
