@@ -12,34 +12,34 @@
 ![[IMG-1266.jpg]]
 
 >[!note] 2
-
 Note: this problem uses $1$-indexing.
-
+>
 (a) $g[1]=2,g[2]=7,g[3]=9,g[3]=10$
-
+>
 (b)
->[!proof]
+>>[!proof]
 Suppose that the algorithm returns true. I will show that $g$ gives an increasing function from $[n]$ to $[m]$. 
->
+>>
 Clearly, $g[j]<g[j+1]$ for all $j\in[m-1]$. No index of $g$ can be $\infty$, as the algorithm only returns true if the last index of $g$ is finite and indices of $g$ are reassigned sequentially. $i$ is monotonic as it is incremented each iteration of the loop. As each index of $g$ is assigned to a value of $i$, and at most one index of $g$ is assigned per iteration of the loop, the indices of $g$ must be monotonic increasing.
->
+>>
 Also, $t_{j}=w_{g[j]}$ as $g[j]$ is assigned to $i$ only if $t_{j}=w_{i}$, and each index of $g$ was assigned to a value of $i$ since the algorithm returned true.
->
+>>
 [[therefore]] $f:[m]\rightarrow [n]$ given by the [[Rule of Assignment]] $f(j)=g[j]$ is a monotonic increasing function with $t_{j}=w_{g[j]}$. So, $T$ is a valid secret message.
-
-(c) Claim: If $f:[m]\rightarrow[n]$ is an increasing map with $t_{j}=w_f(j)$ for all $j\in[m]$, then $g[j]≤f(j)$ for $j\in[m]$. 
-
+>
+(c) 
+>>[!proof]
+>Claim: If $f:[m]\rightarrow[n]$ is an increasing map with $t_{j}=w_f(j)$ for all $j\in[m]$, then $g[j]≤f(j)$ for $j\in[m]$. 
+>>
 Base case: $j=1$.
 $g[1]$ is assigned to $i$ if $w_{i}=t_{1}$. By the definition of $f$, this is the value of $i$ that equals $f(1)$. So, $g[1]≤f(1)$.
-
+>>
 Inductive Step: Suppose that for some $j\in[m-1]$, $g[j]≤f(j)$.
 Suppose that $g[j+1]>f(j+1)$. Then, if $g[j]<i≤f(j+1)$, $t_{j+1}≠w_{i}$. In particular, if $i=f(j+1)$, $t_{j+1}≠w_{i}$. But this contradicts our that $t_{j+1}=w_{f(j+1)}$. So, $g[j+1]≤f(j+1)$.
-
+>>
 [[therefore]] by [[Principle of Mathematical Induction]], $g[j]≤f(j)$ for all $j\in[m]$.
-
+>
 (d) Suppose that $T$ is a valid secret message. Pick an increasing function $f:[m]\rightarrow[n]$ such that $t_{j}=w_{f(j)}$ for all $j\in[m]$. Then, for all $j\in[m]$, $g[j]≤f(j)$ by (c). In particular, $g[m]≤f(m)≤n<\infty$, so the algorithm will return true.
 
 
 >[!note] 3
-
 
