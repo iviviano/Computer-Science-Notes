@@ -43,3 +43,12 @@ Suppose that $g[j+1]>f(j+1)$. Then, if $g[j]<i≤f(j+1)$, $t_{j+1}≠w_{i}$. In 
 
 >[!note] 3
 
+Input: durations $t$, values $v$
+Output: $T$
+Goal: minimize $\sum v_{i}T_{i}$
+
+Note: $$\sum_{i=1}^{n}v_{i}T_{i}=\sum_{i=1}^{n}v_{i}\sum_{j=1}^{i}t_{j}$$
+[[Greedy Paradigm]] [[Algorithm]] ideas:
+1. Highest value
+2. Shortest
+3. 
