@@ -50,5 +50,6 @@ Goal: minimize $\sum v_{i}T_{i}$
 Note: $$\sum_{i=1}^{n}v_{i}T_{i}=\sum_{i=1}^{n}v_{i}\sum_{j=1}^{i}t_{j}$$
 [[Greedy Paradigm]] [[Algorithm]] ideas:
 1. Highest value
-2. Shortest
-3. 
+
+[[Greedy Paradigm]] [[Algorithm]] didn't work:
+1. Shortest: counterexample $t=1,2,v=1,10$ gives $31$ instead of $$
