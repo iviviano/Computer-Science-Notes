@@ -55,5 +55,5 @@ Note: $$\sum_{i=1}^{n}v_{i}T_{i}=\sum_{i=1}^{n}v_{i}\sum_{j=1}^{i}t_{j}$$
 
 [[Greedy Paradigm]] [[Algorithm]] didn't work:
 1. Shortest: counterexample $t=1,2,v=1,10$ gives $31$ instead of $23$
-2. Highest value: counterexample $t=3,1,v=2,1$ gives $10$ instead of $8$
+2. Highest value: counterexample $t=3,1,v=2,1$ gives $10$ instead of $9$
 3. 
