@@ -43,4 +43,8 @@ Suppose that $g[j+1]>f(j+1)$. Then, if $g[j]<i≤f(j+1)$, $t_{j+1}≠w_{i}$. In 
 
 >[!note] 3
 
-Sort the jobs by smallest $\frac{t_{i}}{v_{i}}$. 
+Sort the $n$ requests by smallest $\frac{t_{i}}{v_{i}}$. This is the ordering of requests to return.
+
+Clearly, this algorithm has [[Worst Case Run Time]] $O(n\log n)$, as this is the cost of sorting the requests.
+
+
