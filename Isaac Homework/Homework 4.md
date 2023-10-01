@@ -49,4 +49,4 @@ Clearly, this algorithm has [[Worst Case Run Time]] $O(n\log n)$, as this is the
 
 Simple Case of Exchange Argument:
 
-Let $t=(t_{1},t_{2}),v=(v_{1},v_{2})$ and suppose that $$
+Let $t=(t_{1},t_{2}),v=(v_{1},v_{2})$ and suppose that $\frac{t_{1}}{v_{1}}< \frac{t_{2}}{v_{2}}$. My algorithm will return $1,2$ as the ordering of requests. 
