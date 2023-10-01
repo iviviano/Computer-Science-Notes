@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "8b184b7c5fdfbaaa",
+        "id": "b582d15b3bc9460f",
         "type": "tabs",
         "children": [
           {
-            "id": "d680c31696f75b0e",
+            "id": "d238c8488582549b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Isaac Homework/Homework 4.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Isaac Homework/Homework 4.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Isaac Homework/Homework 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Isaac Homework/Homework 4.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,11 +137,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d680c31696f75b0e",
+  "active": "d238c8488582549b",
   "lastOpenFiles": [
+    "Isaac Homework/Homework 4.md",
     "Exchange Argument.md",
     "Flexible Scheduling Problem.md",
-    "Isaac Homework/Homework 4.md",
     "IMG-1266.jpg",
     "IMG-1265.jpg",
     "IMG-1264.jpg",
