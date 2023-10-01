@@ -47,4 +47,6 @@ Sort the $n$ requests by smallest $\frac{t_{i}}{v_{i}}$. This is the ordering of
 
 Clearly, this algorithm has [[Worst Case Run Time]] $O(n\log n)$, as this is the cost of sorting the requests.
 
+Simple Case of Exchange Argument:
 
+Let $t=(t_{1},t_{2}),v=(v_{1},v_{2})$ and suppose that $$
