@@ -30,7 +30,8 @@ As $d_{1}≤d_{2},l_{2}^{A}≤l_{1}^{B}$.
 $$\therefore\max\{l_{1}^{A},l_{2}^{A}\}≤l_{1}^{B}≤\max\{l_{1}^{B},l_{2}^{B}\}$$
 >
 Suppose that we have $n$ jobs. Let $i<n$ and suppose that $d_{i}>d_{i+1}$. Then, swapping jobs $i$ and $i+1$ does not increase the late penalty, as shown by the simple case and that no other jobs are affected by the swap. 
+>
+Now, take any other optimal solution that is not sorted by earliest deadline. There is at least one adjacent inversion. Fix all adjacent inversions by swapping. Since each swap won't make the solution worse, our solution is not worse than any other optimal solution. So, it is also optimal.
 
-Now, take any other optimal solution that is not sorted by earliest deadline. There is at least one adjacent inversion.
 >[!note]
 >This works for the swap of any two adjacent jobs.
