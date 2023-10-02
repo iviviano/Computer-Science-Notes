@@ -47,18 +47,19 @@ Sort the $n$ requests by smallest $\frac{t_{i}}{v_{i}}$. This is the ordering of
 
 Clearly, this algorithm has [[Worst Case Run Time]] $O(n\log n)$, as this is the cost of sorting the requests.
 
-Simple Case of Exchange Argument:
+[[Exchange Argument]]:
 
-Let $t=(t_{1},t_{2}),v=(v_{1},v_{2})$ and suppose that $\frac{t_{1}}{v_{1}}< \frac{t_{2}}{v_{2}}$. My algorithm will return $1,2$ as the ordering of requests. Let $L_{1},L_{2}$ be the costs of my solution and the alternative solution, respectively. Comparing to the alternate solution: $$\begin{align}L_{1}&=\sum T_{i}v_{i}=v_{1}t_{1}+v_{2}t_{1}+v_{2}t_{2}\\
-L_{2}&=\sum T_{i}v_{i}=v_{2}t_{2}+v_{1}t_{2}+v_{1}t_{2}\end{align}$$
-$\frac{t_{1}}{v_{1}}< \frac{t_{2}}{v_{2}}\implies v_{2}t_{1}<v_{1}t_{2}$. So, $$L_{1}=v_{1}t_{1}+v_{2}t_{1}+v_{2}t_{2}<v_{1}t_{1}+v_{1}t_{2}+v_{2}t_{2}=L_{2}$$This shows that my algorithm works for ...
-
-Let there be an order of $n$ requests and let $i<n$ be given with $\frac{t_{i}}{v_{i}} > \frac{t_{i+1}}{v_{i+1}}$. Swapping requests $i$ and $i+1$ only affects the terms $i,i+1$ of the sum, as both $T_{j}$ and $v_{j}$ are unchanged for $j<i$ or $j>i+1$. I will show that $$(T_{i-1} +t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}<(strict?)(T_{i}-1+t_{i})v_{i}+(T_{i-1}+t_{i}+t_{i+1})v_{i+1}$$
+Let there be an order of $n$ requests and let $i<n$ be given with $\frac{t_{i}}{v_{i}} > \frac{t_{i+1}}{v_{i+1}}$. Swapping requests $i$ and $i+1$ only affects the terms $i,i+1$ of the sum, as both $T_{j}$ and $v_{j}$ are unchanged for $j<i$ or $j>i+1$. I will show that $$\begin{align}(T_{i-1} +t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}<\\(strict?)(T_{i-1}+t_{i})v_{i}+&(T_{i-1}+t_{i}+t_{i+1})v_{i+1}\end{align}$$
 that is the sum of the $i$ and $i+1$ terms after the swap is not worse than the sum of the $i$ and $i+1$ terms before. As these are the only terms of the sum changed by the swap, this will show that the swap does not make the solution less optimal.
 
 $$\begin{align}
 (T_{i-1}+t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}& \\
 -\text{    }(T_{i-1}+t_{i})v_{i}+(T_{i-1}+t_{i}+t_{i+1})v_{i+1}&\\
 \hline \\
-T_{i-1}v_{i+1}+t_{i+1}v_{i+1}+T_{i-1}v_{i}+t_{i+1}v_{i}+t_{i}v_{i}-T_{i-1}v_{i}+t_{i}v_{i}-T_{i-1}v_{i+1} &
+T_{i-1}v_{i+1}+t_{i+1}v_{i+1}+T_{i-1}v_{i}+t_{i+1}v_{i}+t_{i}v_{i}-T_{i-1}v_{i}-t_{i}v_{i}-T_{i-1}v_{i} -t_{i}v_{i+1}-t_{i+1}v_{i+1}& \\
+=t_{i+1}v_{i}-t_{i}v_{i+1}
 \end{align}$$
+Since $t_{i}v_{i+1}>t_{i+1}v_{i}$, $t_{i+1}v_{i}-t_{i}v_{i+1}<0$, so $$\begin{align}(T_{i-1} +t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}<\\(strict?)(T_{i-1}+t_{i})v_{i}+&(T_{i-1}+t_{i}+t_{i+1})v_{i+1}\end{align}$$holds.
+
+
+Now, let any alternative solution, $S$, be given. Sort $S$ based on smallest $\frac{t_{i}}{v_{i}}$ with [[Bubble Sort]]. 
