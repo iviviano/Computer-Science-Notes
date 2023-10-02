@@ -32,8 +32,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "40361728798ebbb9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inversion.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -99,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flexible Scheduling Problem.md",
+                "file": "Isaac Homework/Homework 4.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -116,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flexible Scheduling Problem.md",
+                "file": "Isaac Homework/Homework 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flexible Scheduling Problem.md"
+                "file": "Isaac Homework/Homework 4.md"
               }
             }
           }
@@ -159,11 +173,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "54cfa3af905b86a9",
+  "active": "44283e09a8bbc1e5",
   "lastOpenFiles": [
-    "Exchange Argument.md",
-    "Flexible Scheduling Problem.md",
+    "Inversion.md",
     "Isaac Homework/Homework 4.md",
+    "Flexible Scheduling Problem.md",
+    "Exchange Argument.md",
     "IMG-1266.jpg",
     "IMG-1265.jpg",
     "IMG-1264.jpg",
@@ -192,7 +207,6 @@
     "Asymptotic Tight Bound of Logarithms.md",
     "Asymptotic Tight Bound for Polynomials Proposition.md",
     "Asymptotic Upper Bounds.md",
-    "Asymptotic Bound of Compositions of Functions Proposition.md",
     "Pictures/81C7E693-4E99-41EA-8D75-472288FDC15E_1_105_c.jpeg",
     "Pictures/FCC0C5D0-8366-4762-9622-2E0CBA2F2312_1_105_c.jpeg",
     "Linked List 2",

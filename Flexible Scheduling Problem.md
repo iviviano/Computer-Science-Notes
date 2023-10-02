@@ -29,7 +29,7 @@ $l_{1}^{B}=f_{1}-d_{1}=t_{2}+t_{1}-d_{1}$. (If $l_{1}^{B}$ were $0$, then $l_{2}
 As $d_{1}≤d_{2},l_{2}^{A}≤l_{1}^{B}$.
 $$\therefore\max\{l_{1}^{A},l_{2}^{A}\}≤l_{1}^{B}≤\max\{l_{1}^{B},l_{2}^{B}\}$$
 
-Let $2$ jobs in the solution with $d_{1}≤d_{2}$.
+Suppose that we have $n$ jobs. Let $i<n$ and suppose that $d_{i}>d_{i+1}$. Then, swapping jobs $i$ and $i+1$ does not increase the late penalty, as shown by the simple case and that no other jobs are affected by the swap. 
 
 >[!note]
 >This works for the swap of any two adjacent jobs.

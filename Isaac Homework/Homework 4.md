@@ -52,3 +52,5 @@ Simple Case of Exchange Argument:
 Let $t=(t_{1},t_{2}),v=(v_{1},v_{2})$ and suppose that $\frac{t_{1}}{v_{1}}< \frac{t_{2}}{v_{2}}$. My algorithm will return $1,2$ as the ordering of requests. Let $L_{1},L_{2}$ be the costs of my solution and the alternative solution, respectively. Comparing to the alternate solution: $$\begin{align}L_{1}&=\sum T_{i}v_{i}=v_{1}t_{1}+v_{2}t_{1}+v_{2}t_{2}\\
 L_{2}&=\sum T_{i}v_{i}=v_{2}t_{2}+v_{1}t_{2}+v_{1}t_{2}\end{align}$$
 $\frac{t_{1}}{v_{1}}< \frac{t_{2}}{v_{2}}\implies v_{2}t_{1}<v_{1}t_{2}$. So, $$L_{1}=v_{1}t_{1}+v_{2}t_{1}+v_{2}t_{2}<v_{1}t_{1}+v_{1}t_{2}+v_{2}t_{2}=L_{2}$$This shows that my algorithm works for ...
+
+Let there be an order of $n$ requests and let $i<n$ be given with $\frac{t_{i}}{v_{i}} > \frac{t_{i+1}}{v_{i+1}}$. 
