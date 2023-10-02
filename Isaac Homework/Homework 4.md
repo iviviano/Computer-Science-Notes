@@ -57,7 +57,8 @@ Let there be an order of $n$ requests and let $i<n$ be given with $\frac{t_{i}}{
 that is the sum of the $i$ and $i+1$ terms after the swap is not worse than the sum of the $i$ and $i+1$ terms before. As these are the only terms of the sum changed by the swap, this will show that the swap does not make the solution less optimal.
 
 $$\begin{align}
-&(T_{i-1}+t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i} \\
-&(T_{i-1}+t_{i})v_{i}+(T_{i-1}+t_{i}+t_{i+1})v_{i+1}\\
-\hline
+(T_{i-1}+t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}& \\
+-\text{    }(T_{i-1}+t_{i})v_{i}+(T_{i-1}+t_{i}+t_{i+1})v_{i+1}&\\
+\hline \\
+T_{i-1}v_{i+1}+t_{i+1}v_{i+1}+T_{i-1}v_{i}+t_{i+1}v_{i}+t_{i}v_{i}-T_{i-1}v_{i}+t_{i}v_{i}-T_{i-1}v_{i+1} &
 \end{align}$$
