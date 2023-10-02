@@ -53,4 +53,4 @@ Let $t=(t_{1},t_{2}),v=(v_{1},v_{2})$ and suppose that $\frac{t_{1}}{v_{1}}< \fr
 L_{2}&=\sum T_{i}v_{i}=v_{2}t_{2}+v_{1}t_{2}+v_{1}t_{2}\end{align}$$
 $\frac{t_{1}}{v_{1}}< \frac{t_{2}}{v_{2}}\implies v_{2}t_{1}<v_{1}t_{2}$. So, $$L_{1}=v_{1}t_{1}+v_{2}t_{1}+v_{2}t_{2}<v_{1}t_{1}+v_{1}t_{2}+v_{2}t_{2}=L_{2}$$This shows that my algorithm works for ...
 
-Let there be an order of $n$ requests and let $i<n$ be given with $\frac{t_{i}}{v_{i}} > \frac{t_{i+1}}{v_{i+1}}$. 
+Let there be an order of $n$ requests and let $i<n$ be given with $\frac{t_{i}}{v_{i}} > \frac{t_{i+1}}{v_{i+1}}$. Swapping requests $i$ and $i+1$ only affects the terms $i,i+1$ of the sum, as both $T_{j}$ and $v_{j}$ are unchanged for $j<i$ or $j>i+1$. 
