@@ -62,4 +62,4 @@ T_{i-1}v_{i+1}+t_{i+1}v_{i+1}+T_{i-1}v_{i}+t_{i+1}v_{i}+t_{i}v_{i}-T_{i-1}v_{i}-
 Since $t_{i}v_{i+1}>t_{i+1}v_{i}$, $t_{i+1}v_{i}-t_{i}v_{i+1}<0$, so $$\begin{align}(T_{i-1} +t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}<\\(strict?)(T_{i-1}+t_{i})v_{i}+&(T_{i-1}+t_{i}+t_{i+1})v_{i+1}\end{align}$$holds.
 
 
-Now, let any alternative solution, $S$, be given. Sort $S$ based on smallest $\frac{t_{i}}{v_{i}}$ with [[Bubble Sort]]. 
+Now, let any alternative solution, $S$, be given. Sort $S$ based on smallest $\frac{t_{i}}{v_{i}}$ with [[Bubble Sort]]. Clearly, this gives my solution. Additionally, since each change to the list in bubble sort only swaps adjacent elements, the [[Exchange Argument]] shows that my solution is no worse than $S$.
