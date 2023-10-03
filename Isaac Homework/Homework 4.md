@@ -42,17 +42,16 @@ Suppose that $g[j+1]>f(j+1)$. Then, if $g[j]<i≤f(j+1)$, $t_{j+1}≠w_{i}$. In 
 
 
 >[!note] 3
-
 Sort the $n$ requests by smallest $\frac{t_{i}}{v_{i}}$. This is the ordering of requests to return.
-
+>
 Clearly, this algorithm has [[Worst Case Run Time]] $O(n\log n)$, as this is the cost of sorting the requests.
-
+>
 [[Exchange Argument]]:
-
+>
 Let there be an order of $n$ requests and let $i<n$ be given with $\frac{t_{i}}{v_{i}} > \frac{t_{i+1}}{v_{i+1}}$. Swapping requests $i$ and $i+1$ only affects the terms $i,i+1$ of the sum, as both $T_{j}$ and $v_{j}$ are unchanged for $j<i$ or $j>i+1$. I will show that $$\begin{align}(T_{i-1} +t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}<\\(strict?)(T_{i-1}+t_{i})v_{i}+&(T_{i-1}+t_{i}+t_{i+1})v_{i+1}\end{align}$$
 that is the sum of the $i$ and $i+1$ terms after the swap is not worse than the sum of the $i$ and $i+1$ terms before. As these are the only terms of the sum changed by the swap, this will show that the swap does not make the solution less optimal.
-
-$$\begin{align}
+>
+>$$\begin{align}
 (T_{i-1}+t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}& \\
 -\text{    }(T_{i-1}+t_{i})v_{i}+(T_{i-1}+t_{i}+t_{i+1})v_{i+1}&\\
 \hline \\
@@ -60,6 +59,5 @@ T_{i-1}v_{i+1}+t_{i+1}v_{i+1}+T_{i-1}v_{i}+t_{i+1}v_{i}+t_{i}v_{i}-T_{i-1}v_{i}-
 =t_{i+1}v_{i}-t_{i}v_{i+1}
 \end{align}$$
 Since $t_{i}v_{i+1}>t_{i+1}v_{i}$, $t_{i+1}v_{i}-t_{i}v_{i+1}<0$, so $$\begin{align}(T_{i-1} +t_{i+1})v_{i+1}+(T_{i-1}+t_{i+1}+t_{i})v_{i}<\\(strict?)(T_{i-1}+t_{i})v_{i}+&(T_{i-1}+t_{i}+t_{i+1})v_{i+1}\end{align}$$holds.
-
-
+>
 Now, let any alternative solution, $S$, be given. Sort $S$ based on smallest $\frac{t_{i}}{v_{i}}$ with [[Bubble Sort]]. Clearly, this gives my solution. Additionally, since each change to the list in bubble sort only swaps adjacent elements, the [[Exchange Argument]] shows that my solution is no worse than $S$.
