@@ -11,7 +11,7 @@ Output:
 
 Ideas:
 - Sort the edges by weight. Add the smallest edge that doesn't create a cycle
-- Perform a breadth first search from some vertex by exploring across the cheapest edge from any given vertex first
+- Perform a breadth first search from some vertex by exploring across the cheapest edge from any given vertex first (Not quite)
 - Remove the heaviest edge that can be removed without disconnecting the graph
 
 >[!alg]
