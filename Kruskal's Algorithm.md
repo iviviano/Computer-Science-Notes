@@ -5,14 +5,11 @@ mathLink: Kruskal's algorithm
 >A [[Greedy Paradigm]] [[Algorithm]] for finding a [[Minimum Spanning Tree]].
 
 >[!alg]
->1. Sort $E$ by weight.
->2. Let $T=\emptyset$.
->3. For each [[edge]] $e\in E$, if $e$ doesn't create a [[Cycle]] in $T$, add $e$ to $T$.
->4. Return $T$.
 >$$\begin{align}
 &\textbf{Algorithm } \text{Kruskal's Algorithm }\\
 &\textbf{Input: } \text{Graph } (V,E)\\
 &\textbf{Output: } \text{Edge set } T\\
+&\text{Sort } E \text{ by weight}\\
 &\text{Let } T=\emptyset\\
 &\textbf{For } e\in E \textbf{ do:} \\
 &\quad \textbf{If } \text{adding } e \text{ to } T \text{ doesn't create cycle }\textbf{ then:} \\
@@ -29,4 +26,9 @@ Proof of Optimality:
 
 Let $S$ be another [[Spanning Tree]] and let $T$ be our solution. Let $\{e_{1},\ldots,e_{n-1}\}=T,\{s_{1},\ldots,s_{n-1}\}=S$ be in [[Sort]]ed order.
 
-Claim: 
+Claim: $e_{i}≤s_{i}$.
+
+Base case: Clearly, $e_{1}≤s_{1}$, since a [[Graph]] of $1$ [[edge]] must be [[Acyclic]], and we add the cheapest [[edge]] that doesn't create a [[Cycle]] at every step.
+
+Inductive Step: Assume that for some $i≥1$, for all $1≤i<n-1$, $e_{i}≤s_{i}$.
+
