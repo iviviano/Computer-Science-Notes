@@ -28,3 +28,5 @@ Proof of feasibility: (Show that $T$ is a [[Spanning Tree]])
 Proof of Optimality:
 
 Let $S$ be another [[Spanning Tree]] and let $T$ be our solution. Let $\{e_{1},\ldots,e_{n-1}\}=T,\{s_{1},\ldots,s_{n-1}\}=S$ be in [[Sort]]ed order.
+
+Claim: 
