@@ -13,3 +13,12 @@ Ideas:
 - Sort the edges by weight. Add the smallest edge that doesn't create a cycle
 - Perform a breadth first search from some vertex by exploring across the cheapest edge from any given vertex first
 - Remove the heaviest edge that can be removed without disconnecting the graph
+
+>[!alg]
+Reverse Delete Algorithm: look at highest weight edge. If it can be removed without disconnecting the graph, remove it.
+
+>[!alg]
+Prim's Algorithm: pick the cheapest edge out of the current connected component
+
+>[!alg]
+>
