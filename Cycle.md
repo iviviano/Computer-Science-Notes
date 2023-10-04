@@ -1,0 +1,5 @@
+---
+mathLink: cycle
+---
+>[!def]
+>
