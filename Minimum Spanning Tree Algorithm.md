@@ -9,3 +9,7 @@ Input:
 Output:
 - [[Minimum Spanning Tree]]: [[Spanning Tree]] $(V,T)$ such that $\sum_{e\in T}w(e)$
 
+Ideas:
+- Sort the edges by weight. Add the smallest edge that doesn't create a cycle
+- Perform a breadth first search from some vertex by exploring across the cheapest edge from any given vertex first
+- Remove the heaviest edge that can be removed without disconnecting the graph
