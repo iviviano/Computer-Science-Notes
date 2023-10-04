@@ -15,10 +15,10 @@ Ideas:
 - Remove the heaviest edge that can be removed without disconnecting the graph
 
 >[!alg]
-Reverse Delete Algorithm: look at highest weight edge. If it can be removed without disconnecting the graph, remove it.
+[[Reverse Delete Algorithm]]: look at highest weight edge. If it can be removed without disconnecting the graph, remove it.
 
 >[!alg]
-Prim's Algorithm: pick the cheapest edge out of the current connected component
+[[Prim's Algorithm]]: pick the cheapest edge out of the current connected component
 
 >[!alg]
->
+>[[Kruskal's Algorithm]]: add the cheapest edge that doesn't create a cycle
