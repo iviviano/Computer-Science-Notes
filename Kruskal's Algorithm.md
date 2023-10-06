@@ -32,3 +32,4 @@ Base case: Clearly, $e_{1}≤s_{1}$, since a [[Graph]] of $1$ [[edge]] must be [
 
 Inductive Step: Assume that for some $i≥1$, for all $1≤i<n-1$, $e_{i}≤s_{i}$.
 
+Suppose that $e_{i+1}>s_{i+1}$.
