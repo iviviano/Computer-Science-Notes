@@ -29,6 +29,9 @@ Let $S$ be another [[Spanning Tree]] and let $T$ be our solution. Let $\{e_{1},\
 
 Claim: $e_{i}≤s_{i}$.
 
+>[!prop] Lemma
+>Given a [[Graph]] $G=(V,E)$, let $E_{1},E_{2}$ be [[Acyclic]] [[Subset]]s of $E$ such that $|E_{1}|>|E_{2}|$. Then, there exists an [[edge]] $e\in E_{1}-E_{2}$ such that $E_{2}\cup\{e\}$ is [[Acyclic]].
+
 Base case: Clearly, $e_{1}≤s_{1}$, since a [[Graph]] of $1$ [[edge]] must be [[Acyclic]], and we add the cheapest [[edge]] that doesn't create a [[Cycle]] at every step.
 
 Inductive Step: Assume that for some $i≥1$, for all $1≤i<n-1$, $e_{i}≤s_{i}$.
