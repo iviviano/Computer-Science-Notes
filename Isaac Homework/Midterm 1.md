@@ -62,7 +62,7 @@ $$\begin{align*}
 &\quad \text{Let }middle=\left\lfloor\frac{l}{2}\right\rfloor+start\\
 &\quad \text{Let }found=\text{false}\\
 &\quad \textbf{If } n\%2=1 \textbf{ then:}\\
-&\quad \quad found=A[middle+1]==2middle+2\\\\
+&\quad \quad found=A[middle]==2middle\\\\
 &\quad \textbf{If } found\lor n==1 \textbf{ then:}\\
 &\quad \quad \textbf{return } found\\
 &\quad \textbf{If } A[middle]<=2middle \textbf{ then:}\\
