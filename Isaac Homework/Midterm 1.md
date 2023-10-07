@@ -50,20 +50,24 @@ If $T$ had a [[Cycle]], then some edge could be removed without disconnecting $(
 >[!note] 2
 
 >[!alg]
->$$\begin{align*}
+
+$$\begin{align*}
 &\textbf{Algorithm } \text{Double Index Element?}\\\\
 &\textbf{Input: } \text{Sorted Array } A \text{ of length }n \text{ with no duplicate elements}\\\\
 &\textbf{Output: } \text{Boolean indicating whether }A[i]=2i \text{ for some }i\in[n]\\
-&\text{Let }middle=\left\lfloor\frac{n}{2}\right\rfloor\\
-&\text{Let }found=\text{false}\\
-&\textbf{If } n\%2=1 \textbf{ then:}\\
-&\quad found=A[middle+1]==2middle+2\\\\
-&\textbf{If } found\lor n==1 \textbf{ then:}\\
-&\quad \textbf{return } found\\
-&\textbf{If } A[middle]<=2middle \textbf{ then:}\\
-&\quad \textbf{return } \text{doubleIndexElement?}(A[1:middle])\\
-&\textbf{Else:}\\
-&\quad \textbf{return } \text{doubleIndexElement?}\left(A\left[\left\lceil \frac{n}{2}\right\rceil\right]\right)\\
+&\textbf{return } fun(1,n)\\
+&\\
+&fun(start,end):\\
+&\quad \text{Let }middle=\left\lfloor\frac{n}{2}\right\rfloor\\
+&\quad \text{Let }found=\text{false}\\
+&\quad \textbf{If } n\%2=1 \textbf{ then:}\\
+&\quad \quad found=A[middle+1]==2middle+2\\\\
+&\quad \textbf{If } found\lor n==1 \textbf{ then:}\\
+&\quad \quad \textbf{return } found\\
+&\quad \textbf{If } A[middle]<=2middle \textbf{ then:}\\
+&\quad \quad \textbf{return } \text{doubleIndexElement?}(A[1:middle])\\
+&\quad \textbf{Else:}\\
+&\quad \quad \textbf{return } \text{doubleIndexElement?}\left(A\left[\left\lceil \frac{n}{2}\right\rceil\right]\right)\\
 \end{align*}$$
 
 Let $P(n)$ be that $\text{doubleIndexElement?}$ works for inputs of size $n$.
