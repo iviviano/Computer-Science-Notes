@@ -32,3 +32,10 @@ Claim: $e_{i}≤s_{i}$.
 >Given a [[Graph]] $G=(V,E)$, let $E_{1},E_{2}$ be [[Acyclic]] [[Subset]]s of $E$ such that $|E_{1}|>|E_{2}|$. Then, there exists an [[edge]] $e\in E_{1}-E_{2}$ such that $E_{2}\cup\{e\}$ is [[Acyclic]].
 >
 Suppose that for some $i$, $e_{i}>s_{i}$. Let $T_{i-1}=\{e_{1},\ldots,e_{i-1}\}$. Let $S_{i}=\{s_{1},\ldots,s_{i}\}$. Take $e\in S_{i}-T_{i-1}$ such that $T_{i-1}\cup\{e\}$ is [[Acyclic]] by the lemma. Now, $e≤s_{i}<e_{i}$ as $S$ is [[Sort]]ed. But this contradicts the [[Algorithm]], as $e_{i}$ was the smallest [[edge]] that could be added to $T$ without creating a [[Cycle]].
+
+Runtime Analysis:
+Let $G=(V,E)$ be a [[Graph]] with $n$ [[node]]s and $m$ [[edge]]s
+[[Sort]] the [[edge]]s by weight: $O(m\log m)$
+Check for [[Cycle]]s when adding [[edge]]: $O(m+n)$.
+- [[Union Find]] [[Data Structure]]: $O(\log^{a}n)$ with $a$ small
+Note: $m=O(n^{2})$
