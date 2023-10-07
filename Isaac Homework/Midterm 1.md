@@ -118,20 +118,24 @@ Now, $$\begin{align*}
 &=|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|
 \end{align*}$$
 Case 2: $p_{i}>w_{f(i+1)},p_{i+1}\le w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}$$
-
-Case 3: $p_{i}\le w_{f(i+1)},p_{i+1}>w_{f(i)}$.
-
-Case 4: $p_{i}>w_{f(i+1)},p_{i+1}>w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=p_{i}-w_{f(i+1)}+p_{i+1}-w_{f(i)}$$
+Apply $w_{f(i)}≥w_{f(i+1)}$: $$\begin{align*}\\
+&p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}≤
+\end{align*}$$
+Case 2: $p_{i}\le w_{f(i+1)},p_{i+1}>w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=w_{f(i+1)}-p_{i}+p_{i+1}-w_{f(i)}$$
+Apply $w_{f(i)}≥w_{f(i+1)}$: $$\begin{align*}\\
+&w_{f(i+1)}-p_{i}+p_{i+1}-w_{f(i)}≤w_{f(i)}-p_{i}+p_{i+1}-w_{f(i+1)}\\
+&\le|w_{f(i)}-p_{i}+p_{i+1}-w_{f(i+1)}|\le|w_{f(i)}-p_{i}|+|p_{i+1}-w_{f(i+1)}|\quad(1)\\
+&=|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|
+\end{align*}$$
+Case 3: $p_{i}>w_{f(i+1)},p_{i+1}>w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=p_{i}-w_{f(i+1)}+p_{i+1}-w_{f(i)}$$
 Now, $$\begin{align*}
 &p_{i}-w_{f(i+1)}+p_{i+1}-w_{f(i)}\le|p_{i}-w_{f(i+1)}+p_{i+1}-w_{f(i)}|\\
 &=|p_{i}-w_{f(i)}+p_{i+1}-w_{f(i+1)}|≤|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|\quad(1)\\
 \end{align*}$$
+The last possible combination: $p_{i}>w_{f(i+1)},p_{i+1}\le w_{f(i)}$ is not actually possible: $$w_{f(i+1)}<p_{i}≤p_{i+1}$$as $p$ is non-increasing. So, this condition implies that $w_{f(i+1)}<w_{f(i)}$, contradiction my assumption otherwise.
+
+So, for all possible values of $p_{i},p_{i+1},w_{f(i)},w_{f(i+1)}$ with the stipulation $w_{f(i)}\ge w_{f(i+1)}$, $$\frac{1}{n}\sum_{j=1}^{n}|p_{j}-w_{g(j)}|\le \frac{1}{n}\sum_{j=1}^{n}|p_{j}-w_{f(j)}|$$This proves that the swap of any two "adjacent" watermelons $w_{f(i)},w_{f(i+1)}$ doesn't worsen the solution. 
+
+Let $f$ be any matching of pumpkins to watermelons with the watermelons. Sort the watermelons in non-decreasing order. Then, $f$ induces an ordering of the pumpkins. Sort this ordering in non-decreasing order with bubble sort. (CLARIFY). 
 
 
-
-Now, $$\begin{align*}\\
-&|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|=|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|\\
-&=|p_{i}-w_{f(i)}+w_{f(i)}-w_{f(i+1)}|+|p_{i+1}-w_{f(i+1)}+w_{f(i+1)}-w_{f(i)}|\\
-&≤|p_{i}-w_{f(i)}|+|w_{f(i)}-w_{f(i+1)}|+|p_{i+1}-w_{f(i+1)}|+|w_{f(i)}-w_{f(i+1)}|\\
-&=|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|+2|w_{f(i)}-w_{f(i+1)}|
-\end{align*}$$
