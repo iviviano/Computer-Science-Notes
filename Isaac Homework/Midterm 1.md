@@ -21,4 +21,4 @@ Therefore, by [[Principle of Mathematical Induction]], $P(i)$ for all $i\in[k]$.
 >
 As $S[i]≥X[i]$ for all $1≤i≤k$, clearly $$\sum_{i=1}^{k}S[i]≥\sum_{i=1}^{k}X[i]$$So, no possible solution is better than $S$, showing that my [[Algorithm]] is optimal.
 
-(b) False. For [[mer]]
+(b) False. 
