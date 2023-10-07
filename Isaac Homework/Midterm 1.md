@@ -66,8 +66,9 @@ $$\begin{align*}
 &\quad \quad found=A[middle]==2middle\\\\
 &\quad \textbf{If } found\lor l==1 \textbf{ then:}\\
 &\quad \quad \textbf{return } found\\
-&\quad \textbf{If } A[middle]\ge 2middle \textbf{ then:}\\
+&\quad \textbf{If } A[middle]\ge 2end-l \textbf{ then:}\\
 &\quad \quad \textbf{return } fun(start,middle)\\
+&\quad \textbf{If } A[middle]\le2start+l \textbf{ then:}
 &\quad \textbf{Else:}\\
 &\quad \quad \textbf{return } fun\left(\left\lceil \frac{l}{2}\right\rceil+start,end\right)
 \end{align*}$$
