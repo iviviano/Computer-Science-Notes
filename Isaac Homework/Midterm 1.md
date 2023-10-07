@@ -86,4 +86,4 @@ Runtime Analysis:
 The [[Worst Case Run Time]] for this [[Algorithm]] occurs when 
 
 
-(b)
+(b) $A=$
