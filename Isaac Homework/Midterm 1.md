@@ -58,8 +58,8 @@ $$\begin{align*}
 &\textbf{return } fun(0,n)\\
 &\\
 &fun(start,end):\\
-&\quad \text{Let }l=end-start
-&\quad \text{Let }middle=\left\lfloor\frac{n}{2}\right\rfloor\\
+&\quad \text{Let }l=end-start\\
+&\quad \text{Let }middle=\left\lfloor\frac{l}{2}\right\rfloor+start\\
 &\quad \text{Let }found=\text{false}\\
 &\quad \textbf{If } n\%2=1 \textbf{ then:}\\
 &\quad \quad found=A[middle+1]==2middle+2\\\\
