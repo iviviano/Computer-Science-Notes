@@ -66,9 +66,9 @@ $$\begin{align*}
 &\quad \textbf{If } found\lor n==1 \textbf{ then:}\\
 &\quad \quad \textbf{return } found\\
 &\quad \textbf{If } A[middle]<=2middle \textbf{ then:}\\
-&\quad \quad \textbf{return } \text{doubleIndexElement?}(A[1:middle])\\
+&\quad \quad \textbf{return } fun(start,middle)\\
 &\quad \textbf{Else:}\\
-&\quad \quad \textbf{return } \text{doubleIndexElement?}\left(A\left[\left\lceil \frac{n}{2}\right\rceil\right]\right)\\
+&\quad \quad \textbf{return } fun(start)
 \end{align*}$$
 
 Let $P(n)$ be that $\text{doubleIndexElement?}$ works for inputs of size $n$.
