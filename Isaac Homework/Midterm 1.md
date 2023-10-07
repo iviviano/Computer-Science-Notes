@@ -68,13 +68,14 @@ $$\begin{align*}
 &\quad \textbf{If } A[middle]<=2middle \textbf{ then:}\\
 &\quad \quad \textbf{return } fun(start,middle)\\
 &\quad \textbf{Else:}\\
-&\quad \quad \textbf{return } fun(start)
+&\quad \quad \textbf{return } fun\left(\left\lceil \frac{l}{2}\right\rceil+start,end\right)
 \end{align*}$$
 
-Let $P(n)$ be that $\text{doubleIndexElement?}$ works for inputs of size $n$.
+Let $P(n)$ be that $fun(start,end)$ works $end-start=n$.
 
 Base Case: $n=1$
 $\lfloor \frac{1}{2}\rfloor=0$, so $middle$ is assigned to $0$. Since $n\%2=1\%2=1$, $found$ is assigned to whether $A[middle]$ 
 
 
 Runtime Analysis:
+The [[Worst Case Run Time]] for this [[Algorithm]] occurs when 
