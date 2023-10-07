@@ -21,4 +21,18 @@ Therefore, by [[Principle of Mathematical Induction]], $P(i)$ for all $i\in[k]$.
 >
 As $S[i]≥X[i]$ for all $1≤i≤k$, clearly $$\sum_{i=1}^{k}S[i]≥\sum_{i=1}^{k}X[i]$$So, no possible solution is better than $S$, showing that my [[Algorithm]] is optimal.
 
-(b) False. 
+(b) False. Let $T(n)=n^{3}\log_{2}n$. Then, $$T\left(\frac{n}{2}\right)=\frac{n^{3}}{8}\log_{2}\frac{n}{2}$$so, $$\begin{align*}\\
+8T\left(\frac{n}{2}\right)+n^{3}&=8 \frac{n^{3}}{8}\log_{2} \frac{n}{2}+n^{3}=n^{3}\log_{2}n -n^{3}\log_{2}2+n^{3}\\\\
+&= n^{3}\log_{2}n-n^{3}+n^{3}=n^{3}\log_{2}n=T(n)
+\end{align*}$$so, $T(n)$ satisfies the recurrence relation. However, $T(n)=O(n^{3}\log n)$, so $T(n)≠O(\log n)$.
+
+(c) 
+>[!proof]
+
+Let $P(n)$ be that $T(n)=2^\frac{n}{2}$.
+
+Base Case: $n=0$.
+If $n=0$, $2^{\frac{n}{2}}=2^{\frac{0}{2}}=1=T(0)$. So, $T(0)$. 
+
+Inductive Step: let $n>0$ be even, and assume $P(n-2)$. 
+$$T(n)=T(n-2)+1=2^{\frac{n-2}{2}}+1=2^{\frac{n}{2}-1}+1=2^{\frac{n}{2}}$$
