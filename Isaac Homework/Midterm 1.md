@@ -91,10 +91,7 @@ The [[Worst Case Run Time]] for this [[Algorithm]] occurs when
 
 
 >[!note] 3
-
-
-(a)
-
+(a) Let $P=\{1,4\},W=\{3,6\}$. The [[Algorithm]] by smallest $|p_{i}-w_{f(i)}|$ will make associations: $(1,6),(4,3)$ of pumpkin-watermelon pairs. The average difference for this solution is $$\sum_{i=1}^{2}|p_{i}-w_{f(i)}|=|1-6|+|4-3|=5+1=6$$If instead, we used the associations $(1,3),(4,6)$, the average difference would be $$\sum_{i=1}^{2}|p_{i}-w_{f(i)}|=|1-3|+|4-6|=2+2=4$$
 
 (b) 
 For this proof, I will use the [[Triangle Inequality]]: $$\begin{equation}
