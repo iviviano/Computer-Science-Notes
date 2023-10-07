@@ -55,5 +55,11 @@ $$\begin{align*}
 &\textbf{Algorithm } \text{Double Index Element?}\\\\
 &\textbf{Input: } \text{Sorted Array } A \text{ of length }n \text{ with no duplicate elements}\\\\
 &\textbf{Output: } \text{Boolean indicating whether }A[i]=2i \text{ for some }i\in[n]\\
-&
+&\text{Let }middle=\left\lfloor\frac{n}{2}\right\rfloor\\
+&\text{Let }found=\text{false}\\
+&\textbf{If } n\%2=1 \textbf{ then:}\\
+&\quad found=A[middle+1]==2middle+2\\
+&\textbf{If } !found \textbf{ then:}\\\\
+&\quad \textbf{If } A \textbf{ then:}
+&\quad \textbf{return } \text{doubleIndexElement?}(A)
 \end{align*}$$
