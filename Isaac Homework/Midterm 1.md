@@ -50,8 +50,7 @@ If $T$ had a [[Cycle]], then some edge could be removed without disconnecting $(
 >[!note] 2
 
 >[!alg]
-
-$$\begin{align*}
+>$$\begin{align*}
 &\textbf{Algorithm } \text{Double Index Element?}\\\\
 &\textbf{Input: } \text{Sorted Array } A \text{ of length }n \text{ with no duplicate elements}\\\\
 &\textbf{Output: } \text{Boolean indicating whether }A[i]=2i \text{ for some }i\in[n]\\
@@ -60,6 +59,16 @@ $$\begin{align*}
 &\textbf{If } n\%2=1 \textbf{ then:}\\
 &\quad found=A[middle+1]==2middle+2\\
 &\textbf{If } !found \textbf{ then:}\\\\
-&\quad \textbf{If } A \textbf{ then:}
-&\quad \textbf{return } \text{doubleIndexElement?}(A)
+&\quad \textbf{If } A[middle]<=2middle \textbf{ then:}\\
+&\quad \quad \textbf{return } \text{doubleIndexElement?}(A[1:middle])\\
+&\quad \textbf{Else:}\\
+&\quad \quad \textbf{return } \text{doubleIndexElement?}\left(A\left[\left\lceil \frac{n}{2}\right\rceil\right]\right)\\
+&\textbf{return } \text{true}\\
 \end{align*}$$
+
+Let $P(n)$ be that $\text{doubleIndexElement?}$ works for inputs of size $n$.
+
+Base Cases: $n=0$
+
+
+Runtime Analysis:
