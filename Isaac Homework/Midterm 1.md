@@ -63,23 +63,23 @@ $$\begin{align*}
 &\quad \text{Let }found=\text{false}\\
 &\quad \textbf{If } n\%2=1 \textbf{ then:}\\
 &\quad \quad found=A[middle]==2middle\\\\
-&\quad \textbf{If } found\lor n==1 \textbf{ then:}\\
+&\quad \textbf{If } found\lor l==1 \textbf{ then:}\\
 &\quad \quad \textbf{return } found\\
-&\quad \textbf{If } A[middle]<=2middle \textbf{ then:}\\
+&\quad \textbf{If } A[middle]>2middle \textbf{ then:}\\
 &\quad \quad \textbf{return } fun(start,middle)\\
 &\quad \textbf{Else:}\\
 &\quad \quad \textbf{return } fun\left(\left\lceil \frac{l}{2}\right\rceil+start,end\right)
 \end{align*}$$
 
-Let $P(k)$ be that if $end-start=k$ $fun(start,end)$ returns $\text{true}$ if $\exists i:start≤i<end:A[i]=2i$ and $\text{false}$ otherwise.
+Let $P(l)$ be that if $end-start=l$ $fun(start,end)$ returns $\text{true}$ if $\exists i:start≤i<end:A[i]=2i$ and $\text{false}$ otherwise.
 
-Base Case: $k=1$
-Since $end-start=1$, $l=1$, so $\lfloor \frac{1}{2}\rfloor=0$, and $middle$ is assigned to $start$. Since $n\%2=1\%2=1$, $found$ is assigned to whether $A[start]=2start$. Since $n==1$, $found$ is returned. As $start$ is the only integer at least as big as $start$ and less than $end$ in this case $found$ is $\text{true}\iff\exists i:start≤i<end$. $\therefore P(1)$ holds.
+Base Case: $l=1$
+$\lfloor \frac{l}{2}\rfloor=\lfloor \frac{1}{2}\rfloor=0$, so $middle$ is assigned to $start$. Since $n\%2=1\%2=1$, $found$ is assigned to whether $A[start]=2start$. Since $l==1$, $found$ is returned. As $start$ is the only integer at least as big as $start$ and less than $end$ in this case $found$ is $\text{true}\iff\exists i:start≤i<end$. $\therefore P(1)$ holds.
 
-Inductive Step: let $k$ be given with $1<k≤n$ and assume that for all $l\in[k-1],P(l)$.
-Suppose that $k$ is even. 
+Inductive Step: let $l$ be given with $1<l≤n$ and assume that for all $k\in[k-1],P(k)$.
+Suppose that $l$ is even. Then, $\lfloor \frac{l}{2}\rfloor=\lceil \frac{l}{2}\rceil= \frac{l}{2}$. $found$ is $\text{false}$, and $l>1$, so we reach the final $\textbf{If}$ statement. Suppose that $A[middle]>2middle$. Then, 
 
-Otherwise $k$ is odd.
+Otherwise $l$ is odd.
 
 Runtime Analysis:
 The [[Worst Case Run Time]] for this [[Algorithm]] occurs when 
