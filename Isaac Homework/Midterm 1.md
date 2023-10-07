@@ -9,7 +9,12 @@ Let $S$ be the solution given by our [[Greedy Paradigm]] [[Algorithm]] and let $
 
 Suppose that $k>0$. Clearly, if $k=0$, $S=X=\emptyset$, so $S$ is optimal.
 
-Let $P(i)$ be the statement that $\sum_{j=1}^{i}S[j]≥\sum_{j=1}^{i}X[j]$.
+Let $P(i)$ be the statement that $S[i]≥X[i]$.
 
 Base Case: $i=1$. 
-$\sum_{j=1}^{1}S[j]=S[1]$, and $\sum_{j=1}^{1}X[j]=X[j]$. As $S$ is sorted in non-increasing order and $S$ contains the largest element of $A$, $S[1]$ is the largest element of $A$.
+As $S$ is sorted in non-increasing order and $S$ contains the largest element of $A$, $S[1]$ is the largest element of $A$. As $X$ is also a [[Subset]] of $A$, $X[1]$ is not larger than the largest element of $A$. So, $S[1]≥X[1]$, giving $P(1)$.
+
+Inductive Step: let $i\in[k-1]$ and suppose that $P(i)$ is true.
+
+
+As $S[i]≥X[i]$ for all $1≤i≤k$, clearly $$\sum_{i=1}^{k}S[i]≥\sum_{i=1}^{k}X[i]$$So, no possible solution is better than $S$, showing that my [[Algorithm]] is optimal.
