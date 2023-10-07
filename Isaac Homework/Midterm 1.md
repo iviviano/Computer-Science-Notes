@@ -118,11 +118,16 @@ Now, $$\begin{align*}
 &=|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|
 \end{align*}$$
 Case 2: $p_{i}>w_{f(i+1)},p_{i+1}\le w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}$$
+
+Case 3: $p_{i}\le w_{f(i+1)},p_{i+1}>w_{f(i)}$.
+
+Case 4: $p_{i}>w_{f(i+1)},p_{i+1}>w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=p_{i}-w_{f(i+1)}+p_{i+1}-w_{f(i)}$$
 Now, $$\begin{align*}
-&p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}\le |p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}|\\
-&=|w_{f(i)}-p_{i}+w_{f(i+1)}-p_{i+1}|\le|w_{f(i)}-p_{i}|+|w_{f(i+1)}-p_{i+1}| \quad(1)\\
-&=|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|
+&p_{i}-w_{f(i+1)}+p_{i+1}-w_{f(i)}\le|p_{i}-w_{f(i+1)}+p_{i+1}-w_{f(i)}|\\
+&=|p_{i}-w_{f(i)}+p_{i+1}-w_{f(i+1)}|≤|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|\quad(1)\\
 \end{align*}$$
+
+
 
 Now, $$\begin{align*}\\
 &|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|=|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|\\
