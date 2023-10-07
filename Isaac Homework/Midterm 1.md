@@ -103,4 +103,9 @@ Let $i\in[n-1]$ be given with $w_{f(i)}≥w_{f(i+1)}$. Let $g:[n]\rightarrow[n]$
 &f(j-1)\text{ if }j=i+1\\
 &f(j)\text{ otherwise}\\
 \end{align}\right.$$Clearly, $g$ is a valid matching function, as $f$ is. I will show that $$\frac{1}{n}\sum_{j=1}^{n}|p_{j}-w_{g(j)}|\le \frac{1}{n}\sum_{j=1}^{n}|p_{j}-w_{f(j)}|$$The only two different terms in this sum are for $j=i,i+1$, since these are the only two inputs for which $f$ and $g$ differ. So, I must only show $$|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|≤|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|$$
-Now, $$|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|=|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|$$
+Now, $$\begin{align*}\\
+&|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|=|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|\\
+&=|p_{i}-w_{f(i)}+w_{f(i)}-w_{f(i+1)}|+|p_{i+1}-w_{f(i+1)}+w_{f(i+1)}-w_{f(i)}|\\
+&≤|p_{i}-w_{f(i)}|+|w_{f(i)}-w_{f(i+1)}|+|p_{i+1}-w_{f(i+1)}|+|w_{f(i)}-w_{f(i+1)}|\\
+&=|p_{i}-w
+\end{align*}$$
