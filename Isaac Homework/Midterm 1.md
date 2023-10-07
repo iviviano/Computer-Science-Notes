@@ -96,13 +96,34 @@ The [[Worst Case Run Time]] for this [[Algorithm]] occurs when
 (a)
 
 
-(b) [[Exchange Argument]]:
+(b) 
+For this proof, I will use the [[Triangle Inequality]]: $$\begin{equation}
+|A-B|≤|A|+|B|
+\end{equation}$$
+
+[[Exchange Argument]]:
 Let $f$ be a matching of pumpkins to watermelons where the pumpkins are sorted by non-decreasing weight.
 Let $i\in[n-1]$ be given with $w_{f(i)}≥w_{f(i+1)}$. Let $g:[n]\rightarrow[n]$ be defined by$$g(j)=\left\{\begin{align}
 &f(j+1)\text{ if }j=i\\
 &f(j-1)\text{ if }j=i+1\\
 &f(j)\text{ otherwise}\\
 \end{align}\right.$$Clearly, $g$ is a valid matching function, as $f$ is. I will show that $$\frac{1}{n}\sum_{j=1}^{n}|p_{j}-w_{g(j)}|\le \frac{1}{n}\sum_{j=1}^{n}|p_{j}-w_{f(j)}|$$The only two different terms in this sum are for $j=i,i+1$, since these are the only two inputs for which $f$ and $g$ differ. So, I must only show $$|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|≤|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|$$
+Now, $$\begin{align*}\\
+&|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|=|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|\\
+\end{align*}$$
+Case $1$: $p_{i}≤w_{f(i+1)},p_{i+1}\le w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=w_{f(i+1)}-p_{i}+w_{f(i)}-p_{i+1}$$
+Now, $$\begin{align*}
+&w_{f(i+1)}-p_{i}+w_{f(i)}-p_{i+1}\le |w_{f(i+1)}-p_{i}+w_{f(i)}-p_{i+1}|\\
+&=|w_{f(i)}-p_{i}+w_{f(i+1)}-p_{i+1}|\le|w_{f(i)}-p_{i}|+|w_{f(i+1)}-p_{i+1}| \quad(1)\\
+&=|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|
+\end{align*}$$
+Case 2: $p_{i}>w_{f(i+1)},p_{i+1}\le w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}$$
+Now, $$\begin{align*}
+&p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}\le |p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}|\\
+&=|w_{f(i)}-p_{i}+w_{f(i+1)}-p_{i+1}|\le|w_{f(i)}-p_{i}|+|w_{f(i+1)}-p_{i+1}| \quad(1)\\
+&=|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|
+\end{align*}$$
+
 Now, $$\begin{align*}\\
 &|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|=|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|\\
 &=|p_{i}-w_{f(i)}+w_{f(i)}-w_{f(i+1)}|+|p_{i+1}-w_{f(i+1)}+w_{f(i+1)}-w_{f(i)}|\\
