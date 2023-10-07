@@ -111,15 +111,13 @@ Let $i\in[n-1]$ be given with $w_{f(i)}≥w_{f(i+1)}$. Let $g:[n]\rightarrow[n]$
 Now, $$\begin{align*}\\
 &|p_{i}-w_{g(i)}|+|p_{i+1}-w_{g(i+1)}|=|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|\\
 \end{align*}$$
+There are 3 cases that must be considered:
+
 Case $1$: $p_{i}≤w_{f(i+1)},p_{i+1}\le w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=w_{f(i+1)}-p_{i}+w_{f(i)}-p_{i+1}$$
 Now, $$\begin{align*}
 &w_{f(i+1)}-p_{i}+w_{f(i)}-p_{i+1}\le |w_{f(i+1)}-p_{i}+w_{f(i)}-p_{i+1}|\\
 &=|w_{f(i)}-p_{i}+w_{f(i+1)}-p_{i+1}|\le|w_{f(i)}-p_{i}|+|w_{f(i+1)}-p_{i+1}| \quad(1)\\
 &=|p_{i}-w_{f(i)}|+|p_{i+1}-w_{f(i+1)}|
-\end{align*}$$
-Case 2: $p_{i}>w_{f(i+1)},p_{i+1}\le w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}$$
-Apply $w_{f(i)}≥w_{f(i+1)}$: $$\begin{align*}\\
-&p_{i}-w_{f(i+1)}+w_{f(i)}-p_{i+1}≤
 \end{align*}$$
 Case 2: $p_{i}\le w_{f(i+1)},p_{i+1}>w_{f(i)}$. Then, $$|p_{i}-w_{f(i+1)}|+|p_{i+1}-w_{f(i)}|=w_{f(i+1)}-p_{i}+p_{i+1}-w_{f(i)}$$
 Apply $w_{f(i)}≥w_{f(i+1)}$: $$\begin{align*}\\
