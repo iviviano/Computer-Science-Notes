@@ -57,18 +57,19 @@ If $T$ had a [[Cycle]], then some edge could be removed without disconnecting $(
 &\text{Let }middle=\left\lfloor\frac{n}{2}\right\rfloor\\
 &\text{Let }found=\text{false}\\
 &\textbf{If } n\%2=1 \textbf{ then:}\\
-&\quad found=A[middle+1]==2middle+2\\
-&\textbf{If } !found \textbf{ then:}\\\\
-&\quad \textbf{If } A[middle]<=2middle \textbf{ then:}\\
-&\quad \quad \textbf{return } \text{doubleIndexElement?}(A[1:middle])\\
-&\quad \textbf{Else:}\\
-&\quad \quad \textbf{return } \text{doubleIndexElement?}\left(A\left[\left\lceil \frac{n}{2}\right\rceil\right]\right)\\
-&\textbf{return } \text{true}\\
+&\quad found=A[middle+1]==2middle+2\\\\
+&\textbf{If } found\lor n==1 \textbf{ then:}\\
+&\quad \textbf{return } found\\
+&\textbf{If } A[middle]<=2middle \textbf{ then:}\\
+&\quad \textbf{return } \text{doubleIndexElement?}(A[1:middle])\\
+&\textbf{Else:}\\
+&\quad \textbf{return } \text{doubleIndexElement?}\left(A\left[\left\lceil \frac{n}{2}\right\rceil\right]\right)\\
 \end{align*}$$
 
 Let $P(n)$ be that $\text{doubleIndexElement?}$ works for inputs of size $n$.
 
-Base Cases: $n=0$
+Base Case: $n=1$
+$\lfloor \frac{1}{2}\rfloor=0$, so $middle$ is assigned to $0$. Since $n\%2=1\%2=1$, $found$ is assigned to whether $A[middle]$ 
 
 
 Runtime Analysis:
