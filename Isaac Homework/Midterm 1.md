@@ -71,11 +71,15 @@ $$\begin{align*}
 &\quad \quad \textbf{return } fun\left(\left\lceil \frac{l}{2}\right\rceil+start,end\right)
 \end{align*}$$
 
-Let $P(n)$ be that $fun(start,end)$ works $end-start=n$.
+Let $P(k)$ be that if $end-start=k$ $fun(start,end)$ returns $\text{true}$ if $\exists i:start≤i<end:A[i]=2i$ and $\text{false}$ otherwise.
 
-Base Case: $n=1$
-$\lfloor \frac{1}{2}\rfloor=0$, so $middle$ is assigned to $0$. Since $n\%2=1\%2=1$, $found$ is assigned to whether $A[middle]$ 
+Base Case: $k=1$
+Since $end-start=1$, $l=1$, so $\lfloor \frac{1}{2}\rfloor=0$, and $middle$ is assigned to $start$. Since $n\%2=1\%2=1$, $found$ is assigned to whether $A[start]=2start$. Since $n==1$, $found$ is returned. As $start$ is the only integer at least as big as $start$ and less than $end$ in this case $found$ is $\text{true}\iff\exists i:start≤i<end$. $\therefore P(1)$ holds.
 
+Inductive Step: let $k$ be given with $1<k≤n$ and assume that for all $l\in[k-1],P(l)$.
+Suppose that $k$ is even. 
+
+Otherwise $k$ is odd.
 
 Runtime Analysis:
 The [[Worst Case Run Time]] for this [[Algorithm]] occurs when 
