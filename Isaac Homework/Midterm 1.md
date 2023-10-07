@@ -28,11 +28,32 @@ As $S[i]≥X[i]$ for all $1≤i≤k$, clearly $$\sum_{i=1}^{k}S[i]≥\sum_{i=1}^
 
 (c) 
 >[!proof]
-
-Let $P(n)$ be that $T(n)=2^\frac{n}{2}$.
-
+Let $P(n)$ be that $T(n)=\frac{n}{2}+1$.
+>
 Base Case: $n=0$.
-If $n=0$, $2^{\frac{n}{2}}=2^{\frac{0}{2}}=1=T(0)$. So, $T(0)$. 
-
+If $n=0$, $\frac{n}{2}+1=\frac{0}{2}+1=1=T(0)$. So, $T(0)$. 
+>
 Inductive Step: let $n>0$ be even, and assume $P(n-2)$. 
-$$T(n)=T(n-2)+1=2^{\frac{n-2}{2}}+1=2^{\frac{n}{2}-1}+1=2^{\frac{n}{2}}$$
+$$T(n)=T(n-2)+1=\frac{n-2}{2}+1+1=\frac{n}{2}-1+2=\frac{n}{2}+1$$So, $P(n)$.
+>
+By (PMI), $P(n)$ for all even $n≥0$.
+
+So, $T(n)=O(n)$ by the [[Asymptotic Tight Bound for Polynomials Proposition]].
+
+(d) True. Clearly, this does not increase the cost of $T$. As there were already no other [[Spanning Tree]]s with lower cost than $T$, $T$ is still a [[Minimum Spanning Tree]].
+
+(e) To prove that this is feasible, we must show that its output is a [[Spanning Tree]]. A [[Spanning Tree]] $T$ is a [[Subset]] of $E$ such that $(V,T)$ is [[Connected]] and [[Acyclic]]. Clearly, $T$ is a [[Subset]] of $E$, as it starts as all of $E$ and elements are removed from there. It is also obvious that $E$ is connected, since we assume that $G$ is connected, and no edges are removed from $T$ that disconnect it.
+
+If $T$ had a [[Cycle]], then some edge could be removed without disconnecting $(V,T)$. So, the [[Algorithm]] cannot end without $T$ being acyclic. As there are finitely many edges the algorithm does terminate. [[therefore]] $T$ is a [[Spanning Tree]]
+
+
+>[!note] 2
+
+>[!alg]
+
+$$\begin{align*}
+&\textbf{Algorithm } \text{Double Index Element?}\\\\
+&\textbf{Input: } \text{Sorted Array } A \text{ of length }n \text{ with no duplicate elements}\\\\
+&\textbf{Output: } \text{Boolean indicating whether }A[i]=2i \text{ for some }i\in[n]\\
+&
+\end{align*}$$
